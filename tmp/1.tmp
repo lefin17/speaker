@@ -1,0 +1,884 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html lang="ru" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://ogp.me/ns#" xmlns:v="http://rdf.data-vocabulary.org/#"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="utf-8" /><title>Павел Корнев, Мертвый вор –  купить и скачать fb2, epub, pdf на ЛитРес</title><meta name="description" content="Сервис электронных книг 📚 ЛитРес предлагает скачать книгу 🠳 Мертвый вор, Павла Корнева в форматах fb2, txt, epub, pdf или читать онлайн! ➤ Оставляйте и читайте отзывы о книге на ЛитРес!"><link rel="alternate" hreflang="ru" href="https://www.litres.ru/pavel-kornev/mertvyy-vor/"><link rel="alternate" hreflang="pl" href="https://litres.pl/pawiel-korniew/mertvyy-vor/"><link rel="alternate" hreflang="et" href="https://litres.ee/pavel-kornev/mertvyy-vor/"><link rel="stylesheet" href="/static/wrapper/css/reset.css?65723" type="text/css"><link rel="stylesheet" href="/static/litres/css/style.css?135436" type="text/css"><link rel="stylesheet" href="/static/litres/css/p/biblio_book.css?136679" type="text/css"><link rel="stylesheet" href="/static/litres/css/p/module_recenses.css?134830" type="text/css"><link rel="stylesheet" href="/static/litres/css/p/module_views.css?102563" type="text/css"><link rel="stylesheet" href="/static/litres/css/p/module_lang.css?89871" type="text/css"><link rel="stylesheet" href="/static/litres/css/p/module_country.css" type="text/css"><link rel="stylesheet" href="/static/litres/css/p/read_book_online.css?117737" type="text/css"><script type="text/javascript">
+			(function(i,r){
+				i[r]=i[r] || function(){
+					(i[r].q=i[r].q||[]).push(arguments)
+				},i[r].l=1*new Date();
+			})(window,'ga');
+			var include = [];
+			var litres = {
+				loadCss: function(url) {
+					var link = document.createElement("link");
+					link.type = "text/css";
+					link.rel = "stylesheet";
+					link.href = url;
+					document.getElementsByTagName("head")[0].appendChild(link);
+				},
+				loadJs: function (url, callback) {
+					if (document.querySelector('script[src="' + url + '"]')) {
+						if (callback) {
+							callback();
+						}
+						return;
+					}
+					var script = document.createElement('script');
+					script.type = 'text/javascript';
+					script.src = url;
+					if (callback) {
+						script.onload = function () {
+							callback();
+						};
+					}
+					document.body.appendChild(script);
+				},
+				requireFilter: function(url) {
+					if (!/\?/.test(url) && /\.js$/.test(url)) {
+						url = url.slice(0, -3);
+					}
+					return url;
+				},
+				libface: 1,
+				page: {
+		biblio_book: {
+			art: {
+				isShowDiscount: true,
+				isOpenPopup: true,
+				isCost30: true,
+				isTabsUp: false,
+				
+				type: '0',
+				available: 1,
+				id: '31260990',
+				adult: '16'
+				
+			},
+			popup_read: {
+				platform: {
+					ios: {
+						name: 'Apple Store',
+						link: 'http://go.onelink.me/1566260005?pid=litres&c=how_to'
+					},
+					android: {
+						name: 'Google Play',
+						link: 'https://play.google.com/store/apps/details?id=ru.litres.android&referrer=utm_source%3Dlitres%26utm_medium%3Dhow_to'
+					},
+					wp: {
+						name: 'Магазин Windows Phone',
+						link: 'http://www.windowsphone.com/ru-ru/store/app/литрес-читай/a356e0eb-4c3c-4820-bdeb-804811b51e57'
+					}
+				}
+			},
+			url: '/pavel-kornev/mertvyy-vor/',
+			
+			motivation_metric: "knigi-fentezi_geroicheskoe_fentezi_user"
+		}
+	},
+				user: 0,
+				userCountry: 'RU',
+				name: '',
+				tests: {
+			'test479': 'test',
+			'test458': 'test',
+			'test467': 'control',
+			'test439': 'test',
+			'test464': 'control',
+			'test486': 'test',
+			'test416': 'control',
+			'test465': 'control',
+			'test473': 'test',
+			'test462': 'control'},
+				platform: 'unknown',
+				atype: '',
+				isEU: false,
+				real_money: '0',
+				spam_tickets: true,
+				money_mod: '',
+				money_bonus: '0.00',
+				
+				lib_mode: 0,
+				
+				ref_url: encodeURIComponent('/pavel-kornev/mertvyy-vor/?block_main=43366200'),
+				isNewPaymentBook: true,isNewPaymentBilling: true,isNewPaymentSeries: true,
+				webpush_status: 0,
+				uilang: 'ru',
+				askingPopup:false,
+				onetimePin:false,
+				inBasket: 0,
+				inWishlist: 0,vkPay: true
+				,activeSubscr: false
+				,currency: {
+					currency: 'RUB',
+					post: '₽',
+					pre: '',
+					rate: 1.000000
+				}
+				,showTroykaCard: true
+			};
+		</script><script type="text/javascript" src="/static/wrapper/js/require.js?80990"></script><script type="text/javascript">
+			requirejs.config({
+				"findNestedDependencies": true,
+				"waitSeconds": 100500,
+				"baseUrl": "/",
+				"paths": {
+					"GUAjax": litres.requireFilter("/static/gu_ajax/gu_ajax.js?137047"),
+					"GUJ": litres.requireFilter("/static/wrapper/js/GUJ.js"),
+					"jquery": litres.requireFilter("/static/wrapper/js/jquery-1.7.1.min.js"),
+					"wrapper.functions": litres.requireFilter("/static/wrapper/js/functions.js?137047"),
+					"CSRF": litres.requireFilter("/static/hub/js/csrf.js?126108"),
+					"i18ndata": litres.requireFilter("/static/js/i18n/ru/default.js?136652"),
+					"i18n": litres.requireFilter("/static/js/i18n/gettext.js?132182"),
+					"domReady": litres.requireFilter("/static/wrapper/js/require.domready.js"),
+					"alert": litres.requireFilter("/static/litres/modules/alert/js/alert.js?132256"),
+					"iframe-authorize": litres.requireFilter("/static/litres/js/p/iframe-authorize.js?137047"),
+					"customEventPolyfill": litres.requireFilter('/static/js/customEventPolyfill.js'),
+					"jquery.migrate": litres.requireFilter("/static/wrapper/js/jquery-migrate-1.2.1.min.js"),
+					"dotdotdot": litres.requireFilter("/static/litres/js/jquery/dotdotdot/jquery.dotdotdot.min.js?52814"),
+					"moment": litres.requireFilter("/static/litres/js/jquery/moment/moment.min.js"),
+					"moment-with-locales": litres.requireFilter("/static/litres/js/jquery/moment/moment-with-locales.min.js"),
+					"countdown": litres.requireFilter("/static/litres/js/jquery/countdown/jquery.countdown.js?55899"),
+					"scrollbar": litres.requireFilter("/static/litres/modules/scrollbar/js/scrollbar.js?133907"),
+					"overlay": litres.requireFilter("/static/litres/js/jquery/overlay/overlay.js?84858"),
+					"inputmask.dependencyLib": litres.requireFilter("/static/jquery_plugs/inputmask/inputmask.dependencyLib.jquery.js?63828"),
+					"inputmask": litres.requireFilter("/static/jquery_plugs/inputmask/inputmask.min.js?62884"),
+					"jquery.inputmask": litres.requireFilter("/static/jquery_plugs/inputmask/jquery.inputmask.min.js?62884"),
+					"jquery-ui": litres.requireFilter("/static/litres/modules/audioplayer-main/js/jquery-ui.min.js"),
+					
+					"datepicker": litres.requireFilter("/static/jquery_plugs/jquery.datepicker.min.js?91458"),
+					"paypal": "/static/ds/paypal/checkout.min",
+					"jquery.mask": litres.requireFilter("/static/jquery_plugs/jquery.mask.js?104901"),
+					"jquery.zclip": litres.requireFilter("/static/js/hub/jquery.zclip.min.js"),
+					"cusel": litres.requireFilter("/static/litres/js/jquery/cusel/cusel-min-2.5.js"),
+					"header": litres.requireFilter("/static/litres/js/header.js?136208"),
+					"search": litres.requireFilter("/static/litres/js/search.js?137072"),
+					"seo": litres.requireFilter("/static/litres/js/seo.js?57607"),
+					"trash": litres.requireFilter("/static/litres/js/trash.js?127176"),
+					"sociallogin": litres.requireFilter("/static/litres/js/sociallogin.js?133622"),
+					"ecommerce": litres.requireFilter("/static/litres/js/ecommerce.js?136424"),
+					"jplayer": litres.requireFilter("/static/new/jplayer/jquery.jplayer.min.js"),
+					"jplayer.playlist": litres.requireFilter("/static/new/jplayer/jplayer.playlist.min.js"),
+					"jplayer.inspector": litres.requireFilter("/static/new/jplayer/jquery.jplayer.inspector.js"),
+					"webpush": litres.requireFilter("/static/js/webpush.js?105714"),
+					"login": litres.requireFilter("/static/litres/modules/login/js/login.js?136208"),
+					"authorization": litres.requireFilter("/static/litres/modules/authorization/js/Login.js?132573"),
+					"login_popup": litres.requireFilter("/static/litres/modules/authorization/js/LoginPopup.js?137047"),
+					"login_popup_tools": litres.requireFilter("/static/litres/modules/authorization/js/LoginPopupTools.js"),
+					"books_autoload": litres.requireFilter("/static/litres/js/p/books_autoload.js?137047"),
+					
+					"arts-mini": litres.requireFilter("/static/litres/modules/arts/mini2/js/arts-mini.js?115371"),
+					"payment": litres.requireFilter("/static/litres/js/payment.js?137047"),
+					"qrcode": litres.requireFilter("/static/js/qrcode.min.js"),
+					"audioplayer": litres.requireFilter("/static/litres/modules/audioplayer/js/audioplayer.js?101544"),
+					"phonecodes": litres.requireFilter("/static/litres/modules/phonecodes/js/phonecodes.js?132573"),
+					"no-cover": litres.requireFilter("/static/litres/modules/no-cover/js/no-cover.js"),
+					"art-buttons": litres.requireFilter("/static/litres/modules/arts/buttons/js/arts-buttons.js?133535"),
+					"rec-buttons": litres.requireFilter("/static/litres/modules/recenses/js/rec-buttons.js"),
+					"spam-tickets": litres.requireFilter("/static/litres/modules/spam-tickets/js/spam-tickets.js?136889"),
+					"vk": "//vk.com/js/api/openapi",
+					"sha256": litres.requireFilter("/static/litres/modules/catalit-web/libs/sha256/sha256.js"),
+					"megafon-auth": litres.requireFilter("/static/litres/modules/authorization/js/MegafonAuth.js?132971"),
+					
+					"catalitweb.dataprovider": litres.requireFilter("/static/litres/modules/catalit-web/DataProvider/DataProvider.js"),
+					"catalitweb": litres.requireFilter("/static/litres/modules/catalit-web/CatalitWeb/CatalitWeb.js?122243"),
+					"catalitweb.audionotes": litres.requireFilter("/static/litres/modules/catalit-audionotes/CatalitAudionotes/CatalitAudionotes.js?130006"),
+					"catalitweb.audionoteshandler": litres.requireFilter("/static/litres/modules/catalit-audionotes/audionotes-handler.js?130006"),
+					"litresRatingPopupMaterial": litres.requireFilter("/static/litres/modules/arts/cover-material/js/popup_rating_material.js?137008"),
+					"litresTooltipPopupMaterial": litres.requireFilter("/static/litres/modules/arts/cover-material/js/popup_tooltip_material.js"),
+					"yametrika": ["//mc.yandex.ru/metrika/tag", litres.requireFilter("/static/wrapper/js/lib/ya-tag.js")],
+					"mgrid": litres.requireFilter("/static/litres/modules/mgrid/js/mgrid.js?126639"),
+					"zendesk": litres.requireFilter("/static/litres/js/zendesk.js?135591"),
+					"litresFoldersPopup": litres.requireFilter("/static/litres/modules/arts/popup-folders/js/popup-folders.js?136839"),
+					"popup-merge-users": litres.requireFilter("/static/litres/modules/popup-merge-users/js/popup-merge-users.js?132182"),
+					"animejs": litres.requireFilter("/static/js/anime.min.js"),
+					"animations": litres.requireFilter("/static/litres/modules/animations/animations.js?126335"),
+					"clipboard": litres.requireFilter("/static/js/clipboard.min.js"),
+					
+					"classListPolyfill": litres.requireFilter("/static/js/classListPolyfill.js?123682"),
+					"forEachPolyfill": litres.requireFilter("/static/js/forEachPolyfill.js"),
+					"IntersectionObserverPolyfill": litres.requireFilter("/static/js/IntersectionObserverPolyfill.js"),
+					"MutationObserverPolyfill": litres.requireFilter("/static/js/MutationObserverPolyfill.js"),
+					"removePolyfill": litres.requireFilter("/static/js/removePolyfill.js"),
+					"MGrid_BookLoader": litres.requireFilter("/static/litres/modules/mgrid/js/mgrid-book-loader.js?137047"),
+					"MGrid_AsyncImagesLoadFactory": litres.requireFilter("/static/litres/modules/mgrid/js/AsyncImagesLoadFactory.js?133838"),
+					"MGrid_Core": litres.requireFilter("/static/litres/modules/mgrid/js/Core.js?134664"),
+					"MGrid_Page": litres.requireFilter("/static/litres/modules/mgrid/js/Page.js"),
+					"MGrid_Line": litres.requireFilter("/static/litres/modules/mgrid/js/Line.js?130538"),
+					"MGrid_Art": litres.requireFilter("/static/litres/modules/mgrid/js/Art.js?134664"),
+					'MGrid_LogicArea': litres.requireFilter('/static/litres/modules/mgrid/js/LogicArea.js'),
+					"purchase": litres.requireFilter("/static/litres/modules/arts/purchase/js/index.js?136502"),
+					"AudioElementDecorator": litres.requireFilter("/static/litres/modules/audioplayer-main/js/AudioElementDecorator.js"),
+					"InputSliderDecorator": litres.requireFilter("/static/litres/modules/audioplayer-main/js/InputSliderDecorator.js?132172"),
+					"VolumeController": litres.requireFilter("/static/litres/modules/audioplayer-main/js/VolumeController.js?132172"),
+					"AudioPlayerController": litres.requireFilter("/static/litres/modules/audioplayer-main/js/AudioPlayerController.js?136170"),
+					"ReviewTextarea": litres.requireFilter('/static/litres/modules/recenses/js/ReviewTextarea.js'),
+					"ViewedBooksWidget": litres.requireFilter('/static/litres/modules/viewed-books-widget/js/widget.js?134577')
+				},
+				"shim": {
+					"wrapper.functions": {
+						deps: ["jquery"],
+						init: function() {
+							
+							if (!getCookie('slowline') && Date.now()-userConnectionSpeedTimerStart > 1000) {
+								litres.isSlowConnection = true;
+								setCookie('slowline', 1, 0, '/', 0, 5);
+							} else {
+								litres.isSlowConnection = false;
+							}
+							
+						}
+					},
+					"CSRF": ["jquery"],
+					"i18n": {
+						deps: ["i18ndata"],
+						init: function ($) {
+							litres.i18nGettext = new Gettext({
+								domain: "default",
+								locale_data: json_locale_data
+							});
+							__l = function(msgid, args) {
+								return litres.i18nGettext.strhashargs(
+									litres.i18nGettext.gettext(msgid),
+									args
+								);
+							};
+							__ln = function(msgid, msgid_plural, count, args) {
+								return litres.i18nGettext.strhashargs(
+									litres.i18nGettext.ngettext(msgid, msgid_plural, count),
+									args
+								);
+							};
+
+						}
+					},
+					"i18ndata": {
+						deps: ["wrapper.functions"]
+					},
+					"dotdotdot": ["jquery"],
+					"moment": {
+						deps: ["jquery"]
+					},
+					"countdown": ["jquery"],
+					"overlay": ["jquery"],
+					"inputmask": ["inputmask.dependencyLib"],
+					"jquery.zclip": ["jquery"],
+					"cusel": ["jquery"],
+					"jquery.inputmask": {
+						deps: ["jquery", "inputmask"],
+						exports: "$"
+					},
+					"jquery-ui": ["jquery"],
+					"jquery.mask": ["jquery"],
+					"datepicker": {
+						deps: ["jquery"],
+						exports: "$.fn.datepicker"
+					},
+					"jquery.migrate": ["jquery"],
+					"jplayer": ["jquery"],
+					"jplayer.playlist": ["jplayer"],
+					"jplayer.inspector": ["jplayer"],
+					"ecommerce": {
+						deps: ["wrapper.functions"]
+					},
+					"webpush": {
+						deps: ["jquery", "wrapper.functions"]
+					},
+					"sociallogin": {
+						deps: ["jquery", "csrf"]
+					},
+					"header": {
+						deps: ["jquery", "i18n", "wrapper.functions"]
+					},
+					"trash": {
+						deps: ["wrapper.functions", "overlay", "csrf"]
+					},
+					"books_autoload": {
+						deps: ["IntersectionObserverPolyfill"]
+					},
+					"MGrid_BookLoader": ['GUJ'],
+					"arts-mini": ["books_autoload"],
+					"login": {
+						deps: ["jquery", "wrapper.functions", "csrf"]
+					},
+					"qrcode": {
+						deps: ["jquery", "wrapper.functions", "header"]
+					},
+					"no-cover": {
+						deps: ["jquery", "i18n"]
+					},
+					"vk": {
+						exports: "VK"
+					},
+					"paypal": {
+						exports: "paypal"
+					},
+					"catalitweb": {
+						deps: ["catalitweb.dataprovider"]
+					},
+					"catalitweb.audionotes": {
+						deps: ["catalitweb"]
+					},
+					"catalitweb.audionoteshandler": {
+						deps: ["catalitweb.audionotes"]
+					},
+					"zendesk": {
+						deps: ["jquery"]
+					},
+					"animations": {
+						deps: ["animejs"],
+						exports: "animations"
+					},
+					"iframe-authorize": {
+						deps: ["sociallogin", "login","i18n"]
+					}
+				},
+				wrapShim: true
+			});
+
+			var __l = __ln = function (msgid) {
+				return msgid;
+			};
+
+			define("csrf", ["CSRF", "jquery"], function() {
+				
+				CSRF.init(["2443:1567209560:a5e50770b9953cf05afe4014f990b5a5a11c5b3dc3190b274df3789e21236cb3","74198:1567209560:605fb0f5a0b941753ae7c51d814d69a9131b08a04aaf3aeaa144028926622656","497915:1567209560:397acfc046ccf7d44a6132523930c503ac6bd8647a49572bddfe964ad59c2176","217053:1567209560:ae6dc3b794dcec60db56150c87d3057932b4b9b175086a3450a149e459a318da","901019:1567209560:66cc67e644ec03a11c7701946712e75fca1000826c0780ceaf8ab3c2af7769c6","234438:1567209560:c1275148efccea3a280b916be04b158a7f6ff920e9c35ac7b700851aaeeeca7d"], 0);
+			});
+
+			
+		define("ya", ["yametrika"], function () {
+			var yaParams = window.yaParams || {};
+			
+				yaParams.art_type = 0;
+			
+
+			/* Yandex.Metrika counter */
+			try {
+				window.yaCounter2199583 = new Ya.Metrika2({
+					id: 2199583,
+					clickmap: true,
+					trackLinks: true,
+					accurateTrackBounce: true,
+					webvisor: true,
+					trackHash: true,
+					ecommerce: "dataLayer",
+					triggerEvent: true,
+					params: yaParams
+				});
+			} catch (e) {};
+		});
+	
+			define("GTM", ["//www.googletagmanager.com/gtm.js?id=GTM-MF2ZGM6"], function () {
+				window['dataLayer'] = window['dataLayer'] || [];
+				window['dataLayer'].push({
+					'gtm.start': new Date().getTime(),
+					event: 'gtm.js'
+				});
+			});
+		
+			var userConnectionSpeedTimerStart = Date.now();
+
+			function LoadPhonecodesCss() {
+				litres.loadCss("/static/litres/modules/phonecodes/css/phonecodes.css?130132");
+				litres.loadCss("/static/litres/css/p/module_country.css");
+			}
+		</script><link href="/static/litres/favicon.ico" rel="shortcut icon"><link href="https://www.litres.ru/pavel-kornev/mertvyy-vor/" rel="canonical"><link media="only screen and (max-width: 640px)" href="https://pda.litres.ru/pavel-kornev/mertvyy-vor/" rel="alternate"><link rel="shortlink" href="https://www.litres.ru/31260990"><link rel="stylesheet" href="/static/litres/css/header.css?136991" type="text/css"><link rel="stylesheet" href="/static/litres/modules/footer/css/footer.css?131749" type="text/css"><link rel="stylesheet" href="/static/litres/css/popup_read.css?117737" type="text/css"><meta name="yandex-verification" content="478d5f36769e8054"><meta property="fb:page_id" content="128688247186385"><link rel="apple-touch-icon" href="/static/litres/i/social/seo/icon_114x114.png?57296"><meta property="og:type" content="books.book"><meta property="og:title" content="Мертвый вор – Павел Корнев"><meta property="og:url" content="https://www.litres.ru/pavel-kornev/mertvyy-vor/"><meta property="og:image" content="https://cv9.litres.ru/pub/c/elektronnaya-kniga/cover_max1500/31260990-pavel-kornev-mertvyy-vor.jpg"><meta property="og:site_name" content="ЛитРес"><meta property="fb:admins" content="100001805407885"><meta content="Виртуальные миры – территория безграничной свободы. В игре любой может стать эльфийским магом и невидимкой-вором, вступить в клан и ходить в рейды, сражаться и развивать персонажа, а самое главное – отвлечься от забот и пробл…" property="og:description"><meta property="al:ios:canonical_url" content="litresread://content/b/31260990/"><meta property="al:ios:url" content="litresread://content/b/31260990/"><meta property="al:ios:app_store_id" content="438441429"><meta property="al:ios:app_name" content="Читай!"><link rel="alternate" href="android-app://ru.litres.android/litresread/content/b/31260990"><link href="https://www.litres.ru/pavel-kornev/mertvyy-vor/page-2/?block_main=43366200"><meta http-equiv="content-language" content="ru"><link rel="yandex-tableau-widget" href="/static/litres/inc/seo/yandex-tableau-manifest.json"><link rel="manifest" href="/static/manifest.json"><link rel="stylesheet" href="/static/litres/modules/spam-tickets/css/spam-tickets.css?134601" type="text/css"></head><body class="biblio_book"><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MF2ZGM6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div class="page-wrap page-wrap-with_new_header page-wrap-with_header_banner" id="page-wrap"><div class="litres_header" id="litres_header"><a href="/?tv" class="discount_banner"></a><div class="header_container"><div class="header_main new-container"><div class="header_block header_logo"><div><a href="/"><span class="litres_header_logo" title="ЛитРес">ЛитРес</span></a></div></div><div class="header_block search_and_login"><div class="search_and_login_inner"><div class="header_search"><!--noindex--><form action="/pages/rmd_search/" method="get" class="header_search_form"><button id="go" class="searchbutn btn btn_black"><span>Найти</span></button><div id="q-cell"><input name="q" value="" type="text" id="q" class="top_search_input input_text" placeholder="Введите название книги или имя автора" maxlength="150" autocomplete="off"></div></form><!--/noindex--></div><div class="header_user header_user_unreg"><div data-clicktag-id="go_login" data-header_open="login" class="header_popup_link user_link user_unreg clicktag"><a class="user_wrapper" href="/pages/login/"><span class="user-logo-wrapper"><span id="user_logo" class="user_logo header_popup_focus"><span class="user_avatar_dummy"></span></span></span><span class="user_container">Войти</span></a></div><div data-header_popup="login" class="header-popup header-popup__login-popup" data-overlay="true"><a class="close"></a><div class="header-popup__inner"><!--noindex--><div class="login-popup"><form id="login-popup__form" class="login-popup__form" action="/" method="post"><div id="login-popup__steps"></div><input type="hidden" name="csrf" value="2443:1567209560:a5e50770b9953cf05afe4014f990b5a5a11c5b3dc3190b274df3789e21236cb3"><input value="/pavel-kornev/mertvyy-vor/?block_main=43366200" name="ref_url" type="hidden" id="ref_url"></form><div class="login-popup__loader"><img src="/static/litres/modules/login/i/loader.gif"></div><div class="login-popup__all-socials"><a class="login-popup__all-socials-close"></a><div class="login-popup__block login-popup__head">Вход или регистрация</div><div class="login-popup__all-socials-list"><div class="login-popup__block login-popup__social-container"><div title="Войти, используя аккаунт ВКонтакте" class="login-popup__social-link" data-social="vk"></div><div class="login-popup__social-pic login-popup__social-pic_vk"></div><div class="login-popup__social-title">ВКонтакте</div></div><div class="login-popup__block login-popup__social-container"><div title="Войти, используя аккаунт Facebook" class="login-popup__social-link" data-social="fb"></div><div class="login-popup__social-pic login-popup__social-pic_fb"></div><div class="login-popup__social-title">Facebook</div></div><div class="login-popup__block login-popup__social-container"><div title="Войти, используя аккаунт Одноклассники" class="login-popup__social-link" data-social="ok"></div><div class="login-popup__social-pic login-popup__social-pic_ok"></div><div class="login-popup__social-title">Одноклассники</div></div><div class="login-popup__block login-popup__social-container"><div title="Войти, используя аккаунт Сбербанк ID" class="login-popup__social-link" data-social="sb"></div><div class="login-popup__social-pic login-popup__social-pic_sber"></div><div class="login-popup__social-title">Войти по Сбербанк ID</div></div><div class="login-popup__block login-popup__social-container"><div title="Войти, используя аккаунт Instagram" class="login-popup__social-link" data-social="ig"></div><div class="login-popup__social-pic login-popup__social-pic_insta"></div><div class="login-popup__social-title">Instagram</div></div><div class="login-popup__block login-popup__social-container"><div title="Войти, используя аккаунт Twitter" class="login-popup__social-link" data-social="tw"></div><div class="login-popup__social-pic login-popup__social-pic_tw"></div><div class="login-popup__social-title">Twitter</div></div><div class="login-popup__block login-popup__social-container"><div title="Войти, используя аккаунт Яндекс" class="login-popup__social-link" data-social="ya"></div><div class="login-popup__social-pic login-popup__social-pic_ya"></div><div class="login-popup__social-title">Яндекс</div></div><div class="login-popup__block login-popup__social-container"><div title="Войти, используя аккаунт Google" class="login-popup__social-link" data-social="gp"></div><div class="login-popup__social-pic login-popup__social-pic_gp"></div><div class="login-popup__social-title">Google</div></div><div class="login-popup__block login-popup__social-container"><div title="Войти, используя аккаунт Mail.ru" class="login-popup__social-link" data-social="ma"></div><div class="login-popup__social-pic login-popup__social-pic_mailru"></div><div class="login-popup__social-title">Mail.ru</div></div></div><div class="login-popup__step-back"><span class="login-popup__block login-popup__step-back-link close-socials">Назад</span></div></div></div><!--/noindex--><script type="text/javascript">
+			litres.loadCss('/static/litres/modules/authorization/css/LoginPopup.css?133492');
+		</script></div></div></div></div></div><div class="header_block header_info"><div class="user_info spam-tickets clicktag" data-msg-count="6" id="header-info-link" data-clicktag-id="head_bell"><div data-header_open="info" class="header_popup_link user_info_icon"><a><span class="popup_link_sticker" data-count="6">6</span></a></div><div data-header_popup="info" class="header-popup loading" id="header_popup_info"><div class="header-popup__inner"><div class="popup-info popup-info-unreg"><div class="popup-info__text"><div class="popup-info__text-header_gray">Знаете ли вы, что...</div><div class="popup-info__text-header popup-info__text-header_big">Присоединяясь к ЛитРес, вы заботитесь об экологии</div><div class="popup-info__text-links"><a href="#" class="popup-info__links-reg clicktag" id="bell_reg_click">Зарегистрироваться</a><a href="#" class="popup-info__links-enter" id="popup-info__links-enter">Войти</a></div></div></div><div class="popup-info-spam-tickets"></div></div></div></div><div class="user_action"><div data-click_zone_class="btn__dropdown" data-hover_zone_class="btn__content" data-header_open="my_books" class="header_popup_link "><a class="user_action_button user_books btn btn_green" href="/pages/my_books_all/"><div class="btn btn_user-books"><div class="btn__wrapper"><div class="btn__content">Мои книги</div><div data-clicktag-id="my_books_arrow" class="btn__dropdown clicktag"><div class="icon-container"></div></div></div></div></a></div><div data-header_popup="my_books" class="header-popup header-popup_right-arrow my-books-popup"><div class="my-books-wrapper"><div class="my-books-list"><a class="my-books-item " href="/pages/my_books_all/"><span class="my-books-item__name">Все</span><span class="my-books-item__status"></span><span class="my-books-item__counter"></span></a><a class="my-books-item " href="/pages/my_books_fresh/"><span class="my-books-item__name">Мои</span><span class="my-books-item__status"></span><span class="my-books-item__counter"></span></a><a class="my-books-item " href="/pages/my_views/"><span class="my-books-item__name">Просмотренные</span><span class="my-books-item__status"></span><span class="my-books-item__counter"></span></a><a class="my-books-item my-books-item_wishlist" href="/pages/new_liked/"><span class="my-books-item__name">Отложенные</span><span class="my-books-item__status"></span><span class="my-books-item__counter"></span></a><a class="my-books-item my-books-item_basket" href="/pages/new_basket/"><span class="my-books-item__name">Корзина</span><span class="my-books-item__status"></span><span class="my-books-item__counter"></span></a></div></div></div></div></div></div><div class="header_menu"><div class="header_menu_inner"><ul class="header_nav right_nav"><li data-goal="companylitres" data-header_open="menu-company" class="header_menu_item header_popup_focus header_popup_link"><a href="/o-kompanii/contactnaya-informaciya/" class="header_menu_item_link header_menu_fake_link">Компания</a><div class="header-popup" data-header_popup="menu-company"><div class="header-popup__inner"><ul class="header_menu_item_submenu"><li class="header_menu_item" data-goal="aboutcompany"><a class="header_menu_item_link" href="/o-kompanii/">О компании</a></li><li class="header_menu_item" data-goal="newsaboutcompany"><a class="header_menu_item_link" href="/o-kompanii/novosti/">Новости</a></li><li class="header_menu_item" data-goal="pressaboutlitres"><a class="header_menu_item_link" href="/o-kompanii/press-slugba/">Пресс-служба</a></li><li class="header_menu_item"><a class="header_menu_item_link" href="/o-kompanii/contactnaya-informaciya/">Контакты</a></li></ul><ul class="header_menu_item_submenu"><li class="header_menu_item" data-goal="forpartners"><a class="header_menu_item_link" href="/partners/">Партнёрам</a></li><li class="header_menu_item" data-goal="forpublishers"><a class="header_menu_item_link" href="/o-kompanii/partneram/avtoram-i-izdatelstvam/">Издательствам</a></li><li class="header_menu_item" data-goal="forauthors"><a class="header_menu_item_link" href="/o-kompanii/partneram/avtoram-i-izdatelstvam/">Авторам</a></li><li class="header_menu_item" data-goal="ebukva"><a class="header_menu_item_link" href="//ebukva.litres.ru" rel="nofollow" target="_blank">Электронная Буква</a></li><li class="header_menu_item"><a class="header_menu_item_link" href="/o-kompanii/biblioteka/">Библиотекам</a></li><li class="header_menu_item"><a class="header_menu_item_link" href="/litres-school/">Школам</a></li></ul><ul class="header_menu_item_submenu"><li class="header_menu_item" data-goal="helpdesk"><a class="header_menu_item_link" href="https://support.litres.ru/hc/ru">Служба поддержки</a></li></ul></div></div></li></ul><ul class="header_nav left_nav"><li data-header_open="genres" class="header_menu_item header_popup_link"><a id="genres_popup" href="/pages/new_genres/" class="header_menu_item_link header_menu_fake_link">Жанры</a><ul><li><div id="static_genres" class="bubble_genres new-container"><div class="bubble_genre"><a href="/legkoe-chtenie/" class="bubble_head">легкое чтение</a><ul class="bubble_list"><li><a title="10 поджанров, 15702 книги" href="/knigi-detektivy/">детективы</a></li><li><a title="14 поджанров, 20265 книг" href="/knigi-fantastika/">фантастика</a></li><li><a title="6 поджанров, 11320 книг" href="/knigi-boeviki-ostrosugetnaya/">боевики, остросюжетная литература</a></li><li><a title="7 поджанров, 15122 книги" href="/knigi-lubovnye-romany/">любовные романы</a></li><li><a title="7 поджанров, 12863 книги" href="/knigi-priklucheniya/">приключения</a></li></ul></div><div class="bubble_genre"><a href="/sereznoe-chtenie/" class="bubble_head">серьезное чтение</a><ul class="bubble_list"><li><a title="5 поджанров, 29764 книги" href="/knigi-sovremennaya-proza/">современная проза</a></li><li><a title="15 поджанров, 46986 книг" href="/klassicheskaya-literatura/">классическая литература</a></li><li><a title="10393 книги" href="/knigi-publicistika/biografii-memuary/">биографии и мемуары</a></li><li><a title="4 поджанра, 11844 книги" href="/sereznoe-chtenie/ob-istorii-serezno/">об истории серьезно</a></li><li><a title="3 поджанра, 11162 книги" href="/sereznoe-chtenie/ctihi-poeziya/">cтихи, поэзия</a></li></ul></div><div class="bubble_genre"><a href="/istoriya/" class="bubble_head">история</a><ul class="bubble_list"><li><a title="923 книги" href="/knigi-detektivy/istoricheskie/">исторические детективы</a></li><li><a title="2284 книги" href="/knigi-priklucheniya/istoricheskie/">исторические приключения</a></li><li><a title="2561 книга" href="/knigi-fantastika/istoricheskaya/">историческая фантастика</a></li><li><a title="10393 книги" href="/knigi-publicistika/biografii-memuary/">биографии и мемуары</a></li><li><a title="5405 книг" href="/knigi-sovremennaya-proza/istoricheskaya-literatura/">историческая литература</a></li></ul></div><div class="bubble_genre"><a href="/znaniya-navyki/biznes/" class="bubble_head">бизнес-книги</a><ul class="bubble_list"><li><a title="1059 книг" href="/biznes-knigi/lichnaya-effektivnost/">личная эффективность</a></li><li><a title="8 поджанров, 1445 книг" href="/biznes-knigi/kadrovyj_menedzhment/">кадровый менеджмент</a></li><li><a title="7412 книг" href="/biznes-knigi/zarubezhnaya-delovaya-literatura/">зарубежная деловая литература</a></li><li><a title="15 поджанров, 7003 книги" href="/biznes-knigi/o-biznese-populyarno/">о бизнесе популярно</a></li><li><a title="15 поджанров, 5432 книги" href="/biznes-knigi/menedzhment/">менеджмент</a></li></ul></div><div class="bubble_genre"><a href="/znaniya-navyki/" class="bubble_head">знания и навыки</a><ul class="bubble_list"><li><a title="3751 книга" href="/knigi-psihologiya/samorazvitiye-lichnostnyy-rost/">саморазвитие / личностный рост</a></li><li><a title="30 поджанров, 35276 книг" href="/znaniya-navyki/biznes/">бизнес-книги</a></li><li><a title="11 поджанров, 5949 книг" href="/knigi-ezoterika/">эзотерика</a></li><li><a title="5020 книг" href="/knigi-nauka-obrazovanie/nauchno-populyarnaya-literatura/">научно-популярная литература</a></li><li><a title="16 поджанров, 89682 книги" href="/znaniya-navyki/uchebnaya-nauchnaya-literatura/">учебная и научная литература</a></li></ul></div><div class="bubble_genre"><a href="/psihologiya-motivaciya/" class="bubble_head">психология, мотивация</a><ul class="bubble_list"><li><a title="3751 книга" href="/knigi-psihologiya/samorazvitiye-lichnostnyy-rost/">саморазвитие / личностный рост</a></li><li><a title="18 поджанров, 12486 книг" href="/knigi-psihologiya/">книги по психологии</a></li><li><a title="11 поджанров, 5949 книг" href="/knigi-ezoterika/">эзотерика</a></li><li><a title="10393 книги" href="/knigi-publicistika/biografii-memuary/">биографии и мемуары</a></li><li><a title="813 книг" href="/psihologiya-motivaciya/istorii-iz-zhizni/">истории из жизни</a></li></ul></div><div class="bubble_genre"><a href="/sport-zdorove-krasota/" class="bubble_head">спорт, здоровье, красота</a><ul class="bubble_list"><li><a title="8 поджанров, 9573 книги" href="/sport-zdorove-krasota/medicina-i-zdorove/">медицина и здоровье</a></li><li><a title="4 поджанра, 755 книг" href="/sport-zdorove-krasota/krasota/">красота</a></li><li><a title="2 поджанра, 2815 книг" href="/sport-zdorove-krasota/sport/">спорт</a></li><li><a title="137 книг" href="/erotika-seks/seksualnyye-rukovodstva/">секс / секс-руководства</a></li></ul></div><div class="bubble_genre"><a href="/hobbi-dosug/" class="bubble_head">хобби, досуг</a><ul class="bubble_list"><li><a title="2765 книг" href="/knigi-dom-semya/prikladnaya-literatura/">прикладная литература</a></li><li><a title="78 книг" href="/knigi-ezoterika/yoga/">йога</a></li><li><a title="3269 книг" href="/knigi-dom-semya/kulinariya/">кулинария</a></li><li><a title="2753 книги" href="/knigi-krasota-zdorove/sport-fitnes/">спорт / фитнес</a></li><li><a title="661 книга" href="/knigi-dom-semya/moda-stil/">мода и стиль</a></li></ul></div><div class="bubble_genre"><a href="/dom-dacha/" class="bubble_head">дом, дача</a><ul class="bubble_list"><li><a title="356 книг" href="/dom-dacha/domashnee-hozyaystvo/">домашнее хозяйство</a></li><li><a title="3269 книг" href="/knigi-dom-semya/kulinariya/">кулинария</a></li><li><a title="3760 книг" href="/knigi-dom-semya/rukodeliye-remesla/">рукоделие и ремесла</a></li><li><a title="359 книг" href="/knigi-dom-semya/otdykh-turizm/">отдых / туризм</a></li><li><a title="1842 книги" href="/knigi-dom-semya/hobbi_uvlecheniya/">хобби / увлечения</a></li></ul></div><div class="bubble_genre"><a href="/detskie-knigi/" class="bubble_head">детские книги</a><ul class="bubble_list"><li><a title="1379 книг" href="/detskie-knigi/fantastika/">детская фантастика</a></li><li><a title="1987 книг" href="/detskie-knigi/priklucheniya/">детские приключения</a></li><li><a title="3189 книг" href="/detskie-knigi/zarubezhnye/">зарубежные детские книги</a></li><li><a title="2954 книги" href="/detskie-knigi/proza/">детская проза</a></li><li><a title="5055 книг" href="/detskie-knigi/skazki/">сказки</a></li></ul></div><div class="bubble_genre"><a href="/roditelyam/" class="bubble_head">родителям</a><ul class="bubble_list"><li><a title="2645 книг" href="/knigi-dom-semya/vospitanie-detey/">воспитание детей</a></li><li><a title="1028 книг" href="/knigi-psihologiya/detskaya/">детская психология</a></li><li><a title="15 поджанров, 26030 книг" href="/detskie-knigi/">детские книги</a></li><li><a title="403 книги" href="/zdorovye-detey/">здоровье детей</a></li></ul></div><div class="bubble_genre"><a href="/publicistika-periodicheskie-izdaniya/" class="bubble_head">публицистика и периодические издания</a><ul class="bubble_list"><li><a title="7 поджанров, 28278 книг" href="/knigi-publicisticheskaya_literatura/">публицистическая литература</a></li><li><a title="4 поджанра, 25055 книг" href="/periodicheskie-izdaniya/">периодические издания</a></li></ul></div><div class="bubble_genre"><a href="/tags/samizdat/" class="bubble_head">Самиздат</a></div></div><div class="bubble_allgenres"><a href="/pages/new_genres/">Все 345 жанров</a></div></li></ul></li><li data-goal="newbooks" class="header_menu_item"><a href="/novie/" class="header_menu_item_link">Новинки</a></li><li data-goal="popbooks" class="header_menu_item"><a href="/luchshie-knigi/" class="header_menu_item_link">Популярное</a></li><li data-goal="audiobooks" class="header_menu_item"><a href="/chto-slushat/" class="header_menu_item_link">Аудиокниги</a></li><li data-goal="whattoreadbooks" class="header_menu_item"><a href="/chto-chitat/" class="header_menu_item_link">Что почитать?</a></li><li class="header_menu_item promo-code-link"><a href="/pages/put_money_on_account/?descr=18" class="header_menu_item_link">Промокод</a></li><li data-goal="stilmenu" data-header_open="menu-more" class="header_menu_item header_popup_link"><span class="header_menu_item_link header_menu_fake_link">Ещё</span><div class="header-popup" data-header_popup="menu-more"><div class="header-popup__inner"><ul class="header_menu_item_submenu"><li class="header_menu_item header_menu_item__on_sale_soon" data-goal="soonsale"><a class="header_menu_item_link" href="/kollekcii-knig/predzakaz-so-skidkoy-30/">Предзаказ со скидкой 30%</a></li><li class="header_menu_item"><a class="header_menu_item_link" href="/podborki/">Подборки</a></li><li class="header_menu_item" data-goal="luchshie_avtori"><a class="header_menu_item_link" href="/luchshie-avtori/">Популярные авторы</a></li><li class="header_menu_item"><a class="header_menu_item_link" href="/pages/best_rating_series/">Лучшие серии</a></li><li class="header_menu_item" data-goal="hitsofanytime"><a class="header_menu_item_link" href="/kollekcii-knig/bestsellery-proverennye-vremenem-hudozhka/">Хиты, проверенные временем</a></li><li class="header_menu_item" data-goal="readbookfirst"><a class="header_menu_item_link" href="/kollekcii-knig/prochti-pervym/">Прочти первым</a></li><li class="header_menu_item" data-goal="selfpubbooks"><a class="header_menu_item_link" href="/selfpub/">ЛитРес: Самиздат</a></li><li class="header_menu_item" data-goal="chtets"><a class="header_menu_item_link" href="/reader/">ЛитРес: Чтец</a></li><li class="header_menu_item" data-goal="presentscards"><a class="header_menu_item_link" href="/kniga-luchshiy-podarok/">Подарочные карты</a></li><li class="header_menu_item" data-goal="mobileapplitres"><a class="header_menu_item_link" href="/app3/">Мобильные приложения</a></li><li class="header_menu_item"><a class="header_menu_item_link" href="/ux-research-now/1/">ЛитРес: Исследования</a></li></ul></div></div></li></ul></div></div></div></div><div data-header_popup="genres" class="header-popup"><a class="close"></a><div class="header-popup__inner"><div class="bubble_genres"></div><div class="bubble_back"></div><div class="bubble_subgenres"></div><div class="bubble_allgenres"><a href="/pages/new_genres/">Все 345 жанров</a></div></div></div><div itemtype="https://schema.org/Book" itemscope="itemscope" class="page"><div class="ab-container"><ul class="breadcrumbs" id="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#"><li typeof="v:Breadcrumb" class="breadcrumbs__item"><a href="/" rel="v:url" property="v:title">Книги</a></li><li class="breadcrumbs__item" typeof="v:Breadcrumb"><a property="v:title" rel="v:url" href="/knigi-fentezi/boevoe/">Боевое фэнтези</a></li><li class="breadcrumbs__item" typeof="v:Breadcrumb"><a property="v:title" rel="v:url" href="/pavel-kornev/">Павел Корнев</a></li><li class="breadcrumbs__item"><span property="v:title">Мертвый вор </span></li></ul></div><div class="ab-container"><div class="block_table"><div class="content_column column"><div class="biblio_book_top block_table"><div class="biblio_book_left column"><div class="biblio_book_cover biblio_book_cover_type0" id="biblio_book_cover_31260990"><div class="biblio_book_cover_inside biblio_book_cover_inside0"><div class="cover"><a href="/pavel-kornev/mertvyy-vor/chitat-onlayn/" onclick="showPopupErrorEscape('Чтобы почитать фрагмент книги «Мертвый вор», зарегистрируйтесь или войдите', '/pages/quickread/?art=31260990'); event.returnValue = false; return false;
+	" target="_blank" class="biblio-book-cover-wrapper" id="biblio-book-cover-wrapper"><noscript><img data-src="https://cv9.litres.ru/pub/c/elektronnaya-kniga/cover/31260990-pavel-kornev-mertvyy-vor.jpg" src="https://cv9.litres.ru/pub/c/elektronnaya-kniga/cover/31260990-pavel-kornev-mertvyy-vor.jpg_330.jpg" alt="Мертвый вор" itemprop="image" width="330" height="471"></noscript><script type="text/javascript">
+					(function() {
+						var windowWidth = document.body.offsetWidth;
+						var width;
+						var height;
+						var img_path = 'https://cv9.litres.ru/pub/c/elektronnaya-kniga/cover/31260990-pavel-kornev-mertvyy-vor.jpg';
+						if (windowWidth <= 1279 || false) {
+							width = 330;
+							height = 471
+						} else {
+							
+							width = 415;
+							height = 593;
+						}
+
+						
+						document.write("<img id='biblio_book_cover_image' class='' itemprop='image' width='" + width + "' height='" + height + "' alt='Мертвый вор' src='" + img_path.replace('/cover/','/cover_' + width + '/') + "' data-src='https://cv9.litres.ru/pub/c/elektronnaya-kniga/cover/31260990-pavel-kornev-mertvyy-vor.jpg' onError='this.dataset.coverError = 1;' />");
+					})();
+				</script></a><span class="sticker book_icons"><span class="icon_adult"><span class="age digit1"></span><span class="age digit6"></span></span></span><span class="sticker flags"></span></div></div></div><div class="biblio_book_other_carriers"><div><a href="/pavel-kornev/mertvyy-vor-31589215/" class="other_pub"><span class="type type_audio">1 Аудиокнига <span class="simple-price">190 <span class="currency litres_ruble">₽</span></span></span></a></div></div></div><div class="biblio_book_center column"><script type="text/javascript">litres.book = {
+			id: "31260990",
+			name: "Мертвый вор",
+			type: "0",
+			price: "199.00",
+			release_file: "43563815"
+		};</script><div class="biblio_book_name biblio-book__title-block"><h1 itemprop="name">Мертвый вор <span class="label label-text">Текст</span></h1></div><div class="biblio_book_author"><span class="biblio_book_author_title">Автор:</span><a itemprop="author" class="biblio_book_author__link" href="/pavel-kornev/">Павел Корнев</a></div><div class="biblio_book_sequences"><span class="biblio_book_sequences_title">Из серии: </span><span class="serie_item"><a class="biblio_book_sequences__link" href="/serii-knig/dorogoy-mertveca/">Дорога мертвеца</a> <span class="number">#1</span></span></div><div class="biblio_book_rating"><div class="rating"><div data-options="{
+					
+					show_popup: true,
+					voted: 0,
+					votes:[36, 29, 43, 177, 561],
+					mid_vote:4.5,
+					vote_amount:846,
+					recenses: 51,
+					book_type: 'text',
+					purchased: false
+				}
+				" class="stars_book bigstars stars__book-type-text stars_voted" data-id="31260990"><div itemtype="http://schema.org/AggregateRating" itemscope="" itemprop="aggregateRating" class="g_star"><meta content="1" itemprop="worstRating"><meta content="5" itemprop="bestRating"><meta itemprop="ratingValue" content="4.4"><meta itemprop="ratingCount" content="846"><span class="item"><a href="javascript:void(0);" data-id="1" class="star voted"><span></span></a><a href="javascript:void(0);" data-id="2" class="star voted"><span></span></a><a href="javascript:void(0);" data-id="3" class="star voted"><span></span></a><a href="javascript:void(0);" data-id="4" class="star voted"><span></span></a><a href="javascript:void(0);" data-id="5" class="star voted voted-half"><span></span></a></span><span class="show_mid_vote">4.5</span></div></div></div><a id="book_reviews_link" class="book_reviews_link" href="#recenses">Отзывы <span class="counts">51</span></a></div><div class="biblio_book_actions"><div class="biblio_book_actions_flex"><a data-clicktag-id="read_part" onclick="yametrika_read(); switchActionTrackerTo(31260990,'read_fragment',8,0,'/static/or4/view/or.html?baseurl=/pub/t/31260990.&amp;uuid=b6ea3801-358a-11e8-9a05-0cc47a52085c&amp;art=31260990&amp;trials=1&amp;user=0&amp;file=43563815&amp;trial=1&amp;price=199.00&amp;texttrialbutton=%D0%9A%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%BF%D0%BE%D0%BB%D0%BD%D1%83%D1%8E%20%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8E%20%D0%B7%D0%B0%20199.00&amp;uilang=ru&amp;catalit2&amp;half=1&amp;track_reading'); return false;" class="coolbtn border-gray action_read clicktag" href="/pavel-kornev/mertvyy-vor/chitat-onlayn/" target="_blank" title="Читать фрагмент">Читать фрагмент</a><link rel="stylesheet" href="/static/litres/modules/arts/buttons/css/arts-buttons.css?134795" type="text/css"><script>
+			requirejs(['art-buttons']);
+		</script><div class="art-box art-box_dropdown  art-box_border"><div class="art-box__top"><div class="art-box__title"><form method="post"><input value="add_art_to_likes" name="action" type="hidden"><input value="2443:1567209560:a5e50770b9953cf05afe4014f990b5a5a11c5b3dc3190b274df3789e21236cb3" name="csrf" type="hidden"><input value="31260990" name="art" type="hidden"><input name="clean_redir" type="hidden"><button data-action="addfavorite" class="art-button art-buttons__favorite">Отложить</button></form></div><div class="art-box__menu"></div></div><div class="art-box__dropdown"><ul class="art-box__list"><li class="art-box__item"><form method="post"><input value="add_art_to_basket" name="action" type="hidden"><input value="2443:1567209560:a5e50770b9953cf05afe4014f990b5a5a11c5b3dc3190b274df3789e21236cb3" name="csrf" type="hidden"><input value="31260990" name="art" type="hidden"><input name="clean_redir" type="hidden"><button data-storeartbox="31260990" data-action="addbasket" class="art-button art-buttons__basket">Добавить в корзину</button></form></li></ul></div></div></div></div><div class="biblio_book_buy_block"><div class="biblio_book_buy clicktag" id="unr_buynow" data-clicktag-id="buynow_book"><form onsubmit="return Payment.open({art: 31260990, ref_url: litres.ref_url});" action="" method="post"><input type="hidden" name="action" value="create_custom_set"><input type="hidden" name="csrf" value="2443:1567209560:a5e50770b9953cf05afe4014f990b5a5a11c5b3dc3190b274df3789e21236cb3"><input value="31260990" type="hidden" name="arts"><input type="hidden" name="buy_now" value="true"><button rel="#buy_book_data" onclick="sendMetrics();" id="" class="coolbtn btn-green a_buyany"><span class="uppercase">Купить и скачать за </span><span class="simple-price">199 <span class="currency litres_ruble">₽</span></span></button></form></div><div class="biblio_book_payments clicktag" id="biblio_book_payments_parent" data-clicktag-id="buypay"><a href="javascript: void(0);" class="a_buyicon a_buyicon_mastercard ya_buybtn" id="a_buybtn_mastercard" data-tab="visa" title="MasterCard" data-descr="32">MasterCard</a><a href="javascript: void(0);" class="a_buyicon a_buyicon_visa ya_buybtn" id="a_buybtn_visa" data-tab="visa" title="Visa" data-descr="32">Visa</a><a href="javascript: void(0);" class="a_buyicon a_buyicon_qiwi ya_buybtn" id="a_buybtn_qiwi" data-tab="qiwi" title="QIWI кошелек" data-descr="51">QIWI кошелек</a><a href="javascript: void(0);" class="a_buyicon a_buyicon_paypal ya_buybtn" id="a_buybtn_paypal" data-tab="paypal" title="PayPal" data-descr="69">PayPal</a><a href="javascript: void(0);" class="a_buyicon a_buyicon_webmoney ya_buybtn" id="a_buybtn_webmoney" data-tab="webmoney" title="WebMoney" data-descr="50">WebMoney</a><a href="javascript: void(0);" class="a_buyicon a_buyicon_yandex ya_buybtn" id="a_buybtn_yandex" data-tab="yandex" title="Яндекс.Деньги" data-descr="55">Яндекс.Деньги</a><a href="javascript: void(0);" class="a_buyicon a_buyicon_alfaclick ya_buybtn" id="a_buybtn_alfaclick" data-tab="alfaclick" title="Альфа-Клик" data-descr="41">Альфа-Клик</a><a href="javascript: void(0);" class="a_buyicon a_buyicon_mts ya_buybtn" id="a_buybtn_mts" data-tab="mobile" title="МТС" data-descr="65">МТС</a><a href="javascript: void(0);" class="a_buyicon a_buyicon_beeline ya_buybtn" id="a_buybtn_beeline" data-tab="mobile" title="Билайн" data-descr="65">Билайн</a><a href="javascript: void(0);" class="a_buyicon a_buyicon_megafon ya_buybtn" id="a_buybtn_megafon" data-tab="mobile" title="Мегафон" data-descr="65">Мегафон</a><a href="javascript: void(0);" class="a_buyicon a_buyicon_tele2 ya_buybtn" id="a_buybtn_tele2" data-tab="mobile" title="Tele2" data-descr="65">Tele2</a><a href="javascript: void(0);" class="a_buyicon a_buyicon_applepay ya_buybtn" id="a_buybtn_applepay" data-tab="applepay" title="ApplePay" data-descr="7">ApplePay</a></div></div><form method="post"><input type="hidden" name="action" value="create_custom_set"><input type="hidden" name="csrf" value="2443:1567209560:a5e50770b9953cf05afe4014f990b5a5a11c5b3dc3190b274df3789e21236cb3"><input value="31260990" type="hidden" name="arts"><div class="biblio_book_buy clicktag biblio_book_motivation_wrapper" id="unr_buynow" data-clicktag-id="buynow_book"><div class="biblio_book_motivation_block type_2" data-clicktag-id="buyforfentezi2" id="motivation-block-2"><div class="motivation_image"><img src="/static/litres/i/pages/biblio_book/motivation/type_2.png"></div><div class="motivation_text">Поддержите автора, и книга станет вашей!</div></div></div></form><div style="display:none;" class="biblio_book_go_to_lib_map" id="biblio_book_go_to_lib_map"><div class="biblio_book_library_buy_text">Также данная книга доступна ещё в <span id="biblio_book_library_buy_text_count"></span> библиотеках. Запишись сразу в несколько библиотек и получай книги намного быстрее.</div><div class="biblio_book_library_button__libhouse_map"><a href="/pages/libhouse_map/?art=31260990" class="biblio_book_library__libhouse_map-link">Выбрать библиотеки</a></div></div><div class="biblio_book_howto"><div class="biblio_book_howto_caption" data-popup-read="start">Как читать книгу после покупки</div><div class="blocks devices devices_ru"><a href="javascript:void(0);" class="smartphone" data-popup-read="smartphone">Смартфон,<br/>планшет</a><a href="javascript:void(0);" class="notebook" data-popup-read="notebook">Компьютер,<br/>ноутбук</a><a href="javascript:void(0);" class="reader" data-popup-read="reader">Ридер</a></div><ul class="download_formats"><li class="uppercase"><strong>Скачать:</strong></li><li><a href="/pub/t/31260990-Kornev_P._Dorogamertveca1._Mertvyiyi_Vor.new.fb2.zip" data-book-buy="buy">FB2</a></li><li><a href="/pub/t/31260990-Kornev_P._Dorogamertveca1._Mertvyiyi_Vor.epub" data-book-buy="buy">EPUB</a></li><li><a href="/pub/t/31260990-Kornev_P._Dorogamertveca1._Mertvyiyi_Vor.epub" data-book-buy="buy">iOS.EPUB</a></li><li><a href="javascript:void(0);" data-popup-read="format_type">Ещё 7</a></li></ul><div class="divider"></div><div class="biblio_book_howto_caption" id="start-audio-caption">Нет времени читать книгу?</div><div class="blocks devices"><div class="offer_read__fragment" id="offer_read__fragment">Слушать фрагмент</div><link href="/static/litres/modules/audioplayer-main/css/style.css?132508" rel="stylesheet" type="text/css"><audio id="player-audio"></audio><div class="audioplayer-wrapper player-margin"><div class="buttons-line-wrapper"><button title="Предыдущая глава" class="button disabled" id="btn-prev-track"><svg class="svg" width="18px" height="20px" viewBox="0 0 18 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-583.000000, -136.000000)" fill="#FFFFFF"><g transform="translate(580.000000, 134.000000)"><path d="M20.3901127,11.0489727 L6.49877622,2.23682442 C5.67248653,1.71265691 5,2.08748034 5,3.07608686 L5,20.9233952 C5,21.9125543 5.67102497,22.2877522 6.49877622,21.7626575 L20.3901127,12.9505087 C20.7499962,12.722212 20.9534127,12.4316746 21,12.1330368 L21,11.8662346 C20.9534485,11.5678585 20.7502731,11.2774451 20.3901127,11.0489727 Z" transform="translate(13.000000, 12.000000) scale(-1, 1) translate(-13.000000, -12.000000) "></path><rect transform="translate(4.500000, 12.000000) scale(-1, 1) translate(-4.500000, -12.000000) " x="3" y="2" width="3" height="20" rx="1.5"></rect></g></g></g></svg></button><button title="Промотать на 30 секунд назад" class="button" id="btn-backwards"><svg width="30px" height="27px" viewBox="0 0 30 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-577.000000, -195.000000)" fill="#FFFFFF"><g transform="translate(577.000000, 194.000000)"><g transform="translate(3.000000, 11.000000)"><path d="M19.6569384,10.4293836 L11.8430616,5.14209465 C11.3782737,4.82759414 11,5.05248821 11,5.64565212 L11,16.3540371 C11,16.9475326 11.3774515,17.1726513 11.8430616,16.8575945 L19.6569384,11.5703052 C19.8593728,11.4333272 19.9737946,11.2590048 20,11.0798221 L20,10.9197408 C19.9738148,10.7407151 19.8595286,10.5664671 19.6569384,10.4293836 Z" id="Forward" transform="translate(15.500000, 11.000000) scale(-1, 1) translate(-15.500000, -11.000000) "></path><path d="M11.6569384,10.4293836 L3.84306163,5.14209465 C3.37827367,4.82759414 3,5.05248821 3,5.64565212 L3,16.3540371 C3,16.9475326 3.37745155,17.1726513 3.84306163,16.8575945 L11.6569384,11.5703052 C11.8593728,11.4333272 11.9737946,11.2590048 12,11.0798221 L12,10.9197408 C11.9738148,10.7407151 11.8595286,10.5664671 11.6569384,10.4293836 Z" id="Forward-Copy" transform="translate(7.500000, 11.000000) scale(-1, 1) translate(-7.500000, -11.000000) "></path></g><text font-family="SFUIDisplay-Bold, SF UI Display" font-size="12" font-weight="normal"><tspan aria-hidden="true" x="0.22265625" y="11"> -30 c</tspan></text></g></g></g></svg></button><button title="Начать воспроизведение" class="button" id="btn-play"><div id="button-play" class="show"><svg width="22px" height="24px" viewBox="0 0 22 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-661.000000, -261.000000)" fill="#FFFFFF"><g transform="translate(661.000000, 261.000000)"><path d="M1.48564293,0.361712147 L20.8621475,11.1264369 L20.8621475,11.1264369 C21.3449312,11.3946501 21.518875,12.0034534 21.2506618,12.4862371 C21.1599729,12.6494772 21.0253875,12.7840625 20.8621475,12.8747514 L1.48564293,23.6394762 L1.48564293,23.6394762 C1.0028592,23.9076894 0.394055909,23.7337456 0.125842724,23.2509618 C0.0433105008,23.1024038 1.3530798e-15,22.9352632 1.33226763e-15,22.7653189 L0,1.23586942 L2.22044605e-16,1.23586942 C1.5440923e-16,0.683584673 0.44771525,0.235869423 1,0.235869423 C1.16994425,0.235869423 1.33708493,0.279179924 1.48564293,0.361712147 Z"></path></g></g></g></svg></div><div id="button-pause" class="hide"><svg width="19px" height="24px" viewBox="0 0 19 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-583.000000, -261.000000)" fill="#FFFFFF"><g transform="translate(583.000000, 261.000000)"><path d="M0,1.00069463 C0,0.448026248 0.453036308,0 0.997030139,0 L7.00296986,0 C7.5536144,0 8,0.44746922 8,1.00069463 L8,22.9993054 C8,23.5519738 7.54696369,24 7.00296986,24 L0.997030139,24 C0.446385598,24 0,23.5525308 0,22.9993054 L0,1.00069463 Z M10.6666667,1.00069463 C10.6666667,0.448026248 11.119703,0 11.6636968,0 L17.6696365,0 C18.2202811,0 18.6666667,0.44746922 18.6666667,1.00069463 L18.6666667,22.9993054 C18.6666667,23.5519738 18.2136304,24 17.6696365,24 L11.6636968,24 C11.1130523,24 10.6666667,23.5525308 10.6666667,22.9993054 L10.6666667,1.00069463 Z"></path></g></g></g></svg></div></button><button title="Промотать на 30 секунд вперёд" class="button" id="btn-forward"><svg width="34px" height="27px" viewBox="0 0 31 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-657.000000, -195.000000)" fill="#FFFFFF"><g transform="translate(656.000000, 194.000000)"><g transform="translate(4.000000, 11.000000)"><path d="M20.6569384,10.4293836 L12.8430616,5.14209465 C12.3782737,4.82759414 12,5.05248821 12,5.64565212 L12,16.3540371 C12,16.9475326 12.3774515,17.1726513 12.8430616,16.8575945 L20.6569384,11.5703052 C20.8593728,11.4333272 20.9737946,11.2590048 21,11.0798221 L21,10.9197408 C20.9738148,10.7407151 20.8595286,10.5664671 20.6569384,10.4293836 Z"></path><path d="M12.6569384,10.4293836 L4.84306163,5.14209465 C4.37827367,4.82759414 4,5.05248821 4,5.64565212 L4,16.3540371 C4,16.9475326 4.37745155,17.1726513 4.84306163,16.8575945 L12.6569384,11.5703052 C12.8593728,11.4333272 12.9737946,11.2590048 13,11.0798221 L13,10.9197408 C12.9738148,10.7407151 12.8595286,10.5664671 12.6569384,10.4293836 Z"></path></g><text font-family="SFUIDisplay-Bold, SF UI Display" font-size="12" font-weight="normal"><tspan aria-hidden="true" x="0" y="11">+30 c</tspan></text></g></g></g></svg></button><button title="Следующая глава" class="button disabled" id="btn-next-track"><svg width="18px" height="20px" viewBox="0 0 18 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-664.000000, -136.000000)" fill="#FFFFFF"><g transform="translate(661.000000, 134.000000)"><g transform="translate(3.000000, 2.000000)"><path d="M15.3901127,9.04897266 L1.49877622,0.23682442 C0.672486529,-0.287343094 0,0.0874803433 0,1.07608686 L0,18.9233952 C0,19.9125543 0.671024972,20.2877522 1.49877622,19.7626575 L15.3901127,10.9505087 C15.7499962,10.722212 15.9534127,10.4316746 16,10.1330368 L16,9.86623464 C15.9534485,9.56785853 15.7502731,9.2774451 15.3901127,9.04897266 Z"></path><rect x="15" y="0" width="3" height="20" rx="1.5"></rect></g></g></g></g></svg></button><div class="volume-control-wrapper"><button id="volume-icon"><img class="img" src="/static/litres/modules/audioplayer-main/img/volume-mid.svg"></button><div class="volumeslider-wrapper"><div id="volume-slider" class="slider-wrapper"><div class="slider-background-wrapper"><span class="slider-background" style="background: #dedede;"></span></div><input aria-label="Регулировка громкости" class="slider-input" type="range" value="0" max="100"></div></div></div></div><div class="timer-wrapper"><div aria-hidden="true" class="timer" id="timer-played">-:--</div><div aria-hidden="true" class="timer" id="timer-remained">-:--</div></div><div class="timeline-wrapper"><div id="timeline-slider" class="slider-wrapper"><div class="slider-background-wrapper"><span class="slider-background" style="background: #ffffff;"></span></div><input class="slider-input" type="range" value="0"></div></div></div><div id="offer-element"><div id="bookid-info" id-text="31260990" id-audio="31589215"></div><div id="buy-combo-wrapper-elem" class="buy-combo-wrapper"><div class="buy-combo-books-wrapper"><div class="buy-combo-textbook-wrapper"><div class="cover ct0 cw89 ch127"><img onerror="this.dataset.coverError = 1;" height="127" width="89" alt="Мертвый вор" src="https://cv9.litres.ru/pub/c/elektronnaya-kniga/cover_89/31260990-pavel-kornev-mertvyy-vor.jpg"></div></div><div id="buy-combo-audiobook-wrapper" class="buy-combo-audiobook-wrapper"><div class="cover ct1 cw89 ch85"><img onerror="this.dataset.coverError = 1;" height="85" width="89" alt="Мертвый вор" src="https://cv1.litres.ru/pub/c/audiokniga/cover_89/31589215-pavel-kornev-mertvyy-vor-31589215.jpg"></div></div><div class="buy-combo-sale-wrapper"><img class="buy-combo-sale-img" src="/static/litres/modules/audioplayer/img/label.svg"><div class="buy-combo-sale-text">− 20%</div></div></div><div class="buy-combo-label-wrapper"><div class="buy-combo-label-text-wrapper">Купите электронную и аудиокнигу со скидкой 20%</div></div></div><div id="buy-button" class="btn btn_green book-series-discount__btn buy-text-and-audio-button">Купить комплект за <span class="old-price">389 <span class="currency litres_ruble">₽</span></span><span class="price-delimiter"> </span><span class="new-price">311,20 <span class="currency litres_ruble">₽</span></span></div><div class="audiobook-link-wrapper"><p id="audiobook-link" link-to-open="/pavel-kornev/mertvyy-vor-31589215/" class="audiobook-link">Перейти к аудиокниге <span class="arrow-right"></span></p></div></div></div></div><div class="paid_booktofriend"><div class="paid_booktofriend__btn" data-animation="true"><div class="paid_booktofriend__btn_thumbsup"><svg width="24px" height="29px" viewBox="0 0 24 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><g transform="translate(-76.000000, -22.000000)" stroke="#FF4C00" stroke-width="2"><g><path d="M96.4070783,46.074154 C96.5613553,46.4220155 96.6470588,46.8078725 96.6470588,47.2142857 C96.6470588,48.7493065 95.4126821,50 93.8857635,50 L82.7034907,50 C81.7881399,50 80.628562,49.5110822 79.9817121,48.8565317 L77,45.8393231 L77,36.4585864 L77.576842,36.1891822 C77.6204543,36.1688138 77.7205071,36.1178907 77.8688694,36.0352706 C78.1268952,35.8915808 78.4172792,35.7138157 78.7319252,35.5009014 C79.63881,34.8872316 80.5482245,34.119326 81.3968195,33.1892908 C83.5987552,30.7760337 85.0035068,27.7218936 85.2371961,23.9383528 L85.2951532,23 L86.2352941,23 C88.7608581,23 90.259134,24.21289 90.7355165,26.1411051 C90.934771,26.9476113 90.934771,27.7765385 90.8192563,28.5558041 C90.7898456,28.7542094 90.7591176,28.9062238 90.7503502,28.9307398 L89.9309569,33.7142857 L96.2277194,33.7142857 C97.762268,33.7142857 99,34.9580827 99,36.5 C99,37.3548051 98.6177657,38.1200793 98.0145215,38.6312145 C98.2667744,39.0511059 98.4117647,39.5437972 98.4117647,40.0714286 C98.4117647,40.9263299 98.0296774,41.6914557 97.4263951,42.2025167 C97.6785822,42.6224528 97.8235294,43.1151989 97.8235294,43.6428571 C97.8235294,44.6867299 97.2535087,45.5970866 96.4070783,46.074154 Z"></path></g></g></g></svg></div><div class="paid_booktofriend__btn_text"><span class="paid_booktofriend__btn_title">Посоветуйте книгу друзьям!</span>Друзьям – скидка 10%, вам – рубли</div></div><div class="paid_booktofriend__spoiler"><div class="paid_booktofriend__text">По вашей ссылке друзья получат скидку 10% на эту книгу, а вы будете получать 10% от стоимости их покупок на свой счет ЛитРес. <a href="/kniga-drugu/">Подробнее</a></div><div class="paid_booktofriend__text">Стоимость книги: <span class="paid_booktofriend__price">199 <span class="currency litres_ruble">₽</span></span><br>Ваш доход с одной покупки друга: <span class="paid_booktofriend__price">19,90 <span class="currency litres_ruble">₽</span></span></div><span class="paid_booktofriend__spoiler_title">Чтобы посоветовать книгу друзьям, необходимо войти или зарегистрироваться</span><button class="btn btn-orange paid_booktofriend__login" id="paid_booktofriend__login">Войти</button></div></div><div class="biblio_book_info"><ul><li class="volume"><strong>Объем:</strong> 300 стр.</li><li><strong>Жанр:</strong> <a href="/knigi-fentezi/boevoe/" class="biblio_info__link"><span class="uppercase">б</span>оевое фэнтези</a>, <a href="/knigi-fentezi/geroicheskoe_fentezi/" class="biblio_info__link"><span class="uppercase">г</span>ероическое фэнтези</a></li><li class="tags_list"><strong>Теги:</strong> <a href="/tags/litrpg/" class="biblio_info__link"><span class="uppercase">L</span>itRPG</a>, <a href="/tags/virtualnye-miry/" class="biblio_info__link"><span class="uppercase">в</span>иртуальные миры</a>, <a href="/tags/geymery/" class="biblio_info__link"><span class="uppercase">г</span>еймеры</a>, <a href="/tags/kvest/" class="biblio_info__link"><span class="uppercase">к</span>вест</a>, <a href="/tags/nezhit/" class="biblio_info__link"><span class="uppercase">н</span>ежить</a>, <a href="/tags/opasnye-priklucheniya/" class="biblio_info__link"><span class="uppercase">о</span>пасные приключения</a>, <a href="/tags/pereselenie-dush/" class="biblio_info__link"><span class="uppercase">п</span>ереселение душ</a></li></ul></div></div><div data-popup-relation-type="type-audio" class="art-relation art-type-audio"><a href="javascript:void(0);" class="close"></a><div class="art_block"><div class="art_name">Мертвый вор</div><div class="art_author"><a class="biblio_book_author__link" href="/pavel-kornev/">Павел Корнев</a></div></div><div class="item_block" data-id-book="31589215"><div class="item_cover"><div class="item_over_cover audio"><div class="cover ct1 cw89 ch47"><img onerror="this.dataset.coverError = 1;" height="47" width="49" alt="Мертвый вор" src="https://cv1.litres.ru/pub/c/audiokniga/cover_89/31589215-pavel-kornev-mertvyy-vor-31589215.jpg"></div></div></div><div class="item_info"><div class="biblio_book_name">Мертвый вор</div><div class="biblio_book_type">Аудиокнига</div><div class="reader-person" title="Читает Иван Букчин">Читает Иван Букчин</div><div class="price"><span class="simple-price">190 <span class="currency litres_ruble">₽</span></span></div></div><a href="javascript:void(0);" class="coolbtn border-gray item_detail">Подробнее</a></div></div></div></div><div class="right_column column"></div></div></div><img alt="" src="/z.gif" width="1" height="1" id="art_action_tracker"><script type="text/javascript">
+					requirejs(["wrapper.functions"], function(code, wrapperFunctions){
+						
+						setTimeout(function () {
+							return switchActionTrackerTo('31260990', 'view', 8, '0');
+						}, 8000);
+						setTimeout(function () {
+							return switchActionTrackerTo('31260990', 'view', 30, '0');
+						}, 30000);
+
+						
+							var shadowCookie = getCookie('shadowsid') || false;
+							if (shadowCookie) {
+								var url,
+									request,
+									url = "/pages/fake/";
+
+								request = {
+									url: url,
+									params: {
+										action: "book_view_register",
+										book_action: "view",
+										art: 31260990,
+										sid: shadowCookie
+									}
+								};
+
+								setTimeout(function () {
+									request.params.time = 8;
+									request.params.rnd = Math.random();
+									GUJ.PutRequest(request);
+								}, 8000);
+								setTimeout(function () {
+									request.params.time = 30;
+									request.params.rnd = Math.random();
+									GUJ.PutRequest(request);
+								}, 30000);
+							}
+						
+
+					});
+				
+						requirejs(['wrapper.functions'], function(wrapperFunctions) {
+							setTimeout(function () {
+								return LastViewed('31260990');
+							}, 8000);
+						});
+					</script><div class="ab-container"><nav class="book-tabs" id="book-tabs"><ul><li class="tab-active" data-name="book" data-goal="Tab_about-book"><a href="/pavel-kornev/mertvyy-vor/">О книге</a></li><li data-name="citaty" data-goal="Tab_citaty"><a href="/pavel-kornev/mertvyy-vor/citaty/">Цитаты <span class="count">1</span></a></li><li data-name="otzivi" data-goal="Tab_otzivi"><a href="/pavel-kornev/mertvyy-vor/otzivi/">Отзывы <span class="count">51</span></a></li><li data-name="book_online" data-goal="Tab_read-online"><a class="tab__disabled" onclick="showPopupErrorEscape('Чтобы почитать фрагмент книги «Мертвый вор», зарегистрируйтесь или войдите', '/static/or4/view/or.html?baseurl=/pub/t/31260990.&amp;uuid=b6ea3801-358a-11e8-9a05-0cc47a52085c&amp;art=31260990&amp;trials=1&amp;user=0&amp;file=43563815&amp;trial=1&amp;price=199.00&amp;texttrialbutton=%D0%9A%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%BF%D0%BE%D0%BB%D0%BD%D1%83%D1%8E%20%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8E%20%D0%B7%D0%B0%20199.00&amp;uilang=ru&amp;catalit2&amp;half=1&amp;track_reading'); event.returnValue = false; return false;
+	" href="/pavel-kornev/mertvyy-vor/chitat-onlayn/">Читать онлайн</a></li></ul></nav></div><div id="is_book_tab"><div class="ab-container"><div class="block_table"><div class="content_column column"><div class="biblio_book_bottom biblio_bottom__tab"><div class="biblio_book_descr"><div class="biblio_book_annotation"><div class="biblio_book_descr_caption">Аннотация от ЛитРес</div><div itemprop="description"><p>Желая отвлечься от реальности и на время забыть о своих проблемах, некоторые с головой погружаются в виртуальный мир. Там можно прокачать своего героя, переходя с уровня на уровень, стать невероятно крутым и зачистить мир от нежити. А что, если этой нежитью вдруг становишься ты сам?</p><p>Из-за хакерской атаки Джон оказывается в теле ходячего мертвеца в одной их компьютерных игр. Ему приходится умирать раз за разом, становясь легкой добычей для всех вокруг. И попросить о помощи он никого не может, потому что одна единица интеллекта не предполагает владения речью. Какие испытания ждут этого необычного персонажа впереди? Успеет ли он вернуться в реальный мир прежде, чем его тело умрет от истощения в капсуле виртуальной реальности? И сможет ли он найти кого-то, кто рискнет ему помочь?</p><p>Новый роман «Мёртвый вор» Павла Корнева является первым томом дилогии «Дорогой мертвеца», написанной в жанре LitRPG. Читать онлайн или скачать книгу в удобном формате на ЛитРес можно прямо сейчас.</p></div></div><!--noindex--><div id="biblio_book_descr_toggle" class="biblio_book_descr_caption">Описание от издательства</div><div class="biblio_book_descr_publishers"><p>Виртуальные миры – территория безграничной свободы. В игре любой может стать эльфийским магом и невидимкой-вором, вступить в клан и ходить в рейды, сражаться и развивать персонажа, а самое главное – отвлечься от забот и проблем повседневности.</p><p>Но игра остаётся игрой только пока из неё можно выйти. Я в полной мере прочувствовал это на собственной шкуре. Хотел лишь немного развеяться в виртуальной реальности, а вместо этого оказался убит и заточён в тело ходячего мертвеца – медлительного и неловкого, обречённого раз за разом погибать от рук других игроков.</p><p>И теперь есть лишь один способ выбраться из коварной западни – добыть легендарный свиток Возрождения, но для этого придётся превратить беспомощный чумной труп в настоящую машину смерти. И кто бы только знал, каково это – прокачивать мёртвого жулика…</p></div><!--/noindex--></div><div class="addthis_toolbox addthis_default_style addthis_30x30_style biblio_book_social"><a class="addthis_button_vk" title="Вконтакте"><div class="new-social-block_vk"></div></a><a class="addthis_button_odnoklassniki_ru" title="Одноклассники"><div class="new-social-block_ok"></div></a><a class="addthis_button_facebook" title="Facebook"><div class="new-social-block_fb"></div></a><a class="addthis_button_twitter" title="Twitter"><div class="new-social-block_twitter"></div></a><a class="addthis_button_mymailru" title="Mail.ru"><div class="new-social-block_mymailru"></div></a><a class="addthis_button_livejournal" title="LiveJournal"><div class="new-social-block_livejournal"></div></a><a class="addthis_counter addthis_bubble_style"></a></div><script type="text/javascript">
+			var addthis_config = {"data_track_addressbar":false};
+			var addthis_config = {"data_track_clickback":true};
+			var addthis_share = {url: window.location.href};
+		</script><div class="biblio_book_info_detailed"><div class="biblio_book_info_detailed_caption">Подробная информация</div><div class="blocks"><ul class="biblio_book_info_detailed_left"><li><strong>Возрастное ограничение:</strong> 16+
+			</li><li><strong>Дата выхода на ЛитРес:</strong> 10 апреля 2018</li><li><strong>Дата написания:</strong> 2018</li><li class="volume"><strong>Объем:</strong> 300 стр.</li></ul><ul class="biblio_book_info_detailed_right"><li><strong>Правообладатель:</strong> Автор</li><li><a class="book_intro action_contents" id="book_intro" href="javascript:void(0);" data-url="/pub/c/cover/31260990.xml">Оглавление</a></li></ul></div></div><div class="biblio_book_seo_descr">Книга Павла Корнева «Мертвый вор» — скачать в fb2, txt, epub, pdf или читать онлайн. Оставляйте комментарии и отзывы, голосуйте за понравившиеся.</div></div></div></div></div><div class="ab-container book_wrapper"><div class="book-relations-wrapper"><div class="book-relations__caption">Другие версии</div><div class="book-relations book-relations__audio"><div class="book-relation"><div class="item_cover"><div class="item_over_cover audio"><div class="cover ct1 cw89 ch47"><img onerror="this.dataset.coverError = 1;" height="47" width="49" alt="Мертвый вор" src="https://cv1.litres.ru/pub/c/audiokniga/cover_89/31589215-pavel-kornev-mertvyy-vor-31589215.jpg"></div></div></div><div class="item_info"><div class="biblio_book_type">Аудиокнига</div><div class="reader-person" title="Читает Иван Букчин">Читает Иван Букчин</div><div class="book-relation-price"><span class="simple-price">190 <span class="currency litres_ruble">₽</span></span></div></div><a href="/pavel-kornev/mertvyy-vor-31589215/" class="book-relation__link"></a></div></div></div></div><div class="ab-container book_wrapper" id="book-series-discount"><div style="margin-bottom: 27.142857px;" class="book-series-discount block_table"><div class="book-series-discount__cell book-series-discount__caption">Книга входит в серию<br><span>«<span data-link="/serii-knig/dorogoy-mertveca/" class="biblio_book_link_js">Дорога мертвеца</span>»</span></div><div class="book-series-discount__cell book-series-discount__covers"><div class="book-series-discount__cover book-series-discoun-cover_1"><div data-obj="{art_id: '31260990',author_id: '',alt: 'Мертвый вор',author: '',type: '0',mem: 'text',drm: '',price: '199.00',available: '1',can_preorder: '0',main_book_id: '',promo_price: '199.00'}" class="cover cover_type0 cover_init_w68"><a href="/serii-knig/dorogoy-mertveca/" class="cover_href cover_68"><img onerror="this.dataset.coverError = 1;" alt="Мертвый вор" height="97" width="68" src="https://cv9.litres.ru/pub/c/elektronnaya-kniga/cover_89/31260990-pavel-kornev-mertvyy-vor.jpg" id="cover_art_31260990" class="cover_img"></a></div></div><div class="book-series-discount__cover book-series-discoun-cover_2"><div data-obj="{art_id: '32829351',author_id: '',alt: 'Царство мертвых',author: '',type: '0',mem: 'text',drm: '',price: '199.00',available: '1',can_preorder: '0',main_book_id: '',promo_price: '199.00'}" class="cover cover_type0 cover_init_w68"><a href="/serii-knig/dorogoy-mertveca/" class="cover_href cover_68"><img onerror="this.dataset.coverError = 1;" alt="Царство мертвых" height="97" width="68" src="https://cv5.litres.ru/pub/c/elektronnaya-kniga/cover_89/32829351-pavel-kornev-carstvo-mertvyh.jpg" id="cover_art_32829351" class="cover_img"></a></div></div><div class="book-series-discount__cover book-series-discoun-cover_3"><div data-obj="{art_id: '37660636',author_id: '',alt: 'Свита Мертвеца',author: '',type: '0',mem: 'text',drm: '',price: '99.90',available: '1',can_preorder: '0',main_book_id: '',promo_price: '99.90'}" class="cover cover_type0 cover_init_w68"><a href="/serii-knig/dorogoy-mertveca/" class="cover_href cover_68"><img onerror="this.dataset.coverError = 1;" alt="Свита Мертвеца" height="97" width="68" src="https://cv3.litres.ru/pub/c/elektronnaya-kniga/cover_89/37660636-pavel-kornev-svita-mertveca.jpg" id="cover_art_37660636" class="cover_img"></a></div><div class="book-series-discount__sticker">- 15%</div></div></div><div class="book-series-discount__cell book-series-discount__buy"><form id="id_acc76afa" action="/pages/new_basket/" method="post"><input type="hidden" name="sequence" value="542727"><input type="hidden" name="action" value="create_sequence_set"><input type="hidden" name="csrf" value="2443:1567209560:a5e50770b9953cf05afe4014f990b5a5a11c5b3dc3190b274df3789e21236cb3"><input type="hidden" name="atype" value=""><button class="coolbtn btn-green book-series-discount__btn" type="submit"><span class="uppercase">Купить серию за</span> <span class="old-price">497,90 <span class="currency litres_ruble">₽</span></span><span class="price-delimiter"> </span><span class="new-price">423,21 <span class="currency litres_ruble">₽</span></span></button></form></div></div></div><div id="book-similar-wrapper" class="ab-container no_resize book_wrapper"><div class="book-similar-wrapper"><div class="book-similar__caption"><span id="book-similar__caption-link" class="book-similar__caption-link">С этой книгой читают:</span></div><div class="book-similar book-similar__big" id="book-similar"><div class="book-similar__wrapper"><div class="book-similar-cover"><div><div data-obj="{art_id: '10859144',author_id: '49380',alt: 'Сиятельный',author: 'Павел Корнев',type: '0',mem: '',drm: '0',price: '176.00',available: '1',can_preorder: '0',main_book_id: '',promo_price: '176.00'}" class="cover cover_type0 cover_init_w95"><a href="/pavel-kornev/siyatelnyy/" class="cover_href cover_95"><img onerror="this.dataset.coverError = 1;" alt="Сиятельный" height="146" width="95" src="https://cv4.litres.ru/pub/c/elektronnaya-kniga/cover_123/10859144-pavel-kornev-siyatelnyy.jpg" id="cover_art_10859144" class="cover_img"></a></div></div><div class="book-similar-cover__info"><div class="book-similar-cover__name"><a href="/pavel-kornev/siyatelnyy/" title="Сиятельный">Сиятельный</a></div><div class="book-similar-cover__author">Павел Корнев</div><div class="book-similar-cover__rating"><div class="rating"><div data-options="{
+					
+					show_popup: true,
+					voted: 0,
+					votes:[10, 10, 46, 119, 475],
+					mid_vote:4.6,
+					vote_amount:660,
+					recenses: 0,
+					book_type: 'text',
+					purchased: false
+				}
+				" class="stars_book stars__book-type-text stars_voted" data-id="10859144"><div class="g_star"><span class="item"><a href="javascript:void(0);" data-id="1" class="star voted"><span></span></a><a href="javascript:void(0);" data-id="2" class="star voted"><span></span></a><a href="javascript:void(0);" data-id="3" class="star voted"><span></span></a><a href="javascript:void(0);" data-id="4" class="star voted"><span></span></a><a href="javascript:void(0);" data-id="5" class="star voted voted-half"><span></span></a></span></div></div></div></div><div class="book-similar-cover__price"><span class="simple-price">176 <span class="currency litres_ruble">₽</span></span></div></div></div><div class="book-similar-cover"><div><div data-obj="{art_id: '18978006',author_id: '49380',alt: 'Падший',author: 'Павел Корнев',type: '0',mem: '',drm: '0',price: '176.00',available: '1',can_preorder: '0',main_book_id: '',promo_price: '176.00'}" class="cover cover_type0 cover_init_w95"><a href="/pavel-kornev/padshiy/" class="cover_href cover_95"><img onerror="this.dataset.coverError = 1;" alt="Падший" height="146" width="95" src="https://cv0.litres.ru/pub/c/elektronnaya-kniga/cover_123/18978006-pavel-kornev-padshiy.jpg" id="cover_art_18978006" class="cover_img"></a></div></div><div class="book-similar-cover__info"><div class="book-similar-cover__name"><a href="/pavel-kornev/padshiy/" title="Падший">Падший</a></div><div class="book-similar-cover__author">Павел Корнев</div><div class="book-similar-cover__rating"><div class="rating"><div data-options="{
+					
+					show_popup: true,
+					voted: 0,
+					votes:[9, 13, 22, 84, 389],
+					mid_vote:4.7,
+					vote_amount:517,
+					recenses: 0,
+					book_type: 'text',
+					purchased: false
+				}
+				" class="stars_book stars__book-type-text stars_voted" data-id="18978006"><div class="g_star"><span class="item"><a href="javascript:void(0);" data-id="1" class="star voted"><span></span></a><a href="javascript:void(0);" data-id="2" class="star voted"><span></span></a><a href="javascript:void(0);" data-id="3" class="star voted"><span></span></a><a href="javascript:void(0);" data-id="4" class="star voted"><span></span></a><a href="javascript:void(0);" data-id="5" class="star voted voted-half"><span></span></a></span></div></div></div></div><div class="book-similar-cover__price"><span class="simple-price">176 <span class="currency litres_ruble">₽</span></span></div></div></div><div class="book-similar-cover"><div><div data-obj="{art_id: '21593090',author_id: '49380',alt: 'Спящий',author: 'Павел Корнев',type: '0',mem: '',drm: '0',price: '176.00',available: '1',can_preorder: '0',main_book_id: '',promo_price: '176.00'}" class="cover cover_type0 cover_init_w95"><a href="/pavel-kornev/spyaschiy/" class="cover_href cover_95"><img onerror="this.dataset.coverError = 1;" alt="Спящий" height="146" width="95" src="https://cv9.litres.ru/pub/c/elektronnaya-kniga/cover_123/21593090-pavel-kornev-spyaschiy.jpg" id="cover_art_21593090" class="cover_img"></a></div></div><div class="book-similar-cover__info"><div class="book-similar-cover__name"><a href="/pavel-kornev/spyaschiy/" title="Спящий">Спящий</a></div><div class="book-similar-cover__author">Павел Корнев</div><div class="book-similar-cover__rating"><div class="rating"><div data-options="{
+					
+					show_popup: true,
+					voted: 0,
+					votes:[8, 9, 22, 91, 410],
+					mid_vote:4.7,
+					vote_amount:540,
+					recenses: 0,
+					book_type: 'text',
+					purchased: false
+				}
+				" class="stars_book stars__book-type-text stars_voted" data-id="21593090"><div class="g_star"><span class="item"><a href="javascript:void(0);" data-id="1" class="star voted"><span></span></a><a href="javascript:void(0);" data-id="2" class="star voted"><span></span></a><a href="javascript:void(0);" data-id="3" class="star voted"><span></span></a><a href="javascript:void(0);" data-id="4" class="star voted"><span></span></a><a href="javascript:void(0);" data-id="5" class="star voted voted-half"><span></span></a></span></div></div></div></div><div class="book-similar-cover__price"><span class="simple-price">176 <span class="currency litres_ruble">₽</span></span></div></div></div><div class="book-similar-cover"><div><div data-obj="{art_id: '6130095',author_id: '3549288',alt: 'Играть, чтобы жить. Книга 1. Срыв',author: 'Дмитрий Рус',type: '0',mem: '',drm: '0',price: '149.00',available: '1',can_preorder: '0',main_book_id: '',promo_price: '149.00'}" class="cover cover_type0 cover_init_w95"><a href="/dmitriy-rus/igrat-chtoby-zhit-kniga-1-sryv/" class="cover_href cover_95"><img onerror="this.dataset.coverError = 1;" alt="Играть, чтобы жить. Книга 1. Срыв" height="149" width="95" src="https://cv9.litres.ru/pub/c/elektronnaya-kniga/cover_123/6130095-dmitriy-rus-igrat-chtoby-zhit-kniga-1-sryv.jpg" id="cover_art_6130095" class="cover_img"></a></div></div><div class="book-similar-cover__info"><div class="book-similar-cover__name"><a href="/dmitriy-rus/igrat-chtoby-zhit-kniga-1-sryv/" title="Играть, чтобы жить. Книга 1. Срыв">Играть, чтобы жить. Книга 1. Срыв</a></div><div class="book-similar-cover__author">Дмитрий Рус</div><div class="book-similar-cover__rating"><div class="rating"><div data-options="{
+					
+					show_popup: true,
+					voted: 0,
+					votes:[20, 17, 33, 104, 878],
+					mid_vote:4.8,
+					vote_amount:1052,
+					recenses: 0,
+					book_type: 'text',
+					purchased: false
+				}
+				" class="stars_book stars__book-type-text stars_voted" data-id="6130095"><div class="g_star"><span class="item"><a href="javascript:void(0);" data-id="1" class="star voted"><span></span></a><a href="javascript:void(0);" data-id="2" class="star voted"><span></span></a><a href="javascript:void(0);" data-id="3" class="star voted"><span></span></a><a href="javascript:void(0);" data-id="4" class="star voted"><span></span></a><a href="javascript:void(0);" data-id="5" class="star voted voted-half"><span></span></a></span></div></div></div></div><div class="book-similar-cover__price"><span class="simple-price">149 <span class="currency litres_ruble">₽</span></span></div></div></div><div class="book-similar-cover"><div><div data-obj="{art_id: '6611185',author_id: '3774618',alt: 'Файролл. Игра не ради игры',author: 'Андрей Васильев',type: '0',mem: '',drm: '0',price: '83.00',available: '1',can_preorder: '0',main_book_id: '',promo_price: '83.00'}" class="cover cover_type0 cover_init_w95"><a href="/andrey-vasilev-4/fayroll-igra-ne-radi-igry/" class="cover_href cover_95"><img onerror="this.dataset.coverError = 1;" alt="Файролл. Игра не ради игры" height="146" width="95" src="https://cv8.litres.ru/pub/c/elektronnaya-kniga/cover_123/6611185-andrey-vasilev-4-fayroll-igra-ne-radi-igry.jpg" id="cover_art_6611185" class="cover_img"></a></div></div><div class="book-similar-cover__info"><div class="book-similar-cover__name"><a href="/andrey-vasilev-4/fayroll-igra-ne-radi-igry/" title="Файролл. Игра не ради игры">Файролл. Игра не ради игры</a></div><div class="book-similar-cover__author">Андрей Васильев</div><div class="book-similar-cover__rating"><div class="rating"><div data-options="{
+					
+					show_popup: true,
+					voted: 0,
+					votes:[27, 10, 38, 167, 661],
+					mid_vote:4.6,
+					vote_amount:903,
+					recenses: 0,
+					book_type: 'text',
+					purchased: false
+				}
+				" class="stars_book stars__book-type-text stars_voted" data-id="6611185"><div class="g_star"><span class="item"><a href="javascript:void(0);" data-id="1" class="star voted"><span></span></a><a href="javascript:void(0);" data-id="2" class="star voted"><span></span></a><a href="javascript:void(0);" data-id="3" class="star voted"><span></span></a><a href="javascript:void(0);" data-id="4" class="star voted"><span></span></a><a href="javascript:void(0);" data-id="5" class="star voted voted-half"><span></span></a></span></div></div></div></div><div class="book-similar-cover__price"><span class="simple-price">83 <span class="currency litres_ruble">₽</span></span></div></div></div><div class="book-similar-cover"><div><div data-obj="{art_id: '6130140',author_id: '3549288',alt: 'Играть, чтобы жить. Книга 2. Клан',author: 'Дмитрий Рус',type: '0',mem: '',drm: '0',price: '149.00',available: '1',can_preorder: '0',main_book_id: '',promo_price: '149.00'}" class="cover cover_type0 cover_init_w95"><a href="/dmitriy-rus/igrat-chtoby-zhit-kniga-2-klan/" class="cover_href cover_95"><img onerror="this.dataset.coverError = 1;" alt="Играть, чтобы жить. Книга 2. Клан" height="149" width="95" src="https://cv4.litres.ru/pub/c/elektronnaya-kniga/cover_123/6130140-dmitriy-rus-igrat-chtoby-zhit-kniga-2-klan.jpg" id="cover_art_6130140" class="cover_img"></a></div></div><div class="book-similar-cover__info"><div class="book-similar-cover__name"><a href="/dmitriy-rus/igrat-chtoby-zhit-kniga-2-klan/" title="Играть, чтобы жить. Книга 2. Клан">Играть, чтобы жить. Книга 2. Клан</a></div><div class="book-similar-cover__author">Дмитрий Рус</div><div class="book-similar-cover__rating"><div class="rating"><div data-options="{
+					
+					show_popup: true,
+					voted: 0,
+					votes:[8, 2, 21, 88, 586],
+					mid_vote:4.8,
+					vote_amount:705,
+					recenses: 0,
+					book_type: 'text',
+					purchased: false
+				}
+				" class="stars_book stars__book-type-text stars_voted" data-id="6130140"><div class="g_star"><span class="item"><a href="javascript:void(0);" data-id="1" class="star voted"><span></span></a><a href="javascript:void(0);" data-id="2" class="star voted"><span></span></a><a href="javascript:void(0);" data-id="3" class="star voted"><span></span></a><a href="javascript:void(0);" data-id="4" class="star voted"><span></span></a><a href="javascript:void(0);" data-id="5" class="star voted"><span></span></a></span></div></div></div></div><div class="book-similar-cover__price"><span class="simple-price">149 <span class="currency litres_ruble">₽</span></span></div></div></div></div><span class="book-similar__show-link">Развернуть</span></div></div></div><div class="quotes"><div class="ab-container book_wrapper quotes__list" id="quotes__list"><div class="quotes__title">Цитаты <span class="quotes__count">1</span></div><div class="quote"><div class="quote__text"><p>вплетенными в нечесаные космы темных волос. Меж</p></div><div class="quote__bottom"><span onclick="showPopupErrorEscape('Для голосования зарегистрируйтесь или войдите'); event.returnValue = false; return false;
+	" class="quote__vote quote__vote_good" data-id="67298142EF4743408FDEA7B27E733CAF" data-good="1"></span><span class="quote__rating">-1</span><span onclick="showPopupErrorEscape('Для голосования зарегистрируйтесь или войдите'); event.returnValue = false; return false;
+	" class="quote__vote quote__vote_bad" data-id="67298142EF4743408FDEA7B27E733CAF" data-good="0"></span><span onclick="window.location.href='/chitateli/426348775/#quotes'" class="quote__user quote_user__pointer">android_b4c28b7b-437a-3ede-bf43-e5683ce91b21</span><span class="quote__share">Поделиться:</span>
+		<div class="addthis_toolbox addthis_24x24_style social_shape quote__addthis" addthis:url="//www.litres.ru/pages/view_quote/?id=67298142EF4743408FDEA7B27E733CAF" addthis:title="Цитата пользователя android_b4c28b7b-437a-3ede-bf43-e5683ce91b21 на книгу «Мертвый вор»" addthis:description="вплетенными в нечесаные космы темных волос. Меж" addthis:media="https://www.litres.ru/generate_quote/?q=67298142EF4743408FDEA7B27E733CAF">
+		<a class="addthis_button_vk" title="Вконтакте"><div class="new-social-block_vk"></div></a><a class="addthis_button_odnoklassniki_ru" title="Одноклассники"><div class="new-social-block_ok"></div></a><a class="addthis_button_facebook" title="Facebook"><div class="new-social-block_fb"></div></a><a class="addthis_button_twitter" title="Twitter"><div class="new-social-block_twitter"></div></a><a class="addthis_button_mymailru" title="Mail.ru"><div class="new-social-block_mymailru"></div></a><a class="addthis_button_livejournal" title="LiveJournal"><div class="new-social-block_livejournal"></div></a>
+		</div>
+		</div></div></div></div><div class="recenses" id="recenses"><div class="ab-container recenses_list book_wrapper"><div class="recenses_title">Лучший отзыв</div><div class="recense recense_best" id="r2759155"><div class="recense_avatar">a</div><div class="recense_body"><div class="recense_head"><span class="recense_date">27 апреля 2018, 12:07</span><span class="recense_author"><span class="link" onclick="window.location.href='/chitateli/162453411/#recenses'">autoreg873328854</span></span><span class="recense_voted"><span class="star voted"><span></span></span><span class="star voted"><span></span></span><span class="star voted"><span></span></span><span class="star voted"><span></span></span><span class="star voted"><span></span></span></span></div><div class="recense_content"><p>Дайте автору писать то, что ему интересно! Тогда будут появляться и интересные сюжеты! </p><p>Читая киберрпг от Корнева отлично провёл время. Да это не Лёд и не мрачняк всеблагой. Это другая реальность, другой стиль. </p><p><br></p><p>А написано как всегда очень живо, с юморком и яркими образами. Герои живые, понятные.</p></div><div class="recense_bot"><a class="recense_report_abuse" href="javascript:void(0);" onclick="zendesk.report(); return false;">Пожаловаться</a><span class="recense_rating">+14</span><span onclick="showPopupErrorEscape('Чтобы оценить отзыв, зарегистрируйтесь или войдите'); event.returnValue = false; return false;
+	" class="recense_vote recense_vote_good" data-good="1" data-href="/pavel-kornev/mertvyy-vor/?action=recense_vote&amp;is_good=1&amp;rec_id=2759155#r2759155"></span><span onclick="showPopupErrorEscape('Чтобы оценить отзыв, зарегистрируйтесь или войдите'); event.returnValue = false; return false;
+	" class="recense_vote recense_vote_bad" data-good="0" data-href="/pavel-kornev/mertvyy-vor/?action=recense_vote&amp;is_good=0&amp;rec_id=2759155#r2759155"></span><span class="recense_share">Поделиться:</span>
+		<div class="addthis_toolbox addthis_24x24_style social_shape recense_addthis" addthis:url="//www.litres.ru/otzyv/?id=2759155" addthis:title="Отзыв пользователя autoreg873328854 на книгу «»" addthis:description="Дайте автору писать то, что ему интересно! Тогда будут появляться и интересные сюжеты! Читая киберрпг от Корнева отлично провёл время. Да это не Лёд и не мрачняк всеблагой. Это другая реальность, другой стиль. А написано как в…">
+		<a class="addthis_button_vk" title="Вконтакте"><div class="new-social-block_vk"></div></a><a class="addthis_button_odnoklassniki_ru" title="Одноклассники"><div class="new-social-block_ok"></div></a><a class="addthis_button_facebook" title="Facebook"><div class="new-social-block_fb"></div></a><a class="addthis_button_twitter" title="Twitter"><div class="new-social-block_twitter"></div></a><a class="addthis_button_mymailru" title="Mail.ru"><div class="new-social-block_mymailru"></div></a><a class="addthis_button_livejournal" title="LiveJournal"><div class="new-social-block_livejournal"></div></a>
+		</div>
+		</div></div></div></div><div class="recense_add"><div class="ab-container book_wrapper"><div class="recense_add_avatar"></div><div class="recense_add_body"><div class="recense-add-header" id="recense-add-header">Оставить отзыв</div><div id="recense-add-form-wrapper" class="recense-add-form-wrapper"><form method="POST" action="/pages/add_review/" id="recense-add-form"><div class="recense-add-form__top hidden"><a style="display:none;" class="recense-add-form__top-username" id="recense-add-form__top-username" href="/chitateli/?user=0"></a><input name="email" class="recense-add-form__top-input" id="recense-add-form__top-input" placeholder="Введите адрес электронной почты" type="text" value=""><span class="recense-add-form__error_email">Введите адрес эл. почты</span><span class="recense-add-form__top-rating">Ваша оценка:</span><div class="rating"><div data-options="{
+					
+					show_popup: false,
+					voted: 0,
+					votes:[0, 0, 0, 0, 0],
+					mid_vote:4.5,
+					vote_amount:0,
+					recenses: 51,
+					book_type: 'text',
+					purchased: false
+				}
+				" class="stars_book userstars stars__book-type-text stars_voted" data-id="31260990"><div class="g_star"><span class="item"><a href="javascript:void(0);" data-id="1" class="star"><span></span></a><a href="javascript:void(0);" data-id="2" class="star"><span></span></a><a href="javascript:void(0);" data-id="3" class="star"><span></span></a><a href="javascript:void(0);" data-id="4" class="star"><span></span></a><a href="javascript:void(0);" data-id="5" class="star"><span></span></a></span></div></div></div><div class="recense-add-form__top-date" id="recense-add-form__top-date"></div></div><input name="art" type="hidden" value="31260990"><input type="hidden" name="action" value="add_recense"><input type="hidden" name="csrf" value="2443:1567209560:a5e50770b9953cf05afe4014f990b5a5a11c5b3dc3190b274df3789e21236cb3"><input type="hidden" name="recense" value=""><div><div class="recense-add-form__relative"><div class="recense-add-input-wrapper" id="recense-add-input-wrapper"><textarea placeholder="А вы что думаете об этой книге?" name="message" class="recense-add-input recense-input-anonym" id="recense-add-input"></textarea><div class="recense-add-input__countdown hidden" id="recense-add-input__countdown">минимальное количество символов 120 (<span id="recense-add-input__counter">0</span> / 120)</div></div><div class="recense-add-form__edit" id="recense-add-form__edit"><a class="recense-add-form__rules-link hidden" id="recense-add-form__rules-link" href="javascript:void(0);">Правила</a><button name="send" class="recense-add-button btn btn_black" id="recense-add-button">Опубликовать</button><div class="recense-add-problem__wrapper"><a class="recense-add-problem" href="#" onclick="zendesk.help(); return false;">Сообщить о проблеме</a></div></div><div class="recense-view-form-wrapper hidden" id="recense-view-form-wrapper"><div class="recense_bot"><a class="recense-edit" id="recense-edit" href="javascript:void(0);">Редактировать</a><span class="recense_share">Поделиться:</span>
+		<div class="addthis_toolbox addthis_24x24_style social_shape recense_addthis" addthis:url="//www.litres.ru/otzyv/?id=" addthis:title="Отзыв пользователя  на книгу «»" addthis:description="">
+		<a class="addthis_button_vk" title="Вконтакте"><div class="new-social-block_vk"></div></a><a class="addthis_button_odnoklassniki_ru" title="Одноклассники"><div class="new-social-block_ok"></div></a><a class="addthis_button_facebook" title="Facebook"><div class="new-social-block_fb"></div></a><a class="addthis_button_twitter" title="Twitter"><div class="new-social-block_twitter"></div></a><a class="addthis_button_mymailru" title="Mail.ru"><div class="new-social-block_mymailru"></div></a><a class="addthis_button_livejournal" title="LiveJournal"><div class="new-social-block_livejournal"></div></a>
+		</div>
+		</div><div class="recense-add-form__descr" id="recense-add-form__descr">Ваш отзыв добавлен и будет виден другим пользователям после проверки модератором, а сейчас Вы можете поделиться им с друзьями</div></div></div></div></form></div></div></div></div><div id="recense-add-form-rules" class="recense-add-form-rules ajax_progress popup"><a href="javascript:void(0);" class="close"></a><div id="recense-rules-popup_container"></div></div><div class="ab-container recenses_list book_wrapper"><div class="recenses_title">Отзывы (50)</div><div class="recense recenses_list" id="r2721622"><div class="recense_avatar">w</div><div class="recense_body"><div class="recense_head"><span class="recense_date">10 апреля 2018, 12:56</span><span class="recense_author"><span class="link" onclick="window.location.href='/chitateli/2374/#recenses'">worlok</span></span><span class="recense_voted"><span class="star voted"><span></span></span><span class="star voted"><span></span></span><span class="star voted"><span></span></span><span class="star voted"><span></span></span><span class="star"><span></span></span></span></div><div class="recense_content"><p>Неожиданно было увидеть от Корнева книгу в стиле LitRPG, но получилось у него весьма неплохо. Героя сразу ставят в невыгодные условия что добавляет драйва и дает интересные повествовательные ходы. Никаких убер плюшек и стремительной карьеры. Как всегда сделан задел на серию, однако герой ограничен во времени нахождения в игре и это дает шанс на то, что серия не растянется на десяток книг а уложится в 2-3 тома.</p></div><div class="recense_bot"><a class="recense_report_abuse" href="javascript:void(0);" onclick="zendesk.report(); return false;">Пожаловаться</a><span class="recense_rating">+13</span><span onclick="showPopupErrorEscape('Чтобы оценить отзыв, зарегистрируйтесь или войдите'); event.returnValue = false; return false;
+	" class="recense_vote recense_vote_good" data-good="1" data-href="/pavel-kornev/mertvyy-vor/?action=recense_vote&amp;is_good=1&amp;rec_id=2721622#r2721622"></span><span onclick="showPopupErrorEscape('Чтобы оценить отзыв, зарегистрируйтесь или войдите'); event.returnValue = false; return false;
+	" class="recense_vote recense_vote_bad" data-good="0" data-href="/pavel-kornev/mertvyy-vor/?action=recense_vote&amp;is_good=0&amp;rec_id=2721622#r2721622"></span><span class="recense_share">Поделиться:</span>
+		<div class="addthis_toolbox addthis_24x24_style social_shape recense_addthis" addthis:url="//www.litres.ru/otzyv/?id=2721622" addthis:title="Отзыв пользователя worlok на книгу «»" addthis:description="Неожиданно было увидеть от Корнева книгу в стиле LitRPG, но получилось у него весьма неплохо. Героя сразу ставят в невыгодные условия что добавляет драйва и дает интересные повествовательные ходы. Никаких убер плюшек и стремит…">
+		<a class="addthis_button_vk" title="Вконтакте"><div class="new-social-block_vk"></div></a><a class="addthis_button_odnoklassniki_ru" title="Одноклассники"><div class="new-social-block_ok"></div></a><a class="addthis_button_facebook" title="Facebook"><div class="new-social-block_fb"></div></a><a class="addthis_button_twitter" title="Twitter"><div class="new-social-block_twitter"></div></a><a class="addthis_button_mymailru" title="Mail.ru"><div class="new-social-block_mymailru"></div></a><a class="addthis_button_livejournal" title="LiveJournal"><div class="new-social-block_livejournal"></div></a>
+		</div>
+		</div></div></div><div class="recense recenses_list" id="r2731662"><div class="recense_avatar">Р</div><div class="recense_body"><div class="recense_head"><span class="recense_date">14 апреля 2018, 20:53</span><span class="recense_author"><span class="link" onclick="window.location.href='/chitateli/200294324/#recenses'">Руслан</span></span><span class="recense_voted"><span class="star voted"><span></span></span><span class="star voted"><span></span></span><span class="star voted"><span></span></span><span class="star voted"><span></span></span><span class="star voted"><span></span></span></span></div><div class="recense_content"><p>Хорошая и добротная книга, вызывает давно забытое чувство узнать что будет дальше. Ненавязчивая и не перегруженная излишними излияниями ненужных подробностей которыми так грешат авторы литрпг.</p></div><div class="recense_bot"><a class="recense_report_abuse" href="javascript:void(0);" onclick="zendesk.report(); return false;">Пожаловаться</a><span class="recense_rating">+7</span><span onclick="showPopupErrorEscape('Чтобы оценить отзыв, зарегистрируйтесь или войдите'); event.returnValue = false; return false;
+	" class="recense_vote recense_vote_good" data-good="1" data-href="/pavel-kornev/mertvyy-vor/?action=recense_vote&amp;is_good=1&amp;rec_id=2731662#r2731662"></span><span onclick="showPopupErrorEscape('Чтобы оценить отзыв, зарегистрируйтесь или войдите'); event.returnValue = false; return false;
+	" class="recense_vote recense_vote_bad" data-good="0" data-href="/pavel-kornev/mertvyy-vor/?action=recense_vote&amp;is_good=0&amp;rec_id=2731662#r2731662"></span><span class="recense_share">Поделиться:</span>
+		<div class="addthis_toolbox addthis_24x24_style social_shape recense_addthis" addthis:url="//www.litres.ru/otzyv/?id=2731662" addthis:title="Отзыв пользователя Руслан на книгу «»" addthis:description="Хорошая и добротная книга, вызывает давно забытое чувство узнать что будет дальше. Ненавязчивая и не перегруженная излишними излияниями ненужных подробностей которыми так грешат авторы литрпг.">
+		<a class="addthis_button_vk" title="Вконтакте"><div class="new-social-block_vk"></div></a><a class="addthis_button_odnoklassniki_ru" title="Одноклассники"><div class="new-social-block_ok"></div></a><a class="addthis_button_facebook" title="Facebook"><div class="new-social-block_fb"></div></a><a class="addthis_button_twitter" title="Twitter"><div class="new-social-block_twitter"></div></a><a class="addthis_button_mymailru" title="Mail.ru"><div class="new-social-block_mymailru"></div></a><a class="addthis_button_livejournal" title="LiveJournal"><div class="new-social-block_livejournal"></div></a>
+		</div>
+		</div></div></div><div class="recense recenses_list" id="r2725728"><div class="recense_avatar">D</div><div class="recense_body"><div class="recense_head"><span class="recense_date">12 апреля 2018, 09:55</span><span class="recense_author"><span class="link" onclick="window.location.href='/chitateli/88973/#recenses'">DeAnRus</span></span><span class="recense_voted"><span class="star voted"><span></span></span><span class="star voted"><span></span></span><span class="star voted"><span></span></span><span class="star"><span></span></span><span class="star"><span></span></span></span></div><div class="recense_content"><p>Средненькая очередная ЛитРпг. Завязка отдает бредом, зачем было лезть в капсулу, никто бы не полез однако автор. Убер плюшек как всегда много точней очень много. Начиная с двойного класса убер меча, умений, большинство противников мрут с одного удара, потери опыта от смерти у ГГ даже не упоминается. Враг, Некромант сразу согласился стать членом банды и соучастником убийства где такое видано, причем в игре где все фиксируется. Плохая проработка мира, по сути Башни, Светлые Темные игроки, это все описание мира. РПГ система тоже невнятно, точней никак описана. Герои проработаны поверхностно. Может следующие части станут получше.</p></div><div class="recense_bot"><a class="recense_report_abuse" href="javascript:void(0);" onclick="zendesk.report(); return false;">Пожаловаться</a><span class="recense_rating">+7</span><span onclick="showPopupErrorEscape('Чтобы оценить отзыв, зарегистрируйтесь или войдите'); event.returnValue = false; return false;
+	" class="recense_vote recense_vote_good" data-good="1" data-href="/pavel-kornev/mertvyy-vor/?action=recense_vote&amp;is_good=1&amp;rec_id=2725728#r2725728"></span><span onclick="showPopupErrorEscape('Чтобы оценить отзыв, зарегистрируйтесь или войдите'); event.returnValue = false; return false;
+	" class="recense_vote recense_vote_bad" data-good="0" data-href="/pavel-kornev/mertvyy-vor/?action=recense_vote&amp;is_good=0&amp;rec_id=2725728#r2725728"></span><span class="recense_share">Поделиться:</span>
+		<div class="addthis_toolbox addthis_24x24_style social_shape recense_addthis" addthis:url="//www.litres.ru/otzyv/?id=2725728" addthis:title="Отзыв пользователя DeAnRus на книгу «»" addthis:description="Средненькая очередная ЛитРпг. Завязка отдает бредом, зачем было лезть в капсулу, никто бы не полез однако автор. Убер плюшек как всегда много точней очень много. Начиная с двойного класса убер меча, умений, большинство противн…">
+		<a class="addthis_button_vk" title="Вконтакте"><div class="new-social-block_vk"></div></a><a class="addthis_button_odnoklassniki_ru" title="Одноклассники"><div class="new-social-block_ok"></div></a><a class="addthis_button_facebook" title="Facebook"><div class="new-social-block_fb"></div></a><a class="addthis_button_twitter" title="Twitter"><div class="new-social-block_twitter"></div></a><a class="addthis_button_mymailru" title="Mail.ru"><div class="new-social-block_mymailru"></div></a><a class="addthis_button_livejournal" title="LiveJournal"><div class="new-social-block_livejournal"></div></a>
+		</div>
+		</div></div></div><div class="recense recenses_list" id="r2724107"><div class="recense_avatar">f</div><div class="recense_body"><div class="recense_head"><span class="recense_date">11 апреля 2018, 14:48</span><span class="recense_author"><span class="link" onclick="window.location.href='/chitateli/383810595/#recenses'">fb_2122709491299867</span></span><span class="recense_voted"><span class="star voted"><span></span></span><span class="star voted"><span></span></span><span class="star voted"><span></span></span><span class="star voted"><span></span></span><span class="star voted"><span></span></span></span></div><div class="recense_content"><p>Отличная книга, заинтересовала на первых страницах. Как и в реальной жизни здесь могут помочь, обмануть и даже, просото, не обладать на тебя никого внимания. Книга понравится всем любителям RPG.</p></div><div class="recense_bot"><a class="recense_report_abuse" href="javascript:void(0);" onclick="zendesk.report(); return false;">Пожаловаться</a><span class="recense_rating">+7</span><span onclick="showPopupErrorEscape('Чтобы оценить отзыв, зарегистрируйтесь или войдите'); event.returnValue = false; return false;
+	" class="recense_vote recense_vote_good" data-good="1" data-href="/pavel-kornev/mertvyy-vor/?action=recense_vote&amp;is_good=1&amp;rec_id=2724107#r2724107"></span><span onclick="showPopupErrorEscape('Чтобы оценить отзыв, зарегистрируйтесь или войдите'); event.returnValue = false; return false;
+	" class="recense_vote recense_vote_bad" data-good="0" data-href="/pavel-kornev/mertvyy-vor/?action=recense_vote&amp;is_good=0&amp;rec_id=2724107#r2724107"></span><span class="recense_share">Поделиться:</span>
+		<div class="addthis_toolbox addthis_24x24_style social_shape recense_addthis" addthis:url="//www.litres.ru/otzyv/?id=2724107" addthis:title="Отзыв пользователя fb_2122709491299867 на книгу «»" addthis:description="Отличная книга, заинтересовала на первых страницах. Как и в реальной жизни здесь могут помочь, обмануть и даже, просото, не обладать на тебя никого внимания. Книга понравится всем любителям RPG.">
+		<a class="addthis_button_vk" title="Вконтакте"><div class="new-social-block_vk"></div></a><a class="addthis_button_odnoklassniki_ru" title="Одноклассники"><div class="new-social-block_ok"></div></a><a class="addthis_button_facebook" title="Facebook"><div class="new-social-block_fb"></div></a><a class="addthis_button_twitter" title="Twitter"><div class="new-social-block_twitter"></div></a><a class="addthis_button_mymailru" title="Mail.ru"><div class="new-social-block_mymailru"></div></a><a class="addthis_button_livejournal" title="LiveJournal"><div class="new-social-block_livejournal"></div></a>
+		</div>
+		</div></div></div><div class="recense__more"><span class="coolbtn btn btn_white_gray" data-limit="5" data-page="1" data-pages="11" data-rows="51" id="recense__more_button" data-history="0" data-href="/pavel-kornev/mertvyy-vor/otzivi/" href="/pavel-kornev/mertvyy-vor/page-2/">Ещё 5 отзывов</span></div></div></div></div><div id="popup_read" class="popup_read popup"><div id="popup_loader"></div><div data-popup-read-tab="format_type"><div class="p-format-type-caption"><p class="p-format-type-caption-icon">Удобные форматы для скачивания</p></div><div class="p-format-type-text"><div class="book_send_file_box"><div class="biblio_book_download_section"><div class="biblio_book_download_section__caption">Популярные</div><div class="biblio_book_download_file format_fb2_zip block50"><a onclick="PopClickBuy();" class="biblio_book_download_file__link" href="javascript:void(0);" data-format="fb2_zip"><span class="name">FB2</span><span class="type">ZIP-архив 0,55 MB</span><span class="biblio_book_download_file__info">Читается всеми российскими электронными<br/>книгами и многими программами</span></a><span class="biblio_book_download_file__selector" data-type="fb2.zip" data-size="571558"></span></div><div class="biblio_book_download_file format_epub block50"><a onclick="PopClickBuy();" class="biblio_book_download_file__link" href="javascript:void(0);" data-format="epub"><span class="name">EPUB</span><span class="type">1,4 MB</span><span class="biblio_book_download_file__info">Подходит для iBooks и<br/>большинства приложений для чтения</span></a><span class="biblio_book_download_file__selector" data-type="epub" data-size="1516504"></span></div></div><div class="biblio_book_download_section"><div class="biblio_book_download_section__caption">Для компьютеров</div><div class="biblio_book_download_file format_txt_zip"><a onclick="PopClickBuy();" class="biblio_book_download_file__link" href="javascript:void(0);" data-format="txt_zip"><span class="name">TXT</span><span class="type">ZIP-архив 194 KB</span><span class="biblio_book_download_file__info">Можно открыть на любом компьютере</span></a><span class="biblio_book_download_file__selector" data-type="txt.zip" data-size="199538"></span></div><div class="biblio_book_download_file format_rtf_zip"><a onclick="PopClickBuy();" class="biblio_book_download_file__link" href="javascript:void(0);" data-format="rtf_zip"><span class="name">RTF</span><span class="type">ZIP-архив 0,54 MB</span><span class="biblio_book_download_file__info">Можно открыть на любом компьютере</span></a><span class="biblio_book_download_file__selector" data-type="rtf.zip" data-size="565570"></span></div><div class="biblio_book_download_file format_a4_pdf"><a onclick="PopClickBuy();" class="biblio_book_download_file__link" href="javascript:void(0);" data-format="a4_pdf"><span class="name">PDF A4</span><span class="type">1,0 MB</span><span class="biblio_book_download_file__info">Открывается в программе Adobe Reader</span></a><span class="biblio_book_download_file__selector" data-type="a4.pdf" data-size="1092869"></span></div></div><div class="biblio_book_download_section"><div class="biblio_book_download_section__caption">Для устройств</div><div class="biblio_book_download_file format_ios_epub"><a onclick="PopClickBuy();" class="biblio_book_download_file__link" href="javascript:void(0);" data-format="ios_epub"><span class="name">iOS.EPUB</span><span class="type">0,60 MB</span><span class="biblio_book_download_file__info">EPUB, адаптированный для iPhone и iPad</span></a><span class="biblio_book_download_file__selector" data-type="ios.epub" data-size="632588"></span></div><div class="biblio_book_download_file format_a6_pdf"><a onclick="PopClickBuy();" class="biblio_book_download_file__link" href="javascript:void(0);" data-format="a6_pdf"><span class="name">PDF A6</span><span class="type">1,3 MB</span><span class="biblio_book_download_file__info">Оптимизирован под небольшие экраны</span></a><span class="biblio_book_download_file__selector" data-type="a6.pdf" data-size="1373715"></span></div><div class="biblio_book_download_file format_mobi_prc"><a onclick="PopClickBuy();" class="biblio_book_download_file__link" href="javascript:void(0);" data-format="mobi_prc"><span class="name">MOBI</span><span class="type">0,87 MB</span><span class="biblio_book_download_file__info">Подходит для электронных книг Amazon Kindle</span></a><span class="biblio_book_download_file__selector" data-type="mobi.prc" data-size="912349"></span></div></div><div class="biblio_book_download_section"><div class="biblio_book_download_section__caption">Другие</div><div class="biblio_book_download_file format_fb3"><a onclick="PopClickBuy();" class="biblio_book_download_file__link" href="javascript:void(0);" data-format="fb3"><span class="name">FB3</span><span class="type">0,55 MB</span><span class="biblio_book_download_file__info">Перспективный инновационный формат</span></a><span class="biblio_book_download_file__selector" data-type="fb3" data-size="573038"></span></div><div class="biblio_book_download_file format_txt"><a onclick="PopClickBuy();" class="biblio_book_download_file__link" href="javascript:void(0);" data-format="txt"><span class="name">TXT</span><span class="type">468 KB</span><span class="biblio_book_download_file__info">Можно открыть почти на любом устройстве</span></a><span class="biblio_book_download_file__selector" data-type="txt" data-size="480098"></span></div></div><div class="book_send_file_2_email"><a href="/pages/order_by_email/?art=31260990" class="book_send_file_button" data-file-id="43563815">Отправить на <span></span></a><div><a href="/pages/my_settings/" class="book_download_bottom__email">Изменить адрес Эл. почты в настройках</a><br></div></div></div><div class="book_send_file_done">Файл(ы) отправлены на почту <span></span></div></div></div><div data-lang="ru" data-container-id="31260990" data-container-type="text" id="popup_read__container"></div><div class="popup_read__bottom" data-popup-read="format_type"><div class="popup_read__bottom_wrapper"><div class="popup_read__bottom_caption">Удобные форматы для скачивания</div><div class="popup_read__bottom_links"><ul class="download_formats"><li><a href="/pub/t/31260990-Kornev_P._Dorogamertveca1._Mertvyiyi_Vor.new.fb2.zip" data-popup-read="format_type">FB2</a></li><li><a href="/pub/t/31260990-Kornev_P._Dorogamertveca1._Mertvyiyi_Vor.epub" data-popup-read="format_type">EPUB</a></li><li><a href="/pub/t/31260990-Kornev_P._Dorogamertveca1._Mertvyiyi_Vor.epub" data-popup-read="format_type">iOS.EPUB</a></li><li><a href="javascript:void(0);" data-popup-read="format_type">Ещё 7</a></li></ul></div></div></div></div></div></div><div class="footer-wrap"><div class="ab-container no_resize"><ul><li><span class="header"><img alt="ЛитРес" src="/static/litres/i/footer/logo-gray.svg" width="95" height="22"></span><ul><li><a href="/o-kompanii/">О компании</a></li><li><a href="/o-kompanii/contactnaya-informaciya/">Контакты</a></li><li><a href="https://support.litres.ru/hc/ru">Служба поддержки</a></li><li><a target="_blank" href="//support.litres.ru/hc/ru/articles/212796589">Возврат</a></li><li class="site_name">© ООО «ЛитРес»</li></ul></li><li><ul class="without_header"><li><a href="/pages/put_money_on_account/?descr=18">Активировать купон</a></li><li><a href="/pages/litres_oferta/">Публичная оферта</a></li><li><a target="_blank" href="/static/litres/inc/ru/privacy_policy.html">Политика обработки<br/>персональных данных</a></li><li><a href="/static/litres/inc/ru/receive_newsletters.html" target="_blank">Согласие на получение рассылки</a></li></ul></li><li><span class="header">Сотрудничество</span><ul><li><a href="/o-kompanii/partneram/avtoram-i-izdatelstvam/">Издательствам</a></li><li><a href="/o-kompanii/partneram/avtoram-i-izdatelstvam/">Авторам</a></li><li><a href="/o-kompanii/biblioteka/">Библиотекам</a></li><li><a href="/o-kompanii/partnerskie-programmy/">Партнёрам</a></li><li><a href="/partners/">Вебмастерам</a></li></ul></li><li><span class="header">Что почитать?</span><ul><li><a href="/luchshie-knigi/">Бестселлеры</a></li><li><a href="/skoro-v-prodazhe/">Скоро в продаже</a></li><li><a href="/luchshie-avtori/">Популярные авторы</a></li><li><a href="/intervju/">Интервью с авторами</a></li></ul></li><li><ul class="footer_soc_icons"><span class="header">ЛитРес в соц.сетях</span><li><div><a href="https://vk.com/mylitres" class="footer_soc_icon footer_soc_icon_vk" target="_blank"></a><a href="https://ok.ru/litres" class="footer_soc_icon footer_soc_icon_ok" target="_blank"></a><a href="https://www.facebook.com/litres.ru/" class="footer_soc_icon footer_soc_icon_fb" target="_blank"></a><a href="https://www.instagram.com/mylitres/" class="footer_soc_icon footer_soc_icon_inst" target="_blank"></a></div><div><a href="https://twitter.com/mylitres" class="footer_soc_icon footer_soc_icon_tw" target="_blank"></a><a href="https://my.mail.ru/community/litres/" class="footer_soc_icon footer_soc_icon_mail" target="_blank"></a><a href="https://zen.yandex.ru/litres" class="footer_soc_icon footer_soc_icon_dzen" target="_blank"></a></div></li></ul></li></ul><style type="text/css">
+	.max_w .banner_genre{background:none; padding:0}
+	.partners_list{border-top: 1px dotted #c7c7c7; padding-top:15px; margin-top:15px;}
+	.partners_list .name{display:inline-block; vertical-align:top; width:108px; font-size:18px; color:#b0b0b0; line-height:46px; padding:0;}
+	.partners_list span, .partners_list a{float:none; margin:0 30px 10px 0; padding:0; background-image:url('/static/pr/partners_list.jpg'); cursor:pointer; height:46px; line-height:46px; display:inline-block; vertical-align:top; transition:all 0.3s ease 0s; -webkit-filter: grayscale(100%);-moz-filter: grayscale(100%);-ms-filter: grayscale(100%);-o-filter: grayscale(100%);filter: grayscale(100%); filter:gray;}
+	
+	.partners_list span:hover, .partners_list a:hover{-webkit-filter:none;-moz-filter:none;-ms-filter:none;-o-filter:none;filter:none; filter:none;}
+	
+	.partners_list .kykyru{width:130px; background-position:0 0;}
+	.partners_list .mnogo-ru{width:109px; background-position:-149px 0;}
+	.partners_list .ozon-ru{width:149px; background-position:-278px 0;}
+	
+	.partners_list .perekrestok{background-position:0 -50px; width:185px;}
+	.partners_list .sberbank-spasibo{background-position:-209px -50px; width:106px;}
+	.partners_list .vtb24{background-position:-330px -50px; width:40px;}
+	
+	.partners_list .mastercard{background-position:0 -100px; width:222px;}
+	.partners_list .visa{background-position:-238px -100px; width:186px;}
+	
+	
+        .partners_list .aeroflot{background-position: -140px -249px; width: 132px; }
+	 .partners_list .komandacard{background-position:-211px -150px; width:87px;}
+	.partners_list .beelinecard{background-position:-338px -150px; width:100px;}
+	
+	.partners_list .p_bonus-mail{background-position:0 -200px; width:150px;}
+	.partners_list .halva{background-position:-161px -200px; width:117px;}
+	.partners_list .sovest{background-position:-305px -249px; width:125px; transition:opacity 0.3s ease 0s; opacity:1;}
+	.partners_list .sovest:hover{background-position:-304px -200px; opacity:0.8;}
+	.partners_list .rostelecom{background-position:0 -250px; width:94px; margin-right: 0;}
+	
+	
+	.partners_list .sberbank-spasibo{margin-right:30px;}
+	.partners_list .mnogo-ru:hover{background-position:-149px 0;}
+	.partners_list .ozon-ru:hover{background-position:-278px 0;}
+	.partners_list .perekrestok:hover{background-position:0 -50px;}
+	.partners_list .sberbank-spasibo:hover{background-position:-209px -50px;}
+</style>
+<div class="partners_list">
+<div class="name">Партнеры</div>
+	<span id="p_kykyru" class="kykyru" onclick="window.open('/loyalty/kukuruza/','_blank'); return false;"></span>
+	<span id="p_mnogo" class="mnogo-ru" onclick="window.open('/loyalty/mnogo/','_blank'); return false;"></span>
+	<a href="//www.ozon.ru/" class="ozon-ru" target="_blank"></a>
+	<span id="p_perekrestok" class="perekrestok" onclick="window.open('/loyalty/perekrestok/','_blank'); return false;"></span>
+	<span id="p_sberbank" class="sberbank-spasibo" onclick="window.open('/loyalty/sberbank-spasibo/','_blank'); return false;"></span>
+	<span id="p_vtb24" class="vtb24" onclick="window.open('/loyalty/vtb24/','_blank'); return false;"></span>
+	<span id="p_mastercard" class="mastercard" onclick="window.open('/loyalty/mastercard/','_blank'); return false;"></span>
+	<span id="p_visa" class="visa" onclick="window.open('/loyalty/visa/','_blank'); return false;"></span>
+	<span id="p_aeroflot" class="aeroflot" onclick="window.open('/aeroflot/','_blank'); return false;"></span>
+	<span id="p_komandacard" class="komandacard" onclick="window.open('/loyalty/komandacard/ ','_blank'); return false;"></span>
+	<span id="p_beelinecard" class="beelinecard" onclick="window.open('/loyalty/beeline/','_blank'); return false;"></span>
+	<span id="p_bonus-mail" class="p_bonus-mail" onclick="window.open('/bonusmail/','_blank'); return false;"></span>
+	<span id="p_halva" class="halva" onclick="window.open('/loyalty/halva/','_blank'); return false;"></span>
+	<span id="p_sovest" class="sovest" onclick="window.open('/loyalty/sovest/','_blank'); return false;"></span>
+	<span id="p_rostelecom" class="rostelecom" onclick="window.open('/loyalty/rostelecom/','_blank'); return false;"></span>
+       
+</div></div></div><link rel="stylesheet" href="/static/litres/css/popups.css?135874" type="text/css"><script type="text/javascript">
+					requirejs(["jquery", "wrapper.functions"], function($, wrapperFunctions) {
+						
+		GUJ = new GUAjax({Connections:2});
+		$(function() {
+			if(CatchClick){$('.clicktag').on('click', CatchClick);}
+		});
+	
+					});
+					requirejs(["csrf"]);
+				
+				litres.loadCss("/static/litres/css/payment.css?129589");
+				requirejs(["jquery", "payment"]);
+			</script><script src="/static/litres/js/code.js?136828"></script><script type="text/javascript" src="/static/litres/js/p/biblio_book.js?136969"></script><script type="text/javascript" src="/static/litres/js/p/read_book_online.js?115706"></script><script type="text/javascript" src="/static/litres/js/p/module_views.js?72854"></script><script type="text/javascript" src="/static/litres/js/p/module_recenses.js?134830"></script><script type="text/javascript">
+					requirejs(["/static/litres/modules/audioplayer-main/js/script.js?135643"]);
+
+					
+					var isPurchased = "false";
+					var isUnreg = false;
+					var audioData;
+					var isIssued = false;
+
+					if (isPurchased == "false") {
+						
+
+						audioData = [
+							{ title:"preview", duration: "9:07:42", mp3:"/get_mp3_trial/31589215.mp3", "durationInSeconds": "32862" }
+						];
+					} else {
+						audioData = [
+							
+						];
+					}
+
+					var currentBookId = "31260990";
+				</script><script type="text/javascript">
+						isUnreg = true;
+						requirejs(['jquery'], function () {
+							$(function () {
+								$('.audioplayer-wrapper, #chapters-list').click(function () {
+									
+		showPopupErrorEscape('Для прослушивания аудиокниги «Мертвый вор» зарегистрируйтесь или войдите'); event.returnValue = false; return false;
+	
+								});
+							});
+						});
+					</script><script type="text/javascript">
+			function LoadScripts() {
+
+				requirejs(['jquery', 'jquery.migrate', 'i18n', 'alert'], function(jquery) {
+
+					$(function () {
+						
+					});
+				
+
+				requirejs(['overlay', 'header', 'search', 'trash', 'seo', 'csrf'], function() {
+					litres.loadCss("/static/litres/css/search.css?136985");
+					litres.loadCss("/static/litres/css/trash.css?135665");
+
+					$(function () {
+						
+
+						/* [101269] Замена отсутствующей обложки на модный блок с переводимым текстом */
+						requirejs(['no-cover'], function(noCover) {
+							setNoImgCovers();
+						});
+					});
+
+					
+
+					requirejs(["domReady!"], function() {
+						requirejs(['sociallogin'], function(SocialLogins) {
+							window.___gcfg = {
+								lang: 'ru'
+							};
+						});
+						requirejs([
+							"ecommerce",
+							"wrapper.functions",
+							
+							"webpush",
+							
+							"//www.googleadservices.com/pagead/conversion_async.js",
+							
+							"ya",
+							
+								"//s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4fb666b83e0a646b",
+							
+							"//static.criteo.net/js/ld/ld.js",
+							"//top-fwz1.mail.ru/js/code.js",
+							"//connect.facebook.net/en_US/fbevents.js"
+							,"vk","//www.googletagmanager.com/gtag/js?id=AW-962806630"
+						], function() {
+							
+		if (typeof sent_googleadwords === 'undefined' || !sent_googleadwords) {
+			window.google_tag_params = {
+				ecomm_prodid: "31260990",
+				ecomm_pagetype: "product",
+				ecomm_totalvalue: 199.00
+			};
+		}
+		
+		window.google_trackConversion({
+		  google_conversion_id: 962806630,
+		  google_custom_params: window.google_tag_params,
+		  google_remarketing_only: true
+		});
+	
+				createRTBIframe({
+					page: "biblio_book",
+					artId: "31260990"
+				});
+			
+		VK.Retargeting.Init('VK-RTRG-280711-d3F84');
+		
+			var eventParams = {
+				"products": [{"id": "31260990"}],
+				"total_price": 199.00
+			};
+			VK.Retargeting.ProductEvent(1844, "view_product", eventParams);
+		
+		window.dataLayer = window.dataLayer || [];
+		gtag = function () {
+			dataLayer.push(arguments);
+		};
+		gtag("js", new Date());
+		gtag("config", "AW-962806630");
+
+		var needReportGtag = getCookie("gtag_report_conversion");
+		if (needReportGtag) {
+			try {
+				if (typeof gtagReportConversion === "function") {
+					gtagReportConversion(JSON.parse(needReportGtag));
+					setCookie("gtag_report_conversion", "", -1, "/");
+				}
+			} catch (error) {}
+		}
+	requirejs(["GTM"]);
+							requirejs(["//statad.ru/tracker.js?d=litres.ru"]);
+							
+						});
+
+						
+							requirejs(['zendesk']);
+						
+					});
+
+					requirejs(["scrollbar"], function(){
+						$(function () {
+							if ($('#scrollbar_books').length)
+								var scrollbar_books = new scrollbar($('#scrollbar_books')[0],{show:true});
+							if ($('#fast_basket_spl.scrollbar').length)
+								var scrollbar_basket = new scrollbar($('#fast_basket_spl.scrollbar')[0],{show:true});
+						});
+					});
+
+
+					});
+
+					
+						requirejs(["wrapper.functions", "ya"], showCookieAgreement);
+					
+				});
+
+
+			}
+			
+			setTimeout(LoadScripts, 10);
+		</script><script type="text/javascript">
+		var _gap = [];
+		var GoogleAccount = '';
+		
+		window.criteo_q = window.criteo_q || [];
+		window.criteo_q.push(
+			{ event: "setAccount", account: 12246},
+			{ event: "setCustomerId", id: "" },
+			{ event: "setSiteType", type: "d" }
+		,{ event: "viewItem", item: "31260990" }
+		);
+	
+		/* Rating@Mail.ru counter */
+		var _tmr = window._tmr || (window._tmr = []);
+		_tmr.push({id: "1283707", type: "pageView", start: (new Date()).getTime()});
+		/* Rating@Mail.ru counter */
+
+		
+		/* Rating@Mail.ru rem */
+		
+			var _tmr = _tmr || [];
+			_tmr.push({
+			type: 'itemView',
+			productid: '31260990',
+			pagetype: 'product',
+			totalvalue: '199.00',
+			list: '1' });
+
+		
+			var _tmr = window._tmr || (window._tmr = []);
+			_tmr.push({ id: "1283707", type: "reachGoal", goal: "product" });
+		
+
+		/* Rating@Mail.ru rem */
+	
+		!function(f,n){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+		n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];}(window);
+		if (typeof fbq !== 'undefined') {
+			fbq('init', '656273864467683');
+			fbq('track', "PageView");
+			
+				fbq('track', 'ViewContent', {
+					content_ids: "31260990",
+					content_type: 'product',
+					value: '199.00',
+					currency: 'RUB'
+				});
+			
+		}
+	
+		/* Yandex.Metrika counter */
+		
+			window.dataLayer = window.dataLayer || [];
+			dataLayer.push({
+				"ecommerce": {
+					"currencyCode": "RUB",
+					"detail": {
+						"products": [
+							{
+								"id": "31260990",
+								"name" : "Мертвый вор",
+								"price": "199.00"
+							}
+						]
+					}
+				}
+			});
+		</script><div id="fb-root"></div><div id="vk_api_transport"></div><div id="tw_init"></div><div id="ma_init"></div><div id="ok_init"></div><div id="hg-overlay"></div><div class="hint-gray" id="hg-pop-tooltip"><a class="close" id="hg-pop_close"></a><div class="hg-content" id="hg-content"></div></div><div class="drop_down_menu" id="drop_down_menu"><ul class="menu_list"></ul></div><div class="hover_book list_book_popup" id="hover_book"></div><div class="cookie-agreement cookie-agreement_dark-theme" id="cookie-agreement"><div class="cookie-agreement__content cookie-agreement__content-ru"><span class="cookie-agreement__text">Мы используем <strong>куки-файлы</strong>, чтобы вы могли быстрее и удобнее пользоваться сайтом.</span> <a target="_blank" href="/static/litres/inc/ru/privacy_policy.html" class="cookie-agreement__redmore">Подробнее</a> <button class="cookie-agreement__button btn btn_orange">OK</button></div></div><div class="zendesc__btn" id="zendesc__btn" style="display: block;"><span class="zendesk-button-text">Нужна помощь</span><span class="zendesk-button-icon icon-answer"></span></div><div id="promo-books-popup" class="promo-books-popup"><div class="promo-books-popup__header"><div class="promo-books-popup__head">Купите 3 книги одновременно и выберите четвёртую в подарок!</div><div class="promo-books-popup__books"></div><div class="promo-books-popup__rules"><a href="/pages/cms/?page=5636" class="promo-books-popup__rules-link">Условия акции</a></div></div><div class="promo-books-popup__content"><div class="promo-books-popup__text"><p>Чтобы воспользоваться акцией, добавьте нужные книги в корзину. Сделать это можно на странице каждой книги, либо в общем списке:</p><ol class="promo-books-popup__text-list"><li class="promo-books-popup__text-list-item">Нажмите на <strong>многоточие</strong><br/>рядом с книгой</li><li class="promo-books-popup__text-list-item">Выберите пункт<br/>&laquo;<strong>Добавить в корзину</strong>&raquo;</li></ol></div><div class="promo-books-popup__picture"></div><div class="promo-books-popup__dont-show"><input type="checkbox" id="promo-books-popup__dont-show-checkbox" class="promo-books-popup__dont-show-checkbox"><label class="promo-books-popup__dont-show-label" for="promo-books-popup__dont-show-checkbox">Больше не показывать это сообщение</label></div></div></div><div id="up-button" class="up-button"></div><noscript><div><img src="https://mc.yandex.ru/watch/2199583" style="position:absolute; left:-9999px;" alt=""></div></noscript></body></html>
