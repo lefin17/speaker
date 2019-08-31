@@ -11,12 +11,17 @@ var $text; //text of page
 var $encoding = 'koi8'; 
 var $sentences = null;
 var $minWords = 5;
-var $exampleLength = 15;
+var $exampleLength = 15; //рекомендуемое число слов в примере, который сохраняется в словаре
+var $dict; //словарь
+
+// var $dictionary_base = 'dictionary_rus;
+
+
 function Dictionary($page, $conn)
     {
     $this->page = mysqli_escape_string($conn, $page);
     $this->conn = $conn;
-    
+    $this->dict = "dictionary_rus";
     }
     
 function getSourceId()
@@ -100,7 +105,7 @@ function sentenceLength($txt)
 function checkExample($example)
     {
     if (empty($example)) return true;
-    $q = "SELECT `id` FROM `sr_dictionary_rus` WHERE `example` like '".mysqli_escape_string($this->conn, $example)."'";
+    $q = "SELECT `id` FROM `"._PREFIX_.$this->dict."` WHERE `example` like '".mysqli_escape_string($this->conn, $example)."'";
     $r = mysqli_query($this->conn, $q);
     if (mysqli_num_rows($r) == 0) return false;
     return true;
@@ -108,7 +113,7 @@ function checkExample($example)
     
 function tryWord($word, $example)
     {
-   $q = "SELECT `id`, `frequncy`, `example` FROM `sr_dictionary_rus` WHERE `word` like '".$word."' LIMIT 1";
+   $q = "SELECT `id`, `frequncy`, `example` FROM `"._PREFIX_.$this->dict."` WHERE `word` like '".$word."' LIMIT 1";
     $r = mysqli_query($this->conn, $q);
     if (mysqli_num_rows($r) != 0) 
 	{ 
@@ -120,14 +125,14 @@ function tryWord($word, $example)
 	if (!empty($uExample)) 
 	if ($this->checkExample($example)) $uExample = ''; //do not update example if it already exists... 
 	
-	$q = "UPDATE `sr_dictionary_rus` SET `frequncy` = ".(++$frequncy).$uExample." WHERE `id` = '".$id."'";
+	$q = "UPDATE `"._PREFIX_.$this->dict."` SET `frequncy` = ".(++$frequncy).$uExample." WHERE `id` = '".$id."'";
 	$r = mysqli_query($this->conn, $q);
 	
 	print (!empty($uExample)) ? print "e" : "u";
 	}
 	else 
 	{
-	$q = "INSERT INTO `sr_dictionary_rus` (`word`, `frequncy`, `source_id`) VALUES ('".$word."', '1', '".$this->source_id."')";
+	$q = "INSERT INTO `"._PREFIX_.$this->dict."` (`word`, `frequncy`, `source_id`) VALUES ('".$word."', '1', '".$this->source_id."')";
 	$r = mysqli_query($this->conn, $q);
 	print "i";
 	  /*  */
