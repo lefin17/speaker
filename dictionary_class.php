@@ -8,7 +8,7 @@ var $debug = true;
 var $source_id; //source_id
 var $limit = 1; //limit of readed pages
 var $text; //text of page
-var $encoding = 'cp1251'; 
+var $encoding = 'koi8'; 
 var $sentences = null;
 var $minWords = 5;
 var $exampleLength = 15;
@@ -93,8 +93,9 @@ function getSentence()
     
 function sentenceLength($txt)
     {
+    $txt = str_replace('  ', ' ', $txt);
     $tmp = explode(" ", $txt);
-    return $tmp;
+    return count($tmp);
     }   
 function checkExample($example)
     {
@@ -107,7 +108,7 @@ function checkExample($example)
     
 function tryWord($word, $example)
     {
-    $q = "SELECT `id`, `frequncy`, `example` FROM `sr_dictionary_rus` WHERE `word` like '$word' LIMIT 1";
+   $q = "SELECT `id`, `frequncy`, `example` FROM `sr_dictionary_rus` WHERE `word` like '".$word."' LIMIT 1";
     $r = mysqli_query($this->conn, $q);
     if (mysqli_num_rows($r) != 0) 
 	{ 
@@ -115,8 +116,9 @@ function tryWord($word, $example)
 	$slbase = $this->sentenceLength($example_base) - $this->exampleLength;
 	$slnew = $this->sentenceLength($example) -$this->exampleLength; 
 	
-	$uExample = (abs($slbase) > abs($slnew)) ? ", `example` = '".mysqli_escape_string($this->conn, $example)."', '".$this->source_id."'" : ""; 
-	if ($this->checkExample()) $uExample = ''; //do not update example if it already exists... 
+	$uExample = (abs($slbase) > abs($slnew)) ? ", `example` = '".mysqli_escape_string($this->conn, $example)."', `source_id` = '".$this->source_id."'" : "";
+	if (!empty($uExample)) 
+	if ($this->checkExample($example)) $uExample = ''; //do not update example if it already exists... 
 	
 	$q = "UPDATE `sr_dictionary_rus` SET `frequncy` = ".(++$frequncy).$uExample." WHERE `id` = '".$id."'";
 	$r = mysqli_query($this->conn, $q);
@@ -128,19 +130,32 @@ function tryWord($word, $example)
 	$q = "INSERT INTO `sr_dictionary_rus` (`word`, `frequncy`, `source_id`) VALUES ('".$word."', '1', '".$this->source_id."')";
 	$r = mysqli_query($this->conn, $q);
 	print "i";
-	} 
+	  /*  */
+	} /* */
     }    
     
 function getWords()
     {
-	print_r($this->sentences);
+//	print_r($this->sentences);
 	
     	foreach($this->sentences as $s)	    
     	    {
+    	    $s = str_replace("\n", " ", $s);
+    	    $s = str_replace("\r", " ", $s);
+    	    $s = str_replace("  ", " ", $s);
+    	    
     	    $words = explode(" ", $s);
     	    if ($words < $this->minWords) { print "s"; continue; }
     	    foreach($words as $w)
-    		{ $this->tryWord( 
+    		{ 
+    		if (empty($w)) continue;
+    		preg_match("/^[А-Яа-я]+[\-]*[А-Яа-я]*/u", $w, $res);
+    		if (empty($res[0])) { print "1"; continue; } 
+    		$w = $res[0];
+    	//	print $s;
+    		$this->tryWord("$w", "$s");
+    	//	break 2;
+    		}
     	    }
     }
 
