@@ -1,6 +1,8 @@
+<?php
+
 class FormatSection
 {
-    ...
+//    ...
     /**
      * @var string
      */
@@ -40,6 +42,12 @@ class FormatSection
      * @var int
      */
     protected $bitsPerSample;
+
+    public static function createFromArray($arr)
+    {
+    if (is_array($arr)) return $arr;
+    return false;
+    }
     
 //    ...
 }    

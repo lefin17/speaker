@@ -1,14 +1,21 @@
+<?php
 class Parser
 {
-    ...
+//    ...
     public static function fromFile($filename)
     {
-        ...
+//        ...
         $handle = fopen($filename, 'rb');
 
         try {
             $header         = Header::createFromArray(self::parseHeader($handle));
-            $formatSection  = FormatSection::createFromArray(self::parseFormatSection($handle));
+            
+            $fs = self::parseFormatSection($handle);
+
+            $formatSection  = FormatSection::createFromArray($fs);
+            
+//          print_r($fs);
+            
             $dataSection    = DataSection::createFromArray(self::parseDataSection($handle));
         } finally {
             fclose($handle);
@@ -28,6 +35,7 @@ class Parser
 
     protected static function parseFormatSection($handle)
     {
+	print "parse format section\n";
         return [
             'id'               => Helper::readString($handle, 4),
             'size'             => Helper::readLong($handle),

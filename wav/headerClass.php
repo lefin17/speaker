@@ -1,6 +1,8 @@
+<?php
+
 class Header
 {
-    ...
+//    ...
     /**
      * @var string
      */
@@ -17,5 +19,11 @@ class Header
     protected $format;
 
  //  ...
+   public static function createFromArray($arr)
+    {
+    if (is_array($arr)) return $arr;
+    return false;
+    }
+
  
 }

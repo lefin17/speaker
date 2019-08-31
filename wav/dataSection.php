@@ -1,6 +1,8 @@
+<?php
+
 class DataSection
 {
-    ...
+//    ...
     /**
      * @var string
      */
@@ -16,5 +18,11 @@ class DataSection
      */
     protected $raw;
 
-    ...
+//    ...
+  public static function createFromArray($arr)
+    {
+    if (is_array($arr)) return $arr;
+    return false;
+    }
+
 }    
