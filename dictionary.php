@@ -11,6 +11,8 @@ print $link."\n";
 
 $d = new Dictionary($link, $conn);
 
+
+
 $d->getSourceId();
 $d->readPage();
 $d->statistic();

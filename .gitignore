@@ -1,3 +1,5 @@
 config.php
 *.wav
 *.mp3
+*.tmp
+*.png

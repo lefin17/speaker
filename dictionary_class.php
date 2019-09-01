@@ -8,7 +8,7 @@ var $debug = true;
 var $source_id; //source_id
 var $limit = 1; //limit of readed pages
 var $text; //text of page
-var $encoding = 'koi8'; 
+var $encoding = 'cp1251'; 
 var $sentences = null;
 var $minWords = 5;
 var $exampleLength = 15; //рекомендуемое число слов в примере, который сохраняется в словаре
@@ -154,7 +154,7 @@ function getWords()
     	    foreach($words as $w)
     		{ 
     		if (empty($w)) continue;
-    		preg_match("/^[А-Яа-я]+[\-]*[А-Яа-я]*/u", $w, $res);
+    		preg_match("/^[А-Яа-яЁё]+[\-]*[а-я]ё*/u", $w, $res);
     		if (empty($res[0])) { print "1"; continue; } 
     		$w = $res[0];
     	//	print $s;

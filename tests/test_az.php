@@ -30,4 +30,13 @@ for($i = 0; $i<iconv_strlen($alfabet); $i++)
 	}  
     }
     
-print $text;    
+print $text."\n";
+
+$q = "INSERT INTO `sr_samples` 
+	(`sample_text`, 
+         `created_on`,
+         `type`) VALUES ('".$text."', NOW(), 'test_az')";
+         
+         print $q."\n";
+$r = mysqli_query($conn, $q);
+         

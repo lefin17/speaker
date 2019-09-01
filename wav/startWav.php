@@ -17,6 +17,6 @@ print "audio size: ".$a440->data['size'];
 
 
 //need to get 2 bites from raw from offcet
-$a = unpack($a440->data['raw'], "N");
-
+// $a = unpack("v*", $a440->data['raw']);
+$a = $a440->bin2int(1000, 0);
 print_r($a);
