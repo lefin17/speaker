@@ -1,4 +1,4 @@
-config.php
+connect.php
 *.wav
 *.mp3
 *.tmp
