@@ -8,9 +8,13 @@ var $debug = true;
 var $source_id; //source_id
 var $limit = 1; //limit of readed pages
 var $text; //text of page
-var $encoding = 'cp1251'; 
+var $encoding = 'cp1251'; //koi8, cp1251 
 var $sentences = null;
 var $minWords = 5;
+
+var $writeSequence = true;
+var $querySequence = null;
+
 var $exampleLength = 15; //рекомендуемое число слов в примере, который сохраняется в словаре
 var $dict; //словарь
 
@@ -135,33 +139,72 @@ function tryWord($word, $example)
 	$q = "INSERT INTO `"._PREFIX_.$this->dict."` (`word`, `frequncy`, `source_id`) VALUES ('".$word."', '1', '".$this->source_id."')";
 	$r = mysqli_query($this->conn, $q);
 	print "i";
+	$id = mysqli_insert_id($this->conn);
+	
 	  /*  */
 	} /* */
+	return $id;
     }    
     
 function getWords()
     {
 //	print_r($this->sentences);
 	
-    	foreach($this->sentences as $s)	    
+    	foreach($this->sentences as $sentence_index => $s)	    
     	    {
+    	    $s = trim($s);
+    	    $s = str_replace("-\n", "-", $s); //решаем задачу переносов
     	    $s = str_replace("\n", " ", $s);
     	    $s = str_replace("\r", " ", $s);
     	    $s = str_replace("  ", " ", $s);
     	    
     	    $words = explode(" ", $s);
+    	    
     	    if ($words < $this->minWords) { print "s"; continue; }
-    	    foreach($words as $w)
+    	    
+    	    $skipWordPosition = 0;
+    	    
+    	    foreach($words as $position => $w)
     		{ 
     		if (empty($w)) continue;
-    		preg_match("/^[А-Яа-яЁё]+[\-]*[а-я]ё*/u", $w, $res);
-    		if (empty($res[0])) { print "1"; continue; } 
+    		preg_match("/^[А-Яа-яЁё]+[\-]*[а-яё]*/u", $w, $res);
+    		if (empty($res[0])) { $skipWordPosition++; print "1"; continue; } 
     		$w = $res[0];
     	//	print $s;
-    		$this->tryWord("$w", "$s");
+    		$word_id = $this->tryWord("$w", "$s");
     	//	break 2;
+    		    $pos = $position - $skipWordPosition;
+    		    $this->putSequence($word_id, $pos, $sentence_index);
     		}
+    		$this->fixSequence();
     	    }
-    }
+    	}
+    	    
+function fixSequence()
+    {
+    if (!$this->writeSequence) return false;
+    if (empty($this->querySequence)) return false;
+	$q = "INSERT INTO `"._PREFIX_."position_rus` 
+		(`word_id`,
+		 `position`,
+		 `sentence_index`, 
+		 `source_id`)
+		 VALUES ".join(',', $this->querySequence);
+	$r = mysqli_query($this->conn, $q);		 
+	print "p";
+	$this->querySequence = null;		 
+    }   
+     	    
+function putSequence($word_id, $position, $sentence_index)
+	{
+	if (!$this->writeSequence) return false;
+	if (empty($this->source_id)) return false;
+	$this->querySequence[] = "('".$word_id."',
+			 '".$position."', 
+			 '".$sentence_index."',
+			 '".$this->source_id."')"; //возможно ускорить объединив пачку запросов
+
+	}
+	 //end class
 
 }
