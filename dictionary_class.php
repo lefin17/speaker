@@ -72,9 +72,11 @@ function readWords()
     print "Read words complite. Count words ".count($this->words)."\n";           
     } 
 
-function checkFreq($word)
+function checkWord2($word)
     {
-        //create query whith word_id
+        
+        //create query whith word_id for freq... and insert new words, and check uppercase or other #14, #13
+        
     }
     
 function createTmpFreq()
