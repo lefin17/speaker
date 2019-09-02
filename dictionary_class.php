@@ -74,6 +74,7 @@ function readWords()
 
 function checkFreq($word)
     {
+        //create query whith word_id
     }
     
 function createTmpFreq()
@@ -90,7 +91,7 @@ function createTmpFreq()
                     )";                 
 
         $j = 0;
-        foreach($this->frq as $word_id => $query)
+        foreach($this->frq["query"] as $word_id => $query)
             {
                 $j++;
                 $qi[] = $query
@@ -103,18 +104,19 @@ function createTmpFreq()
                         }                                
             }
          if ($j > 0) mysqli_query($this->conn, ($q.join(",".$qi)));
-            print "Temporary table for save frequency complite\n"; //закончено формирование временной таблицы                   
+            print "Temporary table for save frequency created and filled [".count($this->frq["query"])."]\n"; //закончено формирование временной таблицы                   
     }
 
 function checkTmp($table)
     {
-        //what if not exists
-        print "check if exists new data\n";
+        //what if not exists?
+        print "check if exists new data... ";
         $q = "SELECT count(*) FROM ".$table." WHERE 1";
         $r = mysqli_query($this->conn, $q);
         list($count) = mysqli_fetch_row($r)
-        if (!empty($count)) return true;
-        return false;
+        $res = (!empty($count)) ? true : false;
+        print (($res) ? "exists" : "not exists")."\n";
+        return $res;
     }
     
 function putTmpFreq()
