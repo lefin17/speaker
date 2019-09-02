@@ -304,18 +304,70 @@ function checkExample($example)
     $this->examples[$row["md5"]] = $row;
     return true;
     }    
+
+# function tryWord($word, $example)
+#    {
+#   $q = "SELECT `id`, `frequncy`, `example` FROM `"._PREFIX_.$this->dict."` WHERE `word` like '".$word."' LIMIT 1";
+#    $r = mysqli_query($this->conn, $q);
+#    if (mysqli_num_rows($r) != 0) 
+#	{ 
+#	list($id, $frequncy, $example_base) = mysqli_fetch_row($r);
+#	$slbase = $this->sentenceLength($example_base) - $this->exampleLength;
+#	$slnew = $this->sentenceLength($example) -$this->exampleLength; 
+#	
+#	$uExample = (abs($slbase) > abs($slnew)) ? ", `example` = '".mysqli_escape_string($this->conn, $example)."', `source_id` = '".$this->source_id."'" : "";
+#	if (!empty($uExample)) 
+#	if ($this->checkExample($example)) $uExample = ''; //do not update example if it already exists... 
+#	
+#	$q = "UPDATE `"._PREFIX_.$this->dict."` SET `frequncy` = ".(++$frequncy).$uExample." WHERE `id` = '".$id."'";
+#	$r = mysqli_query($this->conn, $q);
+#	
+#	print (!empty($uExample)) ? print "e" : "u";
+#	}
+#	else 
+#	{
+#	$q = "INSERT INTO `"._PREFIX_.$this->dict."` (`word`, `frequncy`, `source_id`) VALUES ('".$word."', '1', '".$this->source_id."')";
+#	$r = mysqli_query($this->conn, $q);
+#	print "i";
+#	$id = mysqli_insert_id($this->conn);
+#	
+#	  /*  */
+#	} /* */
+#	return $id;
+#   }   
+
+    function putExample()
+        {
+            //сохранить пример нужно с параметрами предложения и источника для дальнейшего сравнения
+        }
     
-function tryWord($word, $example)
+    function tryWord2($word, $example)
     {
-   $q = "SELECT `id`, `frequncy`, `example` FROM `"._PREFIX_.$this->dict."` WHERE `word` like '".$word."' LIMIT 1";
+        
+    if (!empty($this->words[$word])) 
+        {
+        $id = $this->words[$word];
+        //добавть обновление 
+        $this->frq["way"][$this->wordWay($word)]++;
+        $this->frq["total"]++;
+        //добавить добавление примера по анализу длины строки
+        return $id;    
+        } 
+   //проверка а не вставил ли в словарь кто что паралельно     
+   $q = "SELECT `word_id`, ex.length FROM `"._PREFIX_."dict".$this->dict."` as dict
+             LEFT JOIN `"._PREFIX_."dict_examples".$this->dict." as ex
+             ON ex.word_id = dict.word_id 
+             WHERE `word` like '".$word."' LIMIT 1";
     $r = mysqli_query($this->conn, $q);
+
     if (mysqli_num_rows($r) != 0) 
 	{ 
-	list($id, $frequncy, $example_base) = mysqli_fetch_row($r);
-	$slbase = $this->sentenceLength($example_base) - $this->exampleLength;
+	list($id, $slbase) = mysqli_fetch_row($r);
+	
 	$slnew = $this->sentenceLength($example) -$this->exampleLength; 
 	
 	$uExample = (abs($slbase) > abs($slnew)) ? ", `example` = '".mysqli_escape_string($this->conn, $example)."', `source_id` = '".$this->source_id."'" : "";
+	
 	if (!empty($uExample)) 
 	if ($this->checkExample($example)) $uExample = ''; //do not update example if it already exists... 
 	
@@ -363,6 +415,8 @@ function getWords()
     	//	print $s;
     		$word_id = $this->tryWord("$w", "$s");
     	//	break 2;
+    	
+    	    
     		    $pos = $position - $skipWordPosition;
     		    $this->putSequence(["word_id" => $word_id,
     		                        "position" => $pos,
