@@ -58,16 +58,6 @@ function updateWords()
         
     }
     
-function featureRead()
-    {
-        $q = "SELECT `feature_id`, `field`, `value` FROM `sr_features` WHERE 1";
-        $r = mysqli_query($this->conn, $q);
-        while($row = mysqli_fetch_assoc($r))
-            {
-                $this->feature[$row["field"]][$row["feature_id"]] = $row["value"];
-            }
-    }    
-    
 function fillFreq()
     {
     //если нет в таблице freq    
