@@ -1,5 +1,18 @@
 <?php
+/* Dictionary Class 
+- make dictionary with structure of sentence
 
+сохраняет слова 
+- freq - таблица частоты использования слов с учетом регистра
+- dictionary - таблица словаря
+- position - таблица расположения слов - должна иметь свойство обратного преобразования, например для примеров
+- example - запись примера для слова... через временную таблицу?
+
+ - один пример на одно слово? (в теории можно больше)
+ - пример на слово хранится если оно того достойно? встретилось больше одного раза
+ - пример можно забыть?  
+ 
+*/
 
 class Dictionary
 {
@@ -37,19 +50,23 @@ function updateWords()
         
     }
     
+function fillFreq()
+    {
+    //если нет в таблице freq    
+    }
 function readWords()
     {
     $q = "SELECT dict.`word_id`, -- указатель на слово
                  dict.`word`, -- слово 
-                 frq.`all`, -- все вхождения
-                 frq.`uppercase`, -- верхний регистр (CAPSLOCK)
-                 frq.`lowercase`, -- нижний регистр
-                 frq.`ucfirst`, -- первая заглавная
-                 frq.`other`, -- перемешка разных букв в слове
+              --   frq.`all`, -- все вхождения
+              --   frq.`uppercase`, -- верхний регистр (CAPSLOCK)
+              --   frq.`lowercase`, -- нижний регистр
+              --   frq.`ucfirst`, -- первая заглавная
+              --   frq.`custom`, -- перемешка разных букв в слове
                  dict.`example` -- пример использования слова
-                FROM `"._PREFIX_."dictionary_rus` as dict
-                INNER JOIN `"._PREFIX_."freq_rus as frq ON frq.word_id = dict.word_id"; //читаем все - выделяем таблицу частоты использования в отдельную где будут собраны частоты
-    
+                FROM `"._PREFIX_."dict_rus` as dict
+                INNER JOIN `"._PREFIX_."dict_freq_rus as frq ON frq.word_id = dict.word_id"; //читаем все - выделяем таблицу частоты использования в отдельную где будут собраны частоты
+                
     $r = mysqli_query($this->conn, $q);
     
     while($row = mysqli_fetch_assoc($r))
@@ -59,12 +76,13 @@ function readWords()
 
             $this->words[$word] = $row["word_id"];
 
-            $this->frq["all"][$word_id] = $row["all"]; //частота использования     
-            $this->frq["frequency"][$word_id] = $row["frequency"]; //частота использования
-            $this->frq["uppercase"][$word_id] = $row["uppercase"]; //написано капсом
-            $this->frq["lowercase"][$word_id] = $row["lowercase"]; //нижний регистр букв
-            $this->frq["ucfirst"][$word_id] = $row["ucfirst"]; //первая заглавная
-            $this->frq["other"][$word_id] = $row["other"]; //перемешка с большими и маленькими буквами в слове
+            $this->frq["all"][$word_id] = $row["all"]; //частота использования
+            //Значения будут просуммированы     
+            // $this->frq["frequency"][$word_id] = 0; //$row["frequency"]; //частота использования
+            $this->frq["uppercase"][$word_id] = 0; //$row["uppercase"]; //написано капсом
+            $this->frq["lowercase"][$word_id] = 0; //$row["lowercase"]; //нижний регистр букв
+            $this->frq["ucfirst"][$word_id] = 0; //$row["ucfirst"]; //первая заглавная
+            $this->frq["other"][$word_id] = 0; //$row["other"]; //перемешка с большими и маленькими буквами в слове
 
             $this->example[$word_id] = (!empty($row["example"]) ? $this->sentenceLength($row["example"]) : 0; 
             $this->frq["query"] = null; //массив запросов для добавления во временную таблицу (по ключу слова)                         
@@ -89,14 +107,18 @@ function createTmpFreq()
                     `uppercase` INT(11),
                     `lowercase` INT(11),
                     `ucfirst` INT(11),
-                    `other` INT(11)
-                    )";                 
+                    `other` INT(11),
+                    `source_id` INT(6)
+                    )";             
+        mysqli_query($this->conn, $q);
+        
+        $q = "INSERT INTO `tmp_freq` (`word_id`, `all`, `uppercase`, `lowercase`, `ucfirst`, `other`, `source_id`) VALUES ";                
 
         $j = 0;
         foreach($this->frq["query"] as $word_id => $query)
             {
                 $j++;
-                $qi[] = $query
+                $qi[] = $query;
                     if ($j > 100)
                         {
                             print "+";
@@ -106,6 +128,9 @@ function createTmpFreq()
                         }                                
             }
          if ($j > 0) mysqli_query($this->conn, ($q.join(",".$qi)));
+         //очистка переменной для записи в таблицу - так как туда уже все записали
+         $this->frq["query"] = [];
+         
             print "Temporary table for save frequency created and filled [".count($this->frq["query"])."]\n"; //закончено формирование временной таблицы                   
     }
 
@@ -131,11 +156,12 @@ function putTmpFreq()
         $q = "UPDATE 
                 freq  
               SET
-                freq.all = tmp.all,
-                freq.uppercase = tmp.uppercase, 
-                freq.lowercase = tmp.lowercase, 
-                freq.ucfirst = tmp.ucfirst,
-                freq.other = tmp.other,
+                freq.all = freq.all + tmp.all,
+                freq.uppercase = freq.uppercase + tmp.uppercase, 
+                freq.lowercase = freq.lowercase + tmp.lowercase, 
+                freq.ucfirst = freq.ucfirst + tmp.ucfirst,
+                freq.other = freq.other + tmp.other,
+                freq.source_id = '".$this->source_id."' -- time when updated
               FROM 
                 `"._PREFIX_."freq_rus` as freq
                 INNER JOIN `tmp_freq` as tmp
@@ -312,25 +338,48 @@ function fixSequence()
     {
     if (!$this->writeSequence) return false;
     if (empty($this->querySequence)) return false;
-	$q = "INSERT INTO `"._PREFIX_."position_rus` 
+	$q = "INSERT INTO `"._PREFIX_."dict_position_rus` 
 		(`word_id`,
 		 `position`,
 		 `sentence_index`, 
-		 `source_id`)
+		 `source_id`,
+		 `prefix`,
+		 `postfix`,
+		 `way`)
 		 VALUES ".join(',', $this->querySequence);
 	$r = mysqli_query($this->conn, $q);		 
 	print "p";
 	$this->querySequence = null;		 
     }   
-     	    
-function putSequence($word_id, $position, $sentence_index)
+     	
+     	
+function putCustom($row)
+    {
+        $q = "INSERT INTO `"._PREFIX_."dict_position_custom_rus` (`position_id`, `word`) 
+                VALUES '".$row["position_id"]."', '".$row["word"]."'";
+        mysqli_query($this->conn, $q);       
+        print "C"; //custom insert
+    }     	    
+    
+function putSequence($row)
 	{
+	//в последовательность добавляется кастомизированное написание слов для восстановления и анализа
+	
 	if (!$this->writeSequence) return false;
 	if (empty($this->source_id)) return false;
-	$this->querySequence[] = "('".$word_id."',
-			 '".$position."', 
-			 '".$sentence_index."',
-			 '".$this->source_id."')"; //возможно ускорить объединив пачку запросов
+	$this->querySequence[] = "('".$options["word_id"]."',
+			 '".$row["position"]."', 
+			 '".$row["sentence_index"]."',
+			 '".$this->source_id."',
+			 '".(mysqli_escape_string($this->conn, $row["prefix"]))."',
+			 '".(mysqli_escape_string($this->conn, $row["postfix"]))."',
+			 '".$row["way"]."')"; //возможно ускорить объединив пачку запросов
+
+    if ($this->feature[$row["way"]] == "custom")
+        {
+            $this->fixSequence(); //записываем в любом случае последовательность и пишем кастомное слово
+            $this->putCustom([mysqli_insert_id($this->conn), $row["word"]]);
+        }
 
 	}
 	 //end class
