@@ -3,3 +3,4 @@ connect.php
 *.mp3
 *.tmp
 *.png
+*.*~

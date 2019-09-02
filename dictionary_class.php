@@ -1,5 +1,6 @@
 <?php
 
+
 class Dictionary
 {
 var $conn; //connection reference
@@ -12,6 +13,17 @@ var $encoding = 'cp1251'; //koi8, cp1251
 var $sentences = null;
 var $minWords = 5;
 
+// task #13 - оптимизация ввода текста (возможно выделить в отдельный класс)
+var $words = null; //ассоциативный массив содержащий слова из словаря
+var $frq = Array(); //массив частотного анализа
+var $update = Array(); // массив для создания временной таблицы обновления
+var $insert = Array(); //массив добавления 
+var $example = Array();
+
+var $readMethod = "v2"; //метод работы со словарем - v2 - когда используются промежуточные значения переменных и предварительное чтение таблиц словаря
+
+  
+
 var $writeSequence = true;
 var $querySequence = null;
 
@@ -19,7 +31,45 @@ var $exampleLength = 15; //рекомендуемое число слов в п�
 var $dict; //словарь
 
 // var $dictionary_base = 'dictionary_rus;
+function updateWords()
+    {
+        //все что накопилось для вставки в словарь нужно в него записать
+        
+    }
+    
+function readWords()
+    {
+    $q = "SELECT dict.`word_id`, -- указатель на слово
+                 dict.`word`, -- слово 
+                 frq.`all`, -- все вхождения
+                 frq.`uppercase`, -- верхний регистр (CAPSLOCK)
+                 frq.`lowercase`, -- нижний регистр
+                 frq.`upfirst`, -- первая заглавная
+                 frq.`other`, -- перемешка разных букв в слове
+                 dict.`example` -- пример использования слова
+                FROM `"._PREFIX_."dictionary_rus` as dict
+                INNER JOIN `"._PREFIX_."freq_rus as frq ON frq.word_id = dict.word_id"; //читаем все - выделяем таблицу частоты использования в отдельную где будут собраны частоты
+    
+    $r = mysqli_query($this->conn, $q);
+    
+    while($row = mysqli_fetch_assoc($r))
+        {
+            $word = mb_strtolower($row["word"]);
+            $word_id = $row["word_id"]; //номер слова в словаре       
 
+            $this->words[$word] = $row["word_id"];
+     
+            $this->frq["frequency"][$word_id] = $row["frequency"]; //частота использования
+            $this->frq["uppercase"][$word_id] = $row["uppercase"]; //написано капсом
+            $this->frq["lowercase"][$word_id] = $row["lowercase"]; //нижний регистр букв
+            $this->frq["upfirst"][$word_id] = $row["upfirst"]; //первая заглавная
+            $this->frq["other"][$word_id] = $row["other"]; //перемешка с большими и маленькими буквами в слове
+
+            $this->example[$word_id] = (!empty($row["example"]) ? $this->sentenceLength($row["example"]) : 0; 
+                                  
+        }
+    print "Read words complite. Count words ".count($this->words)."\n";           
+    } 
 
 function Dictionary($page, $conn)
     {
@@ -102,6 +152,7 @@ function getSentence()
     
 function sentenceLength($txt)
     {
+    $txt = trim($txt);    
     $txt = str_replace('  ', ' ', $txt);
     $tmp = explode(" ", $txt);
     return count($tmp);
