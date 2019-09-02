@@ -44,7 +44,7 @@ function readWords()
                  frq.`all`, -- все вхождения
                  frq.`uppercase`, -- верхний регистр (CAPSLOCK)
                  frq.`lowercase`, -- нижний регистр
-                 frq.`upfirst`, -- первая заглавная
+                 frq.`ucfirst`, -- первая заглавная
                  frq.`other`, -- перемешка разных букв в слове
                  dict.`example` -- пример использования слова
                 FROM `"._PREFIX_."dictionary_rus` as dict
@@ -58,18 +58,91 @@ function readWords()
             $word_id = $row["word_id"]; //номер слова в словаре       
 
             $this->words[$word] = $row["word_id"];
-     
+
+            $this->frq["all"][$word_id] = $row["all"]; //частота использования     
             $this->frq["frequency"][$word_id] = $row["frequency"]; //частота использования
             $this->frq["uppercase"][$word_id] = $row["uppercase"]; //написано капсом
             $this->frq["lowercase"][$word_id] = $row["lowercase"]; //нижний регистр букв
-            $this->frq["upfirst"][$word_id] = $row["upfirst"]; //первая заглавная
+            $this->frq["ucfirst"][$word_id] = $row["ucfirst"]; //первая заглавная
             $this->frq["other"][$word_id] = $row["other"]; //перемешка с большими и маленькими буквами в слове
 
             $this->example[$word_id] = (!empty($row["example"]) ? $this->sentenceLength($row["example"]) : 0; 
-                                  
+            $this->frq["query"] = null; //массив запросов для добавления во временную таблицу (по ключу слова)                         
         }
     print "Read words complite. Count words ".count($this->words)."\n";           
     } 
+
+function checkFreq($word)
+    {
+    }
+    
+function createTmpFreq()
+    {
+        if (empty($this->frq["query"])) return false;
+        print "create Temporary table\n";    
+        $q = "CREATE TEMPORARY TABLE tmp_freq ( 
+                    `word_id` INT PRIMARY KEY,
+                    `all` INT(11),
+                    `uppercase` INT(11),
+                    `lowercase` INT(11),
+                    `ucfirst` INT(11),
+                    `other` INT(11)
+                    )";                 
+
+        $j = 0;
+        foreach($this->frq as $word_id => $query)
+            {
+                $j++;
+                $qi[] = $query
+                    if ($j > 100)
+                        {
+                            print "+";
+                            mysqli_query($this->conn, ($q.join(",".$qi)));  
+                            $qi = null; 
+                            $j = 0;
+                        }                                
+            }
+         if ($j > 0) mysqli_query($this->conn, ($q.join(",".$qi)));
+            print "Temporary table for save frequency complite\n"; //закончено формирование временной таблицы                   
+    }
+
+function checkTmp($table)
+    {
+        //what if not exists
+        print "check if exists new data\n";
+        $q = "SELECT count(*) FROM ".$table." WHERE 1";
+        $r = mysqli_query($this->conn, $q);
+        list($count) = mysqli_fetch_row($r)
+        if (!empty($count)) return true;
+        return false;
+    }
+    
+function putTmpFreq()
+    {   
+        
+        if (!$this->checkTmp(`tmp_freq`)) { print "there is no tmp table (tmp_freq)"; return false; } 
+         
+        print "start update frequency table with temporary data\n";
+        
+        $q = "UPDATE 
+                freq  
+              SET
+                freq.all = tmp.all,
+                freq.uppercase = tmp.uppercase, 
+                freq.lowercase = tmp.lowercase, 
+                freq.ucfirst = tmp.ucfirst,
+                freq.other = tmp.other,
+              FROM 
+                `"._PREFIX_."freq_rus` as freq
+                INNER JOIN `tmp_freq` as tmp
+                ON freq.word_id = tmp.word_id
+              -- WHERE STATMENT";
+        
+           mysqli_query($this->conn, $q);
+                                          
+           print "Temporary table merged with frequency table\n";                    
+                 
+    }    
 
 function Dictionary($page, $conn)
     {
