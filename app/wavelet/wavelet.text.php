@@ -1,27 +1,31 @@
 <?php
-//Р°РЅР°Р»РѕРі РїРѕСЃС‚СЂРѕРµРЅРёРµ РЅР° Р±СѓРєРІР°С…
+//аналог построение на буквах
 class blockTextAnalis
 {
-var $fn = file($h);
+var $fn = '';
 
 var $level = ["0" => "string", "1" => "block", "2" => "chapter", "3" => "text"];
 var $limit = ["s" => 10, "b" => 10, "chapter" => 10, "text" => 1]; 
 
-var $e = []; // СЌРЅРµСЂРіРёСЏ...
-var $p = []; //РјРѕС‰РЅРѕСЃС‚СЊ РІС…РѕР¶РґРµРЅРёСЏ ]
+var $e = []; // энергия системы...
+var $p = []; //мощность вхождения ]
 var $expirience; 
-//РєР°СЂС‚РёРЅРєСѓ Р±С‹ РїРѕСЃРјРѕС‚СЂРµС‚СЊ... 
+//картинку бы посмотреть... 
 
-var $chars = [' ', 'f', 'k']; //РїСЂРѕРІРµСЃС‚Рё Р°РЅР°Р»РёР· С‚РѕР»СЊРєРѕ СЌС‚РёС… СЌР»РµРјРµРЅС‚РѕРІ РїСЂРѕСЃС‚Рѕ РїРѕ С„РѕСЂРјРµ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёСЏ
-/* Р·Р°РґР°С‡Р° РїСЂРѕРІРµСЃС‚Рё Р°РЅР°Р»РёР·, РїРѕРєР°Р·Р°С‚СЊ РєР°СЂС‚РёРЅРєСѓ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёСЏ Р±СѓРєРІ, СЂР°Р·РґРµР»РёС‚СЊ РЅР° РјРЅРѕР¶РµСЃС‚РІР°, РїРѕРєР°Р·Р°С‚СЊ РєР°СЂС‚РёРЅРєСѓ РїРѕ РїСЂРѕРёР·РІРµРґРµРЅРёСЋ... */
+var $chars = [' ', 'я', 'т']; //провести анализ только этих элементов просто по форме использования
+/* задача провести анализ, показать картинку использования букв, разделить на множества, показать картинку по произведению... */
 /*
-РЅР°РїСЂРёРјРµСЂ РєР°СЂС‚РёРЅРєСѓ Р±СѓРєРІС‹ РїРѕ РїСЂРѕРёР·РІРµРґРµРЅРёСЋ...
-РєР°Рє С…Р°СЂР°РєС‚РµСЂ Р·РІСѓРєР°... РѕРїСЂРµРґРµР»СЏРµРј Р·РІСѓРє... СЂРёСЃСѓРµРј СЃСЂРµРґРЅРµРµ РїРѕ РіР»Р°РІРµ, РґР°Р»РµРµ РѕРїСЂРµРґРµР»СЏРµРј С…Р°СЂР°РєС‚РµСЂ РґР»СЏ С‚РµРєСЃС‚Р°... 
+например картинку буквы по произведению...
+как характер звука... определяем звук... рисуем среднее по главе, далее определяем характер для текста... 
 */
 
-function search_needle($h, $n)
-    {
-    $offset = 0;    
+function search_needle($haystack, $needle)
+    {        
+        
+    $allpos = [];
+    $pos = 0;
+    $offset = 0;
+   // print $needle; die(); //)    
     while (($pos = strpos($haystack, $needle, $offset)) !== FALSE) {
         $offset   = $pos + 1;
         $allpos[] = $pos;
@@ -29,23 +33,32 @@ function search_needle($h, $n)
     return $allpos;    
     }
 
+function blockTextAnalis($fn)
+    
+    {
+        $this->fn = $fn;
+    }
+
 
 function strpos_all($haystack, $needle) {
+    
     if (is_array($needle))
         {
-            foreach($needle as $n)
-               $res[] = $this->search_needle($heystack, $needle);
+            foreach($needle as $key => $n)
+               $res[$n] = count($this->search_needle($haystack, $n));
         }
-        else $res = $this->search_needle($haystack, $needle)
-    return $allpos;
+        else $res = count($this->search_needle($haystack, $needle));
+    return $res;
 }
 
 function count_power($s, $chars)
     {
-    $p = strpos_all($s, $chars);
+    $p = $this->strpos_all($s, $chars);
+   // print_r($p); die();
     foreach($p as $char => $power)
-        { $char = str_replace(" ", "[Space]", $char); } 
-        $res[$char] = array_sum($power);
+        { // $char = str_replace(" ", "[Space]", $char);  
+        $res[$char] = (is_array($power)) ? array_sum($power) : $power;
+        } 
     return $res;     
     }    
 
@@ -55,30 +68,62 @@ function start()
 {
 $string = $s = 0;
 $block = $b = 0;
-        
-foreach($this->fn as $string)
+$f = file($this->fn);
+$p = []; 
+$c = 0;
+print $this->fn; 
+      
+print count($f);
+///die();
+$i = 0;
+foreach($f as $string)
     {
+        $i++;
+        $string = trim($string, "\n");
         // read procedure
-        $s++; 
-        $this->e[$c][$b][$s] = iconv_strlen($string); //РІР»РёСЏРЅРёРµ РґР°РЅРЅРѕР№ СЃС‚СЂР°РєРё РЅР° РЅРѕСЂРјРёСЂРѕРІР°РЅРёРµ
-        $this->p[$c][$b][$s] = count_power($string, $this->chars);
-        if ($c => 10) { $text = 1; break; }
-        if ($b => 10) { $c++; $b = 0; } //Р±Р»РѕРє
-        if ($s => 10) { $b++; $s = 0; } //РЅРѕРјРµСЂ СЃС‚СЂРѕРєРё               
+//        if ($i<100) continue;
+        //$string = iconv("koi8", "cp1251", $string) ? '?' : '';
+        
+        $s++;
+        
+      //  if ($s>20) { $s = 0; print $string; }
+        print "+";
+  ///       print $string;
+    //    if ($c < 2) print $string;
+        $e[$c][$b][$s] = strlen($string); //влияние данной страки на нормирование
+        $p[$c][$b][$s] = $this->count_power($string, $this->chars);
+     //   print_r($p[$c][$b][$s]);
+     //   die();
+        if ($c >= 10) { $text = 1; break; }
+        if ($b >= 10) { $c++; $b = 0; } //блок
+        if ($s >= 10) { $b++; $s = 0; } //номер строки               
     }
-    $this->power = $p;
-
+    $this->p = $p;
+    $this->e = $e;
+    
+//print_r($p);
  } //end start
  
   function putInfo()
     {
+      //  print_r($this->p); die();
         $t = '';
-        foreach($this->power as $c => $arr)
+        foreach($this->p as $c => $arr)
             foreach($arr as $block => $arr2)
-                foreach($arr as $string => $arr3)
+                foreach($arr2 as $string => $arr3)
+                    {
+                    $t .= "$c;$block;$string;".$this->e[$c][$block][$string].";";
+  //                  print_r($arr3);
+//                    die();
+//print_r($this->chars);
+//die();
                     foreach($arr3 as $char => $voltage)
-                        $t .= "$c;$block;$string;$voltage;".$this->e[$c][$block][$string]."\n";
-                       
+                        {
+                        $t .= $char.";$voltage;";
+                         }
+                     $t .= "\n";
+                         
+                     }    
 
         $output = fopen("resVawelet_text.csv", "w");
         fwrite($output, $t);
