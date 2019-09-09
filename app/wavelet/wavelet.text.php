@@ -94,9 +94,10 @@ foreach($f as $string)
         $p[$c][$b][$s] = $this->count_power($string, $this->chars);
      //   print_r($p[$c][$b][$s]);
      //   die();
-        if ($c >= 10) { $text = 1; break; }
+       
         if ($b >= 10) { $c++; $b = 0; } //блок
-        if ($s >= 10) { $b++; $s = 0; } //номер строки               
+        if ($s >= 10) { $b++; $s = 0; } //номер строки
+         if ($c > 10) { $text = 1; break; }               
     }
     $this->p = $p;
     $this->e = $e;
