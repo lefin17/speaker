@@ -44,6 +44,8 @@ class Voltage:
 	print ("Frame rate.",obj.getframerate())
 	print ("Number of frames",obj.getnframes())
 	print ("parameters:",obj.getparams())
-	obj.close() 
+	obj.close()
+	
+     
 	    	
     
