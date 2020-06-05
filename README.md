@@ -4,12 +4,17 @@
 А.Полянский 2019-08-30
 
 Планы
+- roadMap - путь чтения для создания словаря
 - тест на 440Hz
 - записываем разными людьми примеры 
 - определяем время когда звучит буква (слово)
 - записать wav
 
 Что сделано:
+
+2019-09-02
+Подробная история изменений ведется в задачах на github
+Сильно пострадала структура данных
 
 2019-09-01
 - перейти в github  
@@ -32,6 +37,10 @@ Links:
 https://habr.com/ru/post/282922/ - как считать wav файл
 https://gist.github.com/mbijon/1332348 - FFT - Быстрое преобразование Фурье на PHP
 https://www.youtube.com/watch?v=OUvlamJN3nM - 440Hz - с этого видео записана опорная частота
+https://stackoverflow.com/questions/2334712/how-do-i-update-from-a-select-in-sql-server - ссылка на страницу создания временных таблиц
+ https://blog-en.openalfa.com/how-to-work-with-binary-data-in-php Bin 2 int array
+
+https://www.php.net/manual/ru/function.pack.php
 
 Как делать и полезная информация
 - чтение книги - определить кодировку текста, запустить dictionary.php [url] 

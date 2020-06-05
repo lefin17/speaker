@@ -1,0 +1,6 @@
+Number of channels 1
+Sample width 2
+Frame rate. 48000
+Number of frames 266240
+parameters: _wave_params(nchannels=1, sampwidth=2, framerate=48000, nframes=266240, comptype='NONE', compname='not compressed')
+N in one step: 33
