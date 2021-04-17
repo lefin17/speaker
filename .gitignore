@@ -7,3 +7,4 @@ connect.php
 *.sql
 !*_sample.*
 *.txt
+*vendor

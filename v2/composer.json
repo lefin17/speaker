@@ -1,0 +1,8 @@
+{
+"minimum-stability": "dev",
+"require": {
+    "boyhagemann/wave": "dev-master",
+    "php-ai/php-ml": "^0.9.0",
+    "audero/audero-wav-extractor": "2.1.*"
+}
+}

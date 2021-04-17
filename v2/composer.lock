@@ -1,0 +1,174 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "efb3ea3f4a1c761041d565d06730b4d6",
+    "packages": [
+        {
+            "name": "audero/audero-wav-extractor",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AurelioDeRosa/Audero-Wav-Extractor.git",
+                "reference": "2b0badf168e82dd3cb9f3a398500b43fdc88e2f9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AurelioDeRosa/Audero-Wav-Extractor/zipball/2b0badf168e82dd3cb9f3a398500b43fdc88e2f9",
+                "reference": "2b0badf168e82dd3cb9f3a398500b43fdc88e2f9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Audero\\WavExtractor": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "CC-BY-NC-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Aurelio De Rosa",
+                    "email": "aurelioderosa@gmail.com",
+                    "homepage": "http://www.audero.it",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Audero Wav Extractor is a PHP library that allows to extract a chunk from a wav file. The extracted chunk can be saved on the hard disk, can be forced to be prompted as download by the user's browser or returned as a string for a later processing.",
+            "homepage": "https://bitbucket.org/AurelioDeRosa/audero-wav-extractor",
+            "keywords": [
+                "audio",
+                "extractor",
+                "wav",
+                "wave"
+            ],
+            "support": {
+                "email": "aurelioderosa@gmail.com",
+                "issues": "https://bitbucket.org/AurelioDeRosa/audero-wav-extractor/issues",
+                "source": "https://bitbucket.org/AurelioDeRosa/audero-wav-extractor/src"
+            },
+            "time": "2013-02-03T03:13:34+00:00"
+        },
+        {
+            "name": "boyhagemann/wave",
+            "version": "dev-master",
+            "target-dir": "BoyHagemann/Wave",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/boyhagemann/Wave.git",
+                "reference": "953143a8827a0af9c0ffe69c0962ef92440874b4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/boyhagemann/Wave/zipball/953143a8827a0af9c0ffe69c0962ef92440874b4",
+                "reference": "953143a8827a0af9c0ffe69c0962ef92440874b4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "BoyHagemann\\Wave\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "A php package to read WAV data",
+            "keywords": [
+                "audio",
+                "chunk",
+                "php",
+                "riff",
+                "wave",
+                "waveform"
+            ],
+            "support": {
+                "issues": "https://github.com/boyhagemann/Wave/issues",
+                "source": "https://github.com/boyhagemann/Wave/tree/master"
+            },
+            "time": "2013-10-29T21:50:19+00:00"
+        },
+        {
+            "name": "php-ai/php-ml",
+            "version": "0.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.com/php-ai/php-ml.git",
+                "reference": "fd8b70629e16ed67307fe150ba25738449b9a6b2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/php-ai%2Fphp-ml/repository/archive.zip?sha=fd8b70629e16ed67307fe150ba25738449b9a6b2",
+                "reference": "fd8b70629e16ed67307fe150ba25738449b9a6b2",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "phpbench/phpbench": "^0.16.0",
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-phpunit": "^0.12",
+                "phpstan/phpstan-strict-rules": "^0.12",
+                "phpunit/phpunit": "^8.0",
+                "symplify/easy-coding-standard": "^6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Phpml\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Arkadiusz Kondas",
+                    "email": "arkadiusz.kondas@gmail.com"
+                }
+            ],
+            "description": "PHP-ML - Machine Learning library for PHP",
+            "homepage": "https://github.com/php-ai/php-ml",
+            "keywords": [
+                "Neural network",
+                "artificial intelligence",
+                "computational learning theory",
+                "data science",
+                "feature extraction",
+                "machine learning",
+                "pattern recognition"
+            ],
+            "support": {
+                "issues": "https://gitlab.com/api/v4/projects/19024967/issues"
+            },
+            "time": "2020-05-27T09:52:59+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "boyhagemann/wave": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
+}
