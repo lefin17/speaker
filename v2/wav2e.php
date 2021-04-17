@@ -19,21 +19,25 @@ foreach($f as $v)
 return $e;
 }
 
-$inputFile = "./samples/aa_converted.wav";
+# $inputFile = "./samples/aa_converted.wav";
 
 # $a = new AuderoWavExtractor($inputFile);
 #xit();
 $inputFile = "./samples/aa_converted.wav";
-$outputFile = "./excerpt.wav";
-$start = 0 * 1000; // from 0 seconds
-$end = 11 * 1000;  // to 2 seconds
+$outputFile = "./res01/aa-c"; //шаблон для сохранения
+$startMax = 0 * 1000; // from 0 seconds
+$endMax = 11 * 1000;  // to 2 seconds
 
 //f - frame
 //fr - frame result as properties
 
 try {
     $ext = new AuderoWavExtractor($inputFile);
-    $wav = $ext->getChunk($start, $end); //берем кусок данных из файла
+    $wav = $ext->getChunk($startMax, $endMax); //берем кусок данных из файла
+    $w = $ext->getWav();
+    $d = $ext->getWav()->getDuration(); 
+    print "Duration: $d\n";
+    $sampleRate = $w->getSampleRate();
 //    $ext->saveChunk($start, $end, $outputFile);
 }
 catch (Exception $error) {
@@ -72,34 +76,69 @@ catch (Exception $error) {
 	    else 
 	    if ($cutEnergy > $en[0]) { $cutCluster = $clu; $cutEnergy = $en[0]; $minFrame = $index; } 
 	}
+	
     $cutLength = 10; //if pause more then this -> it's cut time (с текущим sample rate - около 0.3 сек
     $liveLength = 10; //if live length > 10 it's enouht to remember
     $dieLength = 5; //will disapear not borned
     $born = false;  	
     $mass = 0; 
+    $p = clone $ext;
+	
     for($i = 0; $i < count($f); $i++)
 	{
+	print $mass;
 	$c = $fr[$i]["energyCluster"];
-	if ($c != $cutCluster)
+	
+	if ($c != $cutCluster && !$born)
 	    { $start_fr = $i; 
 	      $born = true; 
-	      $mass = 0;
-	      $cutEvent = 0; }  // 
+	      $mass = 1;
+	      $cutEvent = 0;
+	      print "B"; } else 
+	      if ($c != $cutCluster) { 
+	      print "L"; $mass++;
+	      $cutEvent = 0;
+	      }  // 
 	
+	if (!$born && $c == $cutCluster)
+	    { print "."; } 
+ 	
 	if ($born && $c == $cutCluster)
 	    { 
 	      if ($mass < $liveLength) $mass -= 1;
-	      if ($mass < -($dieLength)) $born = false; 
+	      if ($mass < -($dieLength)) {  $born = false; print "D"; } 
 	      $cutEvent++; 
+	      print "C";
 	     }
 	    
 	if ($born && $cutEvent >= $cutLength)
 	    {
 	    $start_fr = ($start_fr > 10) ? $start_fr : 0; //перевести в милисекунды если не ноль, добавить 0.2с 
 	    $end_fr = $i;
-	    //теперь сохранить из исходника файл с указанием номеров фреймов или лучше милисекунд
 	    
+	    // это справедливо если был нулевой offcet
+	    $start = round($start_fr * $length / $sampleRate * 1000);
+	    $end = round(($end_fr + 1) * $length / $sampleRate * 1000);
+	    
+//	    print "\nSTART: ". $start;
+//	    print "END: ".$end."\n"; 
+	    $fn = $outputFile."-".$start."-".$end.".wav"; 
+//	    print "fn - $fn";
+	
+//	    print "Duraion: ".$p->getWav()->getDuration();
+	
+	    // $wav = $ext->getChunk($startMax, $endMax);	    	    
+	    
+	    $ext->saveChunk($start, $end, $fn);
+	    $ext = new AuderoWavExtractor($inputFile); //пересоздание так как меняется массив при сохранении
+	    $cutEvent = 0;
+	    $born = false;
+	    $mass = 0;
+	    //теперь сохранить из исходника файл с указанием номеров фреймов или лучше милисекунд
+	    print " cut ";
 	    }  
+	    
+	    
 	    
 	    
 	}
@@ -113,4 +152,5 @@ catch (Exception $error) {
     //
     
 
+    
     
