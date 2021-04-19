@@ -77,9 +77,9 @@ catch (Exception $error) {
 	    if ($cutEnergy > $en[0]) { $cutCluster = $clu; $cutEnergy = $en[0]; $minFrame = $index; } 
 	}
 	
-    $cutLength = 10; //if pause more then this -> it's cut time (с текущим sample rate - около 0.3 сек
+    $cutLength = 6; //if pause more then this -> it's cut time (с текущим sample rate - около 0.3 сек
     $liveLength = 10; //if live length > 10 it's enouht to remember
-    $dieLength = 5; //will disapear not borned
+    $dieLength = 4; //will disapear not borned
     $born = false;  	
     $mass = 0; 
     $p = clone $ext;
