@@ -78,9 +78,10 @@ if(!($data = unpack('s*', $wav)))
     
     foreach($en2 as $order => $arr)
 	{
-	   $k = new KMeans(4);
+	   $k = new KMeans(4); //возможно снизить до трех множеств, или поднять до 5...  и тогда 2 и 3 переходные 
            $res_en[$order] = $k->cluster($en2[$order]); //пауза будет около 350мс для разреза файла
 	}
+	//отсортировать по энергии 
 	print_r($res_en);
     	exit();
 //    print_r($res_en);
