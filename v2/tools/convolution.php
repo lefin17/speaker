@@ -1,9 +1,11 @@
 <?php
 function flip($data)
 {
-    for($x = 0; $x < count($data); $x++)
-	for($y = 0; $y < count($data[$x]); $y++)
-	    $out[$y][$x] = $data[$x][$y];
+// https://coderoad.ru/797251/%D0%A2%D1%80%D0%B0%D0%BD%D1%81%D0%BF%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE%D0%BC%D0%B5%D1%80%D0%BD%D1%8B%D1%85-%D0%BC%D0%B0%D1%81%D1%81%D0%B8%D0%B2%D0%BE%D0%B2-%D0%B2-PHP
+    $out = array();
+    foreach($data as $x => $subarr)
+	foreach($subarr as $y => $subvalue)
+	    $out[$y][$x] = $subvalue;
 	    
     return $out;
 }
