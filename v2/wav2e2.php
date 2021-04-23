@@ -8,6 +8,7 @@ use Phpml\Clustering\KMeans;
 // added MNK as filer...
 
 include('tools/haar_wavelet.php');
+require_once('tools/image_from_array_hsl.php'); 
 
 function energy($f)
 {
@@ -66,6 +67,21 @@ if(!($data = unpack('s*', $wav)))
 	$en[$index] = HaarPower($res[$index]);
 	}
 	
+	$minEn = HaarMinPower($en);
+	$maxEn = HaarMaxPower($en);
+	$hn = HaarLineNormalize($maxEn, $minEn);
+	
+	
+	print "\nEn.min: "; print_r($minEn); 
+	print "\nEn.max: "; print_r($maxEn);
+	print "\nEn.normal: "; print_r($hn);
+	
+	$hnAll = HaarNormalize($en, $minEn);
+	
+	createImageFromArray($hnAll, "./test_hn_all.jpg"); //create image with track... 
+	die("complite image?"); 
+	print "\nEn.nA: "; print_r($hnAll);
+	die("min Power");
     foreach($f as $index => $frame)
 	foreach($en[$index] as $order => $value)
 	    {
