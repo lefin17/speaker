@@ -8,7 +8,7 @@ use Phpml\Clustering\KMeans;
 // added MNK as filer...
 
 include('tools/haar_wavelet.php');
-require_once('tools/image_from_array_hsl.php'); 
+require_once('tools/image_from_haar_hsl.php'); 
 
 function energy($f)
 {
@@ -50,24 +50,35 @@ if(!($data = unpack('s*', $wav)))
 	 exit();
 	} //тип определяется на осное размерности данных
     //разбиение на фреймы
-    $length = 256; //длина фрейма  
-		   //кусок данных дополниться нулями до фрейма нужной длины. - по хорошему перейти к временной шкале... 
     
-    $f = array_chunk($data, 256); //поделили все данные на массив
-    $index = count($f) - 1;
-    $f[$index] = array_pad($f[$index], $length, 0);
+    
+    $length = 256; //длина фрейма  
 
+		   //кусок данных дополниться нулями до фрейма нужной длины. - по хорошему перейти к временной шкалы
+$img = null; //контейнер изображения
+for($dev = 0; $dev < 4; $dev++)
+    {
+    $e = null; 
+    $f = null;
+    $res = null;  
+    
+    $frame_length = round($length / pow(2, $dev));
+    $f = array_chunk($data, $frame_length); //поделили все данные на массив
+    $index = count($f) - 1;
+    $f[$index] = array_pad($f[$index], $frame_length, 0);
     for($i = 0; $i < count($f); $i++)
 	$e[$i] = array(energy($f[$i]));
 //haar wavelet 
+
     foreach($f as $index => $frame)
 	{
-	$res[$index] = Haar($frame, 8);
+	$res[$index] = Haar($frame, 8 - $dev);
 // 	$res[$index]["power"] = HaarPower($res[$index]);
 	$en[$index] = HaarPower($res[$index]);
 	}
-	
-	$minEn = HaarMinPower($en);
+//	print_r($res); 
+//	die(); 
+	if ($dev == 0) $minEn = HaarMinPower($en);  //расчет при максимальном окне
 	$maxEn = HaarMaxPower($en);
 	$hn = HaarLineNormalize($maxEn, $minEn);
 	
@@ -77,11 +88,17 @@ if(!($data = unpack('s*', $wav)))
 	print "\nEn.normal: "; print_r($hn);
 	
 	$hnAll = HaarNormalize($en, $minEn);
-	
-	createImageFromArray($hnAll, "./test_hn_all.jpg"); //create image with track... 
-	die("complite image?"); 
+	print_r($img);
+	$img = createImageFromHaarArray($img, $hnAll, "./test_hn-".$dev.".jpg", 130, [(int) 32 / pow(2, $dev),  16]); //create image with track... 
+	$fn = fopen("res-".$dev.".log", "w");
+	fwrite($fn, json_encode($hnAll));
+	fclose($fn);
+    }
+    imagedestroy($img);//освобождаем изображение 
+    die();
+//	die("complite image?"); 
 	print "\nEn.nA: "; print_r($hnAll);
-	die("min Power");
+//	die("min Power");
     foreach($f as $index => $frame)
 	foreach($en[$index] as $order => $value)
 	    {

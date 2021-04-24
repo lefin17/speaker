@@ -8,9 +8,6 @@ if ($argv && $argv[0] && realpath($argv[0]) === __FILE__) {
     $sat = 75;
     $lum = 60;
 
-    $hue /= 360;
-    $sat /= 100;
-    $lum /= 100;
 
     $result = ColorHSLToRGB($hue, $sat, $lum);
     var_dump($result); echo '<br>';
@@ -19,8 +16,13 @@ if ($argv && $argv[0] && realpath($argv[0]) === __FILE__) {
 
 
 
-function ColorHSLToRGB($h, $s, $l, $toHex=true) {
+function ColorHSLToRGB($hue, $sat, $lum, $toHex=true) {
 // https://stackoverflow.com/questions/20423641/php-function-to-convert-hsl-to-rgb-or-hex
+    $hue /= 360;
+    $sat /= 100;
+    $lum /= 100;
+    
+    $h = $hue; $s = $sat; $l = $lum; 
         $r = $l;
         $g = $l;
         $b = $l;
@@ -87,7 +89,7 @@ function ColorHSLToRGB($h, $s, $l, $toHex=true) {
         $b = ($b < 15)? '0' . dechex($b) : dechex($b);
         return "#$r$g$b";
     } else {
-        return "rgb($r, $g, $b)";    
+        return array($r, $g, $b);    
     }
 }
 ?>

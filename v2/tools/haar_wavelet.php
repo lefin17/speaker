@@ -16,8 +16,8 @@ function Haar($data, $order = 2) //for example 2 order of filter
 {
     for($i = 0; $i < $order; $i++)
 	list($data, $diff[$i]) = HaarDiff($data); //на вход подается сумма предыдущей итерации
-    
-    //$diff[] = $data;
+	
+       $diff[] = $data;
 return array("sum" => $data, "diff" => $diff);
 }
 
@@ -32,6 +32,23 @@ function HaarPower($data)
 //	$power[] = $data["sum"] * $data["sum"]; //мощность среднего сигнала в основании фрейма
     return $power;
     }
+
+function HaarMinPowerWithDegree($data, $degree_from) //input Haar data
+    {   
+       // value - positive function, possible zero and last frame not relevant
+	$min = $data[0][0]; //принимаем первый фрейм как минимальный
+	$frames = count($data);
+	foreach($data as $frame => $subvalue)
+	    foreach($subvalue["diff"] as $degree => $arr)
+		foreach($arr as $data) 
+		    if ($degree < $degree_from)
+			{ 
+			// ---
+			} 
+		    if ($min[$order] > $value && !empty($value)) $min[$order] = $value;
+	return $min;
+    }
+
     
 function HaarMinPower($data) //input HaarPower result in frames
     {   
