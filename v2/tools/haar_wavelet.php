@@ -33,7 +33,7 @@ function HaarPower($data)
     return $power;
     }
 
-function HaarMinPowerWithDegree($data, $degree_from) //input Haar data
+/* function HaarMinPowerWithDegree($data, $degree_from) //input Haar data
     {   
        // value - positive function, possible zero and last frame not relevant
 	$min = $data[0][0]; //принимаем первый фрейм как минимальный
@@ -48,7 +48,24 @@ function HaarMinPowerWithDegree($data, $degree_from) //input Haar data
 		    if ($min[$order] > $value && !empty($value)) $min[$order] = $value;
 	return $min;
     }
+*/
 
+
+function HaarMinPower2($data) //input HaarPower result in frames
+    {   
+       // value - positive function, possible zero and last frame not relevant
+	$min = $data[0]; //принимаем первый фрейм как минимальный
+	$frames = count($data);
+	foreach($data as $frame => $subvalue)
+	    {
+	    foreach($subvalue as $order => $value)
+		if ($frame < $frames && $order < count($subvalue) - 1)
+		    if ($min[$order] > $value && !empty($value)) $min[$order] = $value;
+		$degrees = count($subvalue)        
+	    }    
+	for($i = 0; $i< $degrees; $i++) $min[$order] = $min[0]; //по высокой частоте
+	return $min;
+    }
     
 function HaarMinPower($data) //input HaarPower result in frames
     {   
@@ -56,9 +73,11 @@ function HaarMinPower($data) //input HaarPower result in frames
 	$min = $data[0]; //принимаем первый фрейм как минимальный
 	$frames = count($data);
 	foreach($data as $frame => $subvalue)
+	    {
 	    foreach($subvalue as $order => $value)
-		if ($frame < $frames)
+		if ($frame < $frames && $order < count($subvalue) - 1)
 		    if ($min[$order] > $value && !empty($value)) $min[$order] = $value;
+	    }    
 	return $min;
     }
     
